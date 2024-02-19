@@ -1,4 +1,4 @@
-import { Header } from "../src/features/Header";
+import { Header } from "../src/features/layout/Header/Header";
 import { ThemeProvider } from "../src/theme/ThemeProvider";
 import './globals.css';
 
