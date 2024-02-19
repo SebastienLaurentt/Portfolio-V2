@@ -31,12 +31,16 @@ export function Header() {
             ))}
           </ul>
         </nav>
-
+        
+        <div className="flex">
         <ThemeToggle />
-
         <div className="h-8 md:h-10 lg:hidden">
           <BurgerMenu isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
+        </div>
+        
+
+
       </div>
     </header>
   );
