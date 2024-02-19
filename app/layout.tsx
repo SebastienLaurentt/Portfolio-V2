@@ -1,6 +1,11 @@
-import { ThemeProvider } from "../src/theme/ThemeProvider"  
+import Header from "@/src/theme/features/Header/Header";
+import { ThemeProvider } from "../src/theme/ThemeProvider";
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <>
       <html lang="en" suppressHydrationWarning>
@@ -12,10 +17,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            <Header />
+            <div>{children}</div>
           </ThemeProvider>
         </body>
       </html>
     </>
-  )
+  );
 }
