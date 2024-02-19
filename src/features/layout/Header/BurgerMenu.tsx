@@ -33,7 +33,7 @@ export default function BurgerMenu({ isOpen, setIsOpen }: IBurgerMenu) {
         onClick={() => setIsOpen(true)}
         aria-label="Ouvrir le menu mobile"
       >
-        <Menu color="#fff" className="h-8 md:h-10 w-8 md:w-10" />
+        <Menu  className="h-8 md:h-10 w-8 md:w-10" />
       </button>
 
       <nav
@@ -41,7 +41,7 @@ export default function BurgerMenu({ isOpen, setIsOpen }: IBurgerMenu) {
           isOpen ? "left-0" : "left-full"
         }`}
       >
-        <div className=" px-6 md:px-10 py-4 mb-12">
+        <div className=" px-6 md:px-10 py-6 mb-12">
           <X
             className="ml-auto  h-8 md:h-10 w-8 md:w-10"
             onClick={() => setIsOpen(false)}
