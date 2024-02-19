@@ -1,19 +1,33 @@
-import Section from "@/components/ui/Section/Section";
+import DownloadButton from "@/components/Button/DownloadButton/DownloadButton";
+import Section from "@/components/Section/Section";
+import Image from "next/image";
+
+import HeroImg from "../public/images/HeroImg.svg";
+const CV = `/pdf/CV.pdf`;
 
 export default function Home() {
   return (
     <main className="mb-20 md:mb-24 lg:mb-32">
       {/* Hero */}
-      <Section marginBottom={true} marginTop={true}>
-        <div className="w-1/2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-          quaerat amet repellat exercitationem illo et consequuntur rem, aliquam
-          quibusdam, excepturi unde suscipit expedita! Perferendis eveniet
-          maiores numquam commodi nostrum dolorem iusto, laudantium aspernatur
-          quae assumenda hic sunt quia! Cumque possimus dolor similique eum
-          quasi magni itaque quod maxime corporis dignissimos!
+      <Section marginBottom={true} marginTop={true} classname="lg:flex">
+        <div className="lg:w-2/3">
+          <h1>
+            Sébastien Laurent <br /> Développeur Web{" "}
+          </h1>
+          <DownloadButton
+            href={CV}
+            fileName="Sebastien_Laurent_CV.pdf"
+            linkName="Télécharger mon CV"
+            classname="mt-4"
+          />
         </div>
-        <div className="w-1/2"></div>
+        <div className="lg:w-1/3">
+          <Image
+            src={HeroImg}
+            alt="Logo Galopins"
+            className=""
+          />
+        </div>
       </Section>
 
       {/* Presentation */}
