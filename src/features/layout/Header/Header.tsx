@@ -5,8 +5,10 @@ import navData from "../../../../data/navData";
 import { ThemeToggle } from "../../../theme/ThemeToggle";
 import { usePathname } from "next/navigation";
 import BurgerMenu from "./BurgerMenu";
+import { useState } from "react";
 
 export function Header() {
+  const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
   return (

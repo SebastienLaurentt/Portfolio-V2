@@ -37,7 +37,7 @@ export default function BurgerMenu({ isOpen, setIsOpen }: IBurgerMenu) {
       </button>
 
       <nav
-        className={`flex-col min-h-screen top-0 w-full fixed bg-secondary text-center transition-all duration-500 ease-in-out  ${
+        className={`flex-col min-h-screen top-0 w-full fixed bg-background text-center transition-all duration-500 ease-in-out  ${
           isOpen ? "left-0" : "left-full"
         }`}
       >
