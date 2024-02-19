@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <main className="mb-20 md:mb-24 lg:mb-32">
       {/* Hero */}
-      <Section marginBottom={true} marginTop={true} classname="lg:flex">
-        <div className="lg:w-2/3">
+      <Section marginBottom={true} marginTop={true} classname=" flex flex-col lg:flex-row items-center">
+        <div className="lg:w-3/5">
           <h1>
             Sébastien Laurent <br /> Développeur Web{" "}
           </h1>
@@ -18,10 +18,10 @@ export default function Home() {
             href={CV}
             fileName="Sebastien_Laurent_CV.pdf"
             linkName="Télécharger mon CV"
-            classname="mt-4"
+            classname="mt-4 flex justify-center lg:justify-start"
           />
         </div>
-        <div className="lg:w-1/3">
+        <div className="lg:w-2/5 mt-8 lg:mt-0">
           <Image
             src={HeroImg}
             alt="Logo Galopins"
