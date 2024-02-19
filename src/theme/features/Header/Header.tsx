@@ -1,3 +1,4 @@
+import { DarkModeButton } from '@/components/DarkModeButton/DarkModeButton'
 import React from 'react'
 
 const Header = () => {
@@ -7,6 +8,7 @@ const Header = () => {
         <div>
           SL
         </div>
+        <DarkModeButton />
       </nav>
     </header>
   )
