@@ -1,5 +1,6 @@
-import Header from "@/src/theme/features/Header/Header";
+import { Header } from "../src/features/Header";
 import { ThemeProvider } from "../src/theme/ThemeProvider";
+import './globals.css';
 
 export default function RootLayout({
   children,
@@ -17,8 +18,10 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <Header />
-            <div>{children}</div>
+            <div className=" flex flex-col h-full">
+              <Header />
+              <div>{children}</div>
+            </div>
           </ThemeProvider>
         </body>
       </html>
