@@ -12,7 +12,8 @@ export default function Home() {
       <Section marginBottom={true} marginTop={true} classname=" flex flex-col lg:flex-row items-center">
         <div className="lg:w-3/5">
           <h1>
-            Sébastien Laurent <br /> Développeur Web{" "}
+            Sébastien Laurent <br /> <span className="text-tertiary-foreground">Développeur Web
+              </span>{" "}
           </h1>
           <DownloadButton
             href={CV}
