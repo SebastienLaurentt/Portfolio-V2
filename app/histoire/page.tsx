@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "Pour en savoir plus sur mon histoire",
 };
 
-function Parcours() {
+function Histoire() {
   return (
     <main className="mb-20 md:mb-24 lg:mb-32">
       <PageTitle
@@ -27,4 +27,4 @@ function Parcours() {
   );
 }
 
-export default Parcours;
+export default Histoire;
