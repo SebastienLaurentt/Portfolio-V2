@@ -4,7 +4,16 @@ import Image from "next/image";
 
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
 import HeroImg from "../public/images/HeroImg.svg";
+import ProjectCard from "@/components/ProjectCard/ProjectCard";
+
+import Stash from "../public/images/Stash.png";
+import Codit from "../public/images/Codit.png";
+import Galopins from "../public/images/GalopinsV2.png";
+import Portfolio from "../public/images/PortfolioV2.png";
+
 const CV = `/pdf/CV.pdf`;
+
+
 
 export default function Home() {
   return (
@@ -56,7 +65,14 @@ export default function Home() {
       {/* Skills */}
       <Section marginBottom={true} marginTop={true}>
         <SectionHeader title="Mes dernières" titleHighlight="réalisations" />
+        <div className="">
+          <ProjectCard src={Stash}  alt="Impression d'écran de la page d'accueil du Projet Stash" projectTitle="Stash" />
+          <ProjectCard src={Codit}  alt="Impression d'écran de la page d'accueil du Projet Codit" projectTitle="Codit" />
+          <ProjectCard src={Portfolio}  alt="Impression d'écran de la page d'accueil de mon Portfolio" projectTitle="Portfolio" />
+          <ProjectCard src={Galopins}  alt="Impression d'écran de la page d'accueil du Projet Galopins" projectTitle="Galopins" />
+        </div>
 
+        
       </Section>
 
       {/* Contact */}
