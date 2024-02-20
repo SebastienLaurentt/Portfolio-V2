@@ -22,7 +22,7 @@ export function Header() {
                 <Link
                   href={link.href}
                   className={
-                    pathname === link.href ? " py-2 px-4 rounded-full bg-slate-900" : "py-2 px-4"
+                    pathname === link.href ? " py-2 px-4 rounded-full bg-secondary/90" : "py-2 px-4 text-primary/70"
                   }
                 >
                   {link.name}
