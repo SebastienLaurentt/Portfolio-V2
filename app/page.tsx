@@ -47,6 +47,7 @@ export default function Home() {
 
       {/* Skills */}
       <Section marginBottom={true} marginTop={true}>
+        <SectionHeader title="Des projets" titleHighlight="variés"/>
         <div>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
           corrupti praesentium dolore assumenda, provident nam, reprehenderit
@@ -59,6 +60,7 @@ export default function Home() {
 
       {/* Contact */}
       <Section marginBottom={true} marginTop={true}>
+        <SectionHeader title="Des compétences" titleHighlight="transverses"/>
         <div>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
           corrupti praesentium dolore assumenda, provident nam, reprehenderit
