@@ -18,16 +18,14 @@ const ProjectCard = ({
   return (
     <div className={`mb-16 ${classname}`}>
       <div>
-        <div className="flex items-center gap-x-4 mb-2">
-          <div>
-            <h3 className="mb-1">{projectTitle}</h3>
-          </div>
+        <div className="mb-2">
+          <Image src={src} alt={alt} />
         </div>
-        <div className="">
-        <Image src={src} alt={alt} />
+        <div className="text-center">
+          <h3 className="mb-1">{projectTitle}</h3>
+          <p className="text-sm md:text-sm">{projectDescription}</p>
         </div>
-
-        <p className="text-sm md:text-sm">{projectDescription}</p>
+        
       </div>
     </div>
   );
