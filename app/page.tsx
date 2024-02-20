@@ -13,9 +13,9 @@ export default function Home() {
       <Section
         marginBottom={true}
         marginTop={true}
-        classname=" flex flex-col lg:flex-row items-center"
+        classname=" flex flex-col items-center  "
       >
-        <div className="lg:w-3/5">
+        <div className="lg:mr-40">
           <h1>
             Sébastien Laurent <br />{" "}
             <span className="text-tertiary-foreground">Développeur Web</span>{" "}
@@ -27,27 +27,36 @@ export default function Home() {
             classname="mt-4 flex justify-center lg:justify-start"
           />
         </div>
-        <div className="lg:w-2/5 mt-8 lg:mt-0">
-          <Image src={HeroImg} alt="Logo Galopins" className="" />
+        <div className="mt-12 md:mt-20 lg:mt-0 lg:ml-40 ">
+          <Image src={HeroImg} alt="Logo Galopins" className="w-4/5 md:w-3/5 lg:w-4/5 mx-auto" />
         </div>
       </Section>
 
       {/* Presentation */}
       <Section marginBottom={true} marginTop={true}>
-        <SectionHeader title="De la recherche au" titleHighlight="développement"/>
-        <div className="text-md lg:text-2xl leading-8 lg:leading-[44px] text-secondary-foreground/80">
-          Lorem ipsum dolor sit amet consectetur <span className="text-secondary-foreground">adipisicing</span> elit. Sequi
-          corrupti <span className="text-secondary-foreground">praesentium</span> dolore assumenda, provident nam, reprehenderit
-          quibusdam a <span className="text-secondary-foreground">repudiandae</span> autem voluptatum porro cumque nihil possimus
-          ullam soluta? Esse vitae distinctio rerum repellendus. Expedita
-          <span className="text-secondary-foreground"> consequatur</span> unde amet nesciunt placeat omnis atque nisi, id totam
-          veniam porro <span className="text-secondary-foreground">cupiditate</span> eum, cum quis culpa?
+        <SectionHeader
+          title="De la recherche au"
+          titleHighlight="développement"
+        />
+        <div className="text-md lg:text-2xl xl:text-4xl leading-8 lg:leading-[44px] xl:leading-[60px] text-secondary-foreground/80">
+          Lorem ipsum dolor sit amet consectetur{" "}
+          <span className="text-secondary-foreground">adipisicing</span> elit.
+          Sequi corrupti{" "}
+          <span className="text-secondary-foreground">praesentium</span> dolore
+          assumenda, provident nam, reprehenderit quibusdam a{" "}
+          <span className="text-secondary-foreground">repudiandae</span> autem
+          voluptatum porro cumque nihil possimus ullam soluta? Esse vitae
+          distinctio rerum repellendus. Expedita
+          <span className="text-secondary-foreground"> consequatur</span> unde
+          amet nesciunt placeat omnis atque nisi, id totam veniam porro{" "}
+          <span className="text-secondary-foreground">cupiditate</span> eum, cum
+          quis culpa?
         </div>
       </Section>
 
       {/* Skills */}
       <Section marginBottom={true} marginTop={true}>
-        <SectionHeader title="Des projets" titleHighlight="variés"/>
+        <SectionHeader title="Des projets" titleHighlight="variés" />
         <div>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
           corrupti praesentium dolore assumenda, provident nam, reprehenderit
@@ -60,7 +69,7 @@ export default function Home() {
 
       {/* Contact */}
       <Section marginBottom={true} marginTop={true}>
-        <SectionHeader title="Des compétences" titleHighlight="transverses"/>
+        <SectionHeader title="Des compétences" titleHighlight="transverses" />
         <div>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
           corrupti praesentium dolore assumenda, provident nam, reprehenderit

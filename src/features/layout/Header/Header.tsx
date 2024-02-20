@@ -13,7 +13,7 @@ export function Header() {
 
   return (
     <header className="">
-      <div className="flex items-center justify-between px-6 md:px-10 xl:px-16 2xl:max-w-[1280px] 2xl:mx-auto py-6 lg:py-6">
+      <div className="flex items-center justify-between px-6 md:px-10 xl:px-16 xl:max-w-[1280px] xl:mx-auto py-6 lg:py-6">
         <span className="">Sébastien Laurent </span>
         <nav className="hidden lg:block">
           <ul className="flex gap-x-4 border py-3 px-1 rounded-full">
