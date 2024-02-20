@@ -66,8 +66,11 @@ export default function Home() {
       <Section marginBottom={true} marginTop={true}>
         <SectionHeader title="Mes dernières" titleHighlight="réalisations" />
         <div className="">
-          <ProjectCard src={Stash}  alt="Impression d'écran de la page d'accueil du Projet Stash" projectTitle="Stash" />
-          <ProjectCard src={Codit}  alt="Impression d'écran de la page d'accueil du Projet Codit" projectTitle="Codit" />
+          <div className="xl:flex xl:gap-x-8">
+            <ProjectCard src={Stash}  alt="Impression d'écran de la page d'accueil du Projet Stash" projectTitle="Stash" />
+            <ProjectCard src={Codit}  alt="Impression d'écran de la page d'accueil du Projet Codit" projectTitle="Codit" />
+          </div>
+
           <ProjectCard src={Portfolio}  alt="Impression d'écran de la page d'accueil de mon Portfolio" projectTitle="Portfolio" />
           <ProjectCard src={Galopins}  alt="Impression d'écran de la page d'accueil du Projet Galopins" projectTitle="Galopins" />
         </div>

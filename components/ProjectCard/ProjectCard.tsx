@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 
 interface ProjectCardProps {
+  classname?: string;
   src: StaticImageData;
   alt: string;
   projectTitle: string;
@@ -8,13 +9,14 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({
+  classname,
   src,
   alt,
   projectTitle,
   projectDescription,
 }: ProjectCardProps) => {
   return (
-    <div className="mb-16">
+    <div className={`mb-16 ${classname}`}>
       <div>
         <div className="flex items-center gap-x-4 mb-2">
           <div>
