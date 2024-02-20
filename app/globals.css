@@ -81,11 +81,11 @@
   }
 
   h1 {
-    @apply text-2xl md:text-5xl lg:text-6xl leading-[3rem] md:leading-[4rem] lg:leading-[5rem] font-bold;
+    @apply text-2xl md:text-5xl lg:text-6xl xl:text-7xl leading-[3rem] md:leading-[5rem] lg:leading-[6rem] xl:leading-[7rem] font-bold;
   }
 
   h2 {
-    @apply text-xl md:text-3xl leading-8 md:leading-[48px] font-semibold mb-4 text-primary ;
+    @apply text-xl md:text-4xl lg:text-5xl xl:text-6xl leading-8 md:leading-[48px] font-semibold mb-4 text-primary ;
   }
 
   h3 {

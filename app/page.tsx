@@ -42,8 +42,8 @@ export default function Home() {
           title="De la recherche au"
           titleHighlight="développement"
         />
-        <div className="text-md lg:text-2xl xl:text-4xl leading-8 lg:leading-[44px] xl:leading-[72px] text-secondary-foreground">
-          Après un doctorat en <span className="text-tertiary-foreground">Sciences Cognitives</span> je me suis tourné vers le développement
+        <div className="text-md md:text-xl lg:text-3xl xl:text-4xl leading-8 md:leading-[48px] lg:leading-[64px] xl:leading-[72px] text-secondary-foreground">
+          Après un doctorat en <span className="text-tertiary-foreground"> Sciences Cognitives</span> je me suis tourné vers le développement
           web. Ce choix s&apos;explique par la volonté d&apos;utiliser ma compréhension du
           <span className="text-tertiary-foreground"> cerveau humain</span> dans un secteur qui m&apos;intéresse particulièrement, celui
           du <span className="text-tertiary-foreground"> numérique</span>. Ainsi, de manière autodidacte mais
