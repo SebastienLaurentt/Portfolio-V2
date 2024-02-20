@@ -2,6 +2,7 @@ import { Footer } from "@/src/features/layout/Footer/Footer";
 import { Header } from "../src/features/layout/Header/Header";
 import { ThemeProvider } from "../src/theme/ThemeProvider";
 import './globals.css';
+import ScrollToTopButton from "@/components/Button/DownloadButton/ScrollToTopButton/ScrollToTopButton";
 
 export default function RootLayout({
   children,
@@ -23,6 +24,7 @@ export default function RootLayout({
               <Header />
               <div>{children}</div>
               <Footer />
+              <ScrollToTopButton />
             </div>
           </ThemeProvider>
         </body>
