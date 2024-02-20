@@ -2,18 +2,16 @@ import DownloadButton from "@/components/Button/DownloadButton/DownloadButton";
 import Section from "@/components/Section/Section";
 import Image from "next/image";
 
+import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
 import HeroImg from "../public/images/HeroImg.svg";
-import ProjectCard from "@/components/ProjectCard/ProjectCard";
 
-import Stash from "../public/images/Stash.png";
 import Codit from "../public/images/Codit.png";
 import Galopins from "../public/images/GalopinsV2.png";
 import Portfolio from "../public/images/PortfolioV2.png";
+import Stash from "../public/images/Stash.png";
 
 const CV = `/pdf/CV.pdf`;
-
-
 
 export default function Home() {
   return (
@@ -52,13 +50,20 @@ export default function Home() {
           titleHighlight="développement"
         />
         <div className="text-md md:text-xl lg:text-3xl xl:text-4xl leading-8 md:leading-[48px] lg:leading-[64px] xl:leading-[72px] text-secondary-foreground">
-          Après un doctorat en <span className="text-tertiary-foreground"> Sciences Cognitives</span> je me suis tourné vers le développement
-          web. Ce choix s&apos;explique par la volonté d&apos;utiliser ma compréhension du
-          <span className="text-tertiary-foreground"> cerveau humain</span> dans un secteur qui m&apos;intéresse particulièrement, celui
-          du <span className="text-tertiary-foreground"> numérique</span>. Ainsi, de manière autodidacte mais
-          aussi par le biais d&apos;une formation intensive j&apos;explore ce nouvel
-          environnement. J&apos;adore découvrir et apprendre à réaliser de <span className="text-tertiary-foreground">nouvelles
-          fonctionnalités</span> pouvant améliorer l&apos;expérience des utilisateurs. 
+          Après un doctorat en{" "}
+          <span className="text-tertiary-foreground"> Sciences Cognitives</span>{" "}
+          je me suis tourné vers le développement web. Ce choix s&apos;explique
+          par la volonté d&apos;utiliser ma compréhension du
+          <span className="text-tertiary-foreground"> cerveau humain</span> dans
+          un secteur qui m&apos;intéresse particulièrement, celui du{" "}
+          <span className="text-tertiary-foreground"> numérique</span>. Ainsi,
+          de manière autodidacte mais aussi par le biais d&apos;une formation
+          intensive j&apos;explore ce nouvel environnement. J&apos;adore
+          découvrir et apprendre à réaliser de{" "}
+          <span className="text-tertiary-foreground">
+            nouvelles fonctionnalités
+          </span>{" "}
+          pouvant améliorer l&apos;expérience des utilisateurs.
         </div>
       </Section>
 
@@ -67,16 +72,36 @@ export default function Home() {
         <SectionHeader title="Mes dernières" titleHighlight="réalisations" />
         <div className="flex flex-col ">
           <div className="xl:flex xl:gap-x-8">
-            <ProjectCard src={Stash}  alt="Impression d'écran de la page d'accueil du Projet Stash" projectTitle="Stash" />
-            <ProjectCard src={Codit}  alt="Impression d'écran de la page d'accueil du Projet Codit" projectTitle="Codit" classname="xl:mt-64" />
+            <ProjectCard
+              src={Stash}
+              alt="Impression d'écran de la page d'accueil du Projet Stash"
+              projectTitle="Stash"
+              projectDescription="Agence de web design"
+            />
+            <ProjectCard
+              src={Codit}
+              alt="Impression d'écran de la page d'accueil du Projet Codit"
+              projectTitle="Codit"
+              projectDescription="Réseau social pour développeurs"
+              classname="xl:mt-64"
+            />
           </div>
           <div className="xl:flex xl:gap-x-8">
-          <ProjectCard src={Portfolio}  alt="Impression d'écran de la page d'accueil de mon Portfolio" projectTitle="Portfolio" />
-          <ProjectCard src={Galopins}  alt="Impression d'écran de la page d'accueil du Projet Galopins" projectTitle="Galopins" classname="xl:mt-64" />
+            <ProjectCard
+              src={Portfolio}
+              alt="Impression d'écran de la page d'accueil de mon Portfolio"
+              projectDescription="Mon portfolio personnel"
+              projectTitle="Portfolio"
+            />
+            <ProjectCard
+              src={Galopins}
+              alt="Impression d'écran de la page d'accueil du Projet Galopins"
+              projectTitle="Galopins"
+              projectDescription="Club de randonnée"
+              classname="xl:mt-64"
+            />
           </div>
         </div>
-
-        
       </Section>
 
       {/* Contact */}
