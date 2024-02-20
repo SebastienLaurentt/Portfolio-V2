@@ -2,6 +2,7 @@ import DownloadButton from "@/components/Button/DownloadButton/DownloadButton";
 import Section from "@/components/Section/Section";
 import Image from "next/image";
 
+import SectionHeader from "@/components/SectionHeader/SectionHeader";
 import HeroImg from "../public/images/HeroImg.svg";
 const CV = `/pdf/CV.pdf`;
 
@@ -9,11 +10,15 @@ export default function Home() {
   return (
     <main className="mb-20 md:mb-24 lg:mb-32">
       {/* Hero */}
-      <Section marginBottom={true} marginTop={true} classname=" flex flex-col lg:flex-row items-center">
+      <Section
+        marginBottom={true}
+        marginTop={true}
+        classname=" flex flex-col lg:flex-row items-center"
+      >
         <div className="lg:w-3/5">
           <h1>
-            Sébastien Laurent <br /> <span className="text-tertiary-foreground">Développeur Web
-              </span>{" "}
+            Sébastien Laurent <br />{" "}
+            <span className="text-tertiary-foreground">Développeur Web</span>{" "}
           </h1>
           <DownloadButton
             href={CV}
@@ -23,16 +28,13 @@ export default function Home() {
           />
         </div>
         <div className="lg:w-2/5 mt-8 lg:mt-0">
-          <Image
-            src={HeroImg}
-            alt="Logo Galopins"
-            className=""
-          />
+          <Image src={HeroImg} alt="Logo Galopins" className="" />
         </div>
       </Section>
 
       {/* Presentation */}
       <Section marginBottom={true} marginTop={true}>
+        <SectionHeader title="Mon histoire" />
         <div>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
           corrupti praesentium dolore assumenda, provident nam, reprehenderit
