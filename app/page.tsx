@@ -34,14 +34,14 @@ export default function Home() {
 
       {/* Presentation */}
       <Section marginBottom={true} marginTop={true}>
-        <SectionHeader title="Mon histoire" />
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-          corrupti praesentium dolore assumenda, provident nam, reprehenderit
-          quibusdam a repudiandae autem voluptatum porro cumque nihil possimus
+        <SectionHeader title="De la recherche au" titleHighlight="développement"/>
+        <div className="text-md lg:text-2xl leading-8 lg:leading-[44px] text-secondary-foreground/80">
+          Lorem ipsum dolor sit amet consectetur <span className="text-secondary-foreground">adipisicing</span> elit. Sequi
+          corrupti <span className="text-secondary-foreground">praesentium</span> dolore assumenda, provident nam, reprehenderit
+          quibusdam a <span className="text-secondary-foreground">repudiandae</span> autem voluptatum porro cumque nihil possimus
           ullam soluta? Esse vitae distinctio rerum repellendus. Expedita
-          consequatur unde amet nesciunt placeat omnis atque nisi, id totam
-          veniam porro cupiditate eum, cum quis culpa?
+          <span className="text-secondary-foreground"> consequatur</span> unde amet nesciunt placeat omnis atque nisi, id totam
+          veniam porro <span className="text-secondary-foreground">cupiditate</span> eum, cum quis culpa?
         </div>
       </Section>
 
