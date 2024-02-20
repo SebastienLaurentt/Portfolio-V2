@@ -15,7 +15,7 @@ export default function Home() {
         marginTop={true}
         classname=" flex flex-col items-center  "
       >
-        <div className="lg:mr-40">
+        <div className="lg:mr-60">
           <h1>
             Sébastien Laurent <br />{" "}
             <span className="text-tertiary-foreground">Développeur Web</span>{" "}
@@ -27,11 +27,11 @@ export default function Home() {
             classname="mt-4 flex justify-center lg:justify-start"
           />
         </div>
-        <div className="mt-12 md:mt-20 lg:mt-0 lg:ml-40 ">
+        <div className="flex justify-center lg:justify-end mt-12 md:mt-20 lg:mt-0 lg:mr-20  ">
           <Image
             src={HeroImg}
             alt="Logo Galopins"
-            className="w-4/5 md:w-3/5 lg:w-4/5 mx-auto"
+            className="w-4/5 md:w-3/5 lg:w-2/3  "
           />
         </div>
       </Section>
