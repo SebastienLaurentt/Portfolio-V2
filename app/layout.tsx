@@ -1,3 +1,4 @@
+import { Footer } from "@/src/features/layout/Footer/Footer";
 import { Header } from "../src/features/layout/Header/Header";
 import { ThemeProvider } from "../src/theme/ThemeProvider";
 import './globals.css';
@@ -21,6 +22,7 @@ export default function RootLayout({
             <div className=" flex flex-col h-full">
               <Header />
               <div>{children}</div>
+              <Footer />
             </div>
           </ThemeProvider>
         </body>
