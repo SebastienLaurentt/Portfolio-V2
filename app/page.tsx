@@ -65,14 +65,15 @@ export default function Home() {
       {/* Skills */}
       <Section marginBottom={true} marginTop={true}>
         <SectionHeader title="Mes dernières" titleHighlight="réalisations" />
-        <div className="">
+        <div className="flex flex-col ">
           <div className="xl:flex xl:gap-x-8">
             <ProjectCard src={Stash}  alt="Impression d'écran de la page d'accueil du Projet Stash" projectTitle="Stash" />
-            <ProjectCard src={Codit}  alt="Impression d'écran de la page d'accueil du Projet Codit" projectTitle="Codit" />
+            <ProjectCard src={Codit}  alt="Impression d'écran de la page d'accueil du Projet Codit" projectTitle="Codit" classname="xl:mt-64" />
           </div>
-
+          <div className="xl:flex xl:gap-x-8">
           <ProjectCard src={Portfolio}  alt="Impression d'écran de la page d'accueil de mon Portfolio" projectTitle="Portfolio" />
-          <ProjectCard src={Galopins}  alt="Impression d'écran de la page d'accueil du Projet Galopins" projectTitle="Galopins" />
+          <ProjectCard src={Galopins}  alt="Impression d'écran de la page d'accueil du Projet Galopins" projectTitle="Galopins" classname="xl:mt-64" />
+          </div>
         </div>
 
         
