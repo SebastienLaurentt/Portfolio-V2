@@ -55,15 +55,8 @@ export default function Home() {
 
       {/* Skills */}
       <Section marginBottom={true} marginTop={true}>
-        <SectionHeader title="Des projets" titleHighlight="variés" />
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-          corrupti praesentium dolore assumenda, provident nam, reprehenderit
-          quibusdam a repudiandae autem voluptatum porro cumque nihil possimus
-          ullam soluta? Esse vitae distinctio rerum repellendus. Expedita
-          consequatur unde amet nesciunt placeat omnis atque nisi, id totam
-          veniam porro cupiditate eum, cum quis culpa?
-        </div>
+        <SectionHeader title="Mes dernières" titleHighlight="réalisations" />
+
       </Section>
 
       {/* Contact */}
