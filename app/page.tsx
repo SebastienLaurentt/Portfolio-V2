@@ -28,7 +28,11 @@ export default function Home() {
           />
         </div>
         <div className="mt-12 md:mt-20 lg:mt-0 lg:ml-40 ">
-          <Image src={HeroImg} alt="Logo Galopins" className="w-4/5 md:w-3/5 lg:w-4/5 mx-auto" />
+          <Image
+            src={HeroImg}
+            alt="Logo Galopins"
+            className="w-4/5 md:w-3/5 lg:w-4/5 mx-auto"
+          />
         </div>
       </Section>
 
@@ -38,19 +42,14 @@ export default function Home() {
           title="De la recherche au"
           titleHighlight="développement"
         />
-        <div className="text-md lg:text-2xl xl:text-4xl leading-8 lg:leading-[44px] xl:leading-[60px] text-secondary-foreground/80">
-          Lorem ipsum dolor sit amet consectetur{" "}
-          <span className="text-secondary-foreground">adipisicing</span> elit.
-          Sequi corrupti{" "}
-          <span className="text-secondary-foreground">praesentium</span> dolore
-          assumenda, provident nam, reprehenderit quibusdam a{" "}
-          <span className="text-secondary-foreground">repudiandae</span> autem
-          voluptatum porro cumque nihil possimus ullam soluta? Esse vitae
-          distinctio rerum repellendus. Expedita
-          <span className="text-secondary-foreground"> consequatur</span> unde
-          amet nesciunt placeat omnis atque nisi, id totam veniam porro{" "}
-          <span className="text-secondary-foreground">cupiditate</span> eum, cum
-          quis culpa?
+        <div className="text-md lg:text-2xl xl:text-4xl leading-8 lg:leading-[44px] xl:leading-[72px] text-secondary-foreground">
+          Après un doctorat en <span className="text-tertiary-foreground">Sciences Cognitives</span> je me suis tourné vers le développement
+          web. Ce choix s&apos;explique par la volonté d&apos;utiliser ma compréhension du
+          <span className="text-tertiary-foreground"> cerveau humain</span> dans un secteur qui m&apos;intéresse particulièrement, celui
+          du <span className="text-tertiary-foreground"> numérique</span>. Ainsi, de manière autodidacte mais
+          aussi par le biais d&apos;une formation intensive j&apos;explore ce nouvel
+          environnement. J&apos;adore découvrir et apprendre à réaliser de <span className="text-tertiary-foreground">nouvelles
+          fonctionnalités</span> pouvant améliorer l&apos;expérience des utilisateurs. 
         </div>
       </Section>
 
