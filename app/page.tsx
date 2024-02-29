@@ -1,10 +1,7 @@
-import Section from "@/components/Section/Section";
-
-import SectionHeader from "@/components/SectionHeader/SectionHeader";
-
 import Hero from "@/components/LandingSections/Hero/Hero";
 import Presentation from "@/components/LandingSections/Presentation/Presentation";
 
+import Contact from "@/components/LandingSections/Contact/Contact";
 import Projets from "@/components/LandingSections/Projets/Projets";
 import Skills from "@/components/LandingSections/Skills/Skills";
 
@@ -21,12 +18,7 @@ export default function Home() {
       {/* Skills */}
       <Skills />
       {/* Contact */}
-      <Section marginBottom={true} marginTop={true}>
-        <SectionHeader
-          title="Des questions ?"
-          titleHighlight="Contactez-moi !"
-        />
-      </Section>
+      <Contact />
     </main>
   );
 }
