@@ -4,7 +4,7 @@ import { useFormState } from "react-dom";
 import { sendEmail } from "../../src/actions";
 import { Button } from "../ui/button";
 
-export default function Form() {
+export default function ContactForm() {
   const [sendEmailState, sendEmailAction] = useFormState(sendEmail, {
     error: null,
     success: false,
