@@ -6,8 +6,8 @@
   :root {
       /* Off White */
     --background: 50 12% 90%; 
-    /* Warm Grey */
-    --foreground: 51 3% 57%; 
+    /* Dark */
+    --foreground: 0 0% 3%; 
 
     --card: 50 12% 90%;
     --card-foreground: 0 0% 3%;
@@ -15,6 +15,7 @@
     --popover: 50 12% 90%;
     --popover-foreground: 0 0% 3%;
  
+    /* Title : h1 */
     /* Black */
     --primary: 0 0% 3%;
     --primary-foreground: 50 3% 35%;
@@ -31,7 +32,7 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
+    --border: 0 0% 76%;
     --input: 214.3 31.8% 91.4%;
     --ring: 0 0% 3%;
  
@@ -67,7 +68,7 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
  
-    --border: 217.2 32.6% 17.5%;
+    --border: 0 0% 14%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
   }
