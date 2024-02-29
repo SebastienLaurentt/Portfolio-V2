@@ -1,10 +1,8 @@
-import DownloadButton from "@/components/Button/DownloadButton/DownloadButton";
 import Section from "@/components/Section/Section";
 import Image from "next/image";
 
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
-import HeroImg from "../public/images/HeroImg.svg";
 
 import Codit from "../public/images/Codit.png";
 import Galopins from "../public/images/GalopinsV2.png";
@@ -16,39 +14,14 @@ import Node from "../public/images/NodeJs.svg";
 import ReactSvg from "../public/images/React.svg";
 import Tailwind from "../public/images/Tailwind.svg";
 import Wordpress from "../public/images/Wordpress.svg";
+import Hero from "@/components/LandingSections/Hero/Hero";
 
-const CV = `/pdf/CV.pdf`;
 
 export default function Home() {
   return (
     <main className="mb-20 md:mb-24 lg:mb-32">
       {/* Hero */}
-      <Section
-        marginBottom={true}
-        marginTop={true}
-        classname=" flex flex-col items-center  "
-      >
-        <div className="lg:mr-60">
-          <h1>
-            Sébastien Laurent <br />{" "}
-            <span className="text-tertiary-foreground">Développeur Web</span>{" "}
-          </h1>
-          <DownloadButton
-            href={CV}
-            fileName="Sebastien_Laurent_CV.pdf"
-            linkName="Télécharger mon CV"
-            classname="mt-4 flex justify-center lg:justify-start"
-          />
-        </div>
-        <div className="flex justify-center lg:justify-end mt-12 md:mt-20 lg:mt-0 lg:mr-20  ">
-          <Image
-            src={HeroImg}
-            alt="Logo Galopins"
-            className="w-4/5 md:w-3/5 lg:w-2/3  "
-          />
-        </div>
-      </Section>
-
+      <Hero />
       {/* Presentation */}
       <Section marginBottom={true} marginTop={true}>
         <SectionHeader
@@ -138,8 +111,10 @@ export default function Home() {
 
       {/* Contact */}
       <Section marginBottom={true} marginTop={true}>
-        <SectionHeader title="Des questions ?" titleHighlight="Contactez-moi !" />
-
+        <SectionHeader
+          title="Des questions ?"
+          titleHighlight="Contactez-moi !"
+        />
       </Section>
     </main>
   );
