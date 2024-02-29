@@ -15,10 +15,10 @@
     --popover: 50 12% 90%;
     --popover-foreground: 0 0% 3%;
  
-    /* Title : h1 */
     /* Black */
     --primary: 0 0% 3%;
-    --primary-foreground: 50 3% 35%;
+    /* Black -> Titles : h1  */
+    --primary-foreground: 0 0% 3%;
  
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -54,6 +54,7 @@
  
     /* Off White */
     --primary: 50 12% 90%;
+    /* Off White */
     --primary-foreground: 50 12% 90%;
  
     --secondary: 217.2 32.6% 17.5%;
