@@ -9,7 +9,7 @@ const Presentation = () => {
       title="De la recherche au"
       titleHighlight="développement"
     />
-    <div className="text-md md:text-xl lg:text-3xl xl:text-4xl leading-8 md:leading-[48px] lg:leading-[64px] xl:leading-[72px] text-secondary-foreground">
+    <div className="text-md md:text-xl lg:text-3xl xl:text-4xl leading-8 md:leading-[48px] lg:leading-[64px] xl:leading-[72px]">
       Après un doctorat en{" "}
       <span className="text-tertiary-foreground"> Sciences Cognitives</span>{" "}
       je me suis tourné vers le développement web. Ce choix s&apos;explique
