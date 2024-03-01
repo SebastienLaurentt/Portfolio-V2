@@ -13,7 +13,7 @@ const Projets = () => {
     <Section marginBottom={true} marginTop={true}>
     <SectionHeader title="Mes dernières" titleHighlight="réalisations" />
     <div className="flex flex-col ">
-      <div className="xl:flex xl:gap-x-8">
+      <div className="">
         <ProjectCard
           src={Stash}
           alt="Impression d'écran de la page d'accueil du Projet Stash"
@@ -30,7 +30,7 @@ const Projets = () => {
           classname="xl:mt-64"
         />
       </div>
-      <div className="xl:flex xl:gap-x-8">
+      <div className="">
         <ProjectCard
           src={Portfolio}
           alt="Impression d'écran de la page d'accueil de mon Portfolio"
