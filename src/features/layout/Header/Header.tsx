@@ -1,26 +1,27 @@
 'use client'
-
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { BrainCircuit } from "lucide-react";
 import { ThemeToggle } from "../../../theme/ThemeToggle";
 
 export function Header() {
-  const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPos = window.scrollY;
-      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
-      setPrevScrollPos(currentScrollPos);
-    };
+    if (typeof window !== 'undefined') {
+      const handleScroll = () => {
+        const currentScrollPos = window.scrollY;
+        setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+        setPrevScrollPos(currentScrollPos);
+      };
 
-    window.addEventListener('scroll', handleScroll);
-    
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+      window.addEventListener('scroll', handleScroll);
+
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }
   }, [prevScrollPos, visible]);
 
   return (
