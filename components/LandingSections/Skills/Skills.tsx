@@ -8,7 +8,7 @@ import TailwindIcon from "@/components/SvgIcons/Tailwind/Tailwind";
 import WordPressIcon from "@/components/SvgIcons/Wordpress/Wordpress";
 
 const Skills = () => {
-  const fillColor = "#fff";
+  const fillColor = "hsl(var(--primary-foreground))";
   const size = 32;
 
   return (
