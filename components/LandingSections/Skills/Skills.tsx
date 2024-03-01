@@ -8,27 +8,30 @@ import TailwindIcon from "@/components/SvgIcons/Tailwind/Tailwind";
 import WordPressIcon from "@/components/SvgIcons/Wordpress/Wordpress";
 
 const Skills = () => {
+  const fillColor = "#fff";
+  const size = 32;
+
   return (
     <Section marginBottom={true} marginTop={true}>
       <SectionHeader title="Des compétences" titleHighlight="transverses" />
       <div className="flex flex-col md:flex-row md:justify-center gap-y-2 md:gap-x-2 ">
         <div className="flex justify-center gap-x-2">
           <div className="border rounded-xl w-24 h-16  justify-center flex items-center">
-            <NextJsIcon fillColor="#f78" width={32} height={32} />
+            <NextJsIcon fillColor={fillColor} width={size} height={size} />
           </div>
           <div className="border rounded-xl w-24 h-16 flex justify-center  items-center">
-            <TailwindIcon fillColor="#f78" width={32} height={32} />
+            <TailwindIcon fillColor={fillColor} width={size} height={size} />
           </div>
           <div className="border rounded-xl w-24 h-16 flex justify-center items-center">
-            <ReactIcon fillColor="#f78" width={32} height={32} />
+            <ReactIcon fillColor={fillColor} width={size} height={size} />
           </div>
         </div>
         <div className="flex justify-center gap-x-2">
           <div className="border rounded-xl w-24 h-16 flex justify-center flex items-center">
-            <WordPressIcon fillColor="#f78" width={32} height={32} />
+            <WordPressIcon fillColor={fillColor} width={size} height={size} />
           </div>
           <div className="border rounded-xl w-24 h-16 flex justify-center flex items-center">
-            <NodeJsIcon fillColor="#f78" width={32} height={32} />
+            <NodeJsIcon fillColor={fillColor} width={size} height={size} />
           </div>
         </div>
       </div>
