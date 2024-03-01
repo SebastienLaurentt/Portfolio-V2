@@ -71,7 +71,7 @@
     /* Black */
     --tertiary: 0 0% 3%;
     /* White */
-    --tertiary-foreground: 0 0% 14%;
+    --tertiary-foreground: 0 0% 100%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
