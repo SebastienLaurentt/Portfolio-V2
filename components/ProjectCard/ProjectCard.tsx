@@ -17,15 +17,14 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <div className={`mb-16 ${classname}`}>
-      <div>
-        <div className="mb-2">
-          <Image src={src} alt={alt} />
-        </div>
+      <div className="md:flex md:flex-row-reverse md:items-center md:gap-x-12">
         <div className="text-center">
           <h3 className="mb-1">{projectTitle}</h3>
           <p className="text-sm md:text-sm">{projectDescription}</p>
         </div>
-        
+        <div className="mt-4">
+          <Image src={src} alt={alt} />
+        </div>
       </div>
     </div>
   );
