@@ -8,8 +8,8 @@ const Hero = () => {
   return (
     <Section
       marginBottom={true}
-      marginTop={true}
-      classname=" flex flex-col items-center  "
+      marginTop={false}
+      classname=" flex flex-col items-center mt-36 md:mt-44 lg:mt-60 xl:mt-32  "
     >
       <div className="lg:mr-60">
         <h1>
