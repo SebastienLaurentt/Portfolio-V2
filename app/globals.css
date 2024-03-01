@@ -6,8 +6,8 @@
   :root {
     /* Off White */
     --background: 50 12% 90%;
-    /* Dark */
-    --foreground: 0 0% 3%;
+    /* Warm Grey */
+    --foreground: 51 3% 57%;
 
     --card: 50 12% 90%;
     --card-foreground: 0 0% 3%;
@@ -28,7 +28,7 @@
     /* Off White */
     --tertiary: 50 12% 90%;
     /* Dark */
-    --tertiary-foreground: 0 0% 3%
+    --tertiary-foreground: 0 0% 3%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
