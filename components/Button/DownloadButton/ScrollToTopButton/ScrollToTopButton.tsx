@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { ChevronUp } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -30,14 +31,14 @@ const ScrollToTopButton = () => {
   }
 
   return (
-    <button
-      className={`fixed bottom-14 right-6 md:right-10 rounded-xl p-1 outline-none transition-opacity duration-200   ${
+    <Button variant="icons" size="icons"
+      className={`fixed bottom-6 right-6 md:right-10 rounded-xl outline-none transition-opacity duration-200   ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
       onClick={scrollToTop}
     >
       <ChevronUp />
-    </button>
+    </Button>
   )
 }
 
