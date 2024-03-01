@@ -9,8 +9,8 @@ export function ThemeToggle() {
 
   return (
     <Button
-      variant="ghost"
-      size="sm"
+      variant="icons"
+      size="icons"
       onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
     >
       <SunMedium
