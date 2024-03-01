@@ -129,7 +129,7 @@ export default function ContactForm() {
         {formErrors.message && <p className="text-red-500 text-sm mt-1">Ce champ est requis.</p>}
       </div>
       <div className="flex items-center">
-        <Button type="submit" aria-label="Envoyer le formulaire" className="bg-green-700 hover:bg-accent text-white">
+        <Button type="submit" aria-label="Envoyer le formulaire" >
           Envoyer
         </Button>
         {formFeedback && <p className={`text-sm ml-3 ${sendEmailState.success ? 'text-green-600 font-bold' : 'text-red-600 font-bold'}`}>{formFeedback}</p>}
