@@ -21,9 +21,9 @@ const ProjectCard = ({
   const isRowReverse = rowReverse ? "md:flex-row-reverse" : "";
 
   return (
-    <div className={`mb-16 ${classname}`}>
+    <div className={`mb-24 md:mb-36 lg:mb-48 ${classname}`}>
       <div className={`md:flex ${isRowReverse} md:items-center md:gap-x-12 w-full`}>
-        <div className="text-center md:w-4/5">
+        <div className="text-center md:w-4/5 lg:md:w-3/5">
           <h3 className="mb-1 md:mb-3">{projectTitle}</h3>
           <p className="text-sm md:text-sm">{projectDescription}</p>
         </div>
