@@ -19,7 +19,7 @@ const Hero = () => {
         <DownloadButton
           href={CV}
           fileName="Sebastien_Laurent_CV.pdf"
-          linkName="Télécharger mon CV"
+          linkName="Télécharger CV"
           classname="mt-4 flex justify-center lg:justify-start"
         />
       </div>
