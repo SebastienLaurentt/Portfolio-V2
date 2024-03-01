@@ -28,7 +28,7 @@ const ProjectCard = ({
           <p className="text-sm md:text-sm max-w-[320px]  mx-auto ">{projectDescription}</p>
         </div>
         <div className="mt-4 ">
-          <Image src={src} alt={alt} />
+          <Image src={src} alt={alt} className="rounded-lg" />
         </div>
       </div>
     </div>
