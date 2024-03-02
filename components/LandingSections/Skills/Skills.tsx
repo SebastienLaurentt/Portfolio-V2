@@ -8,28 +8,37 @@ import NodeJsIcon from "@/components/SvgIcons/NodeJsIcon/NodeJsIcon";
 import ReactIcon from "@/components/SvgIcons/ReactIcon/ReactIcon";
 import TailwindIcon from "@/components/SvgIcons/Tailwind/Tailwind";
 import WordPressIcon from "@/components/SvgIcons/Wordpress/Wordpress";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Skills = () => {
   const fillColor = "hsl(var(--primary-foreground))";
-  const [size, setSize] = useState(() => getSize());
+  const [size, setSize] = useState(getSize());
 
   // Fonction pour obtenir la taille en fonction de la largeur de la fenêtre
   function getSize() {
-    const width = window.innerWidth;
-    if (width < 768) {
-      return 28; // Taille plus petite pour les appareils mobiles
-    } else if (width >= 768 && width < 1024) {
-      return 40; // Taille moyenne pour les tablettes
-    } else {
-      return 52; // Taille la plus grande pour les écrans très larges
+    if (typeof window !== 'undefined') {
+      const width = window.innerWidth;
+      if (width < 768) {
+        return 28; // Taille plus petite pour les appareils mobiles
+      } else if (width >= 768 && width < 1024) {
+        return 40; // Taille moyenne pour les tablettes
+      } else {
+        return 52; // Taille la plus grande pour les écrans très larges
+      }
     }
+    return 32; // Taille par défaut
   }
 
   // Mettre à jour la taille de l'icône lors du redimensionnement de la fenêtre
-  window.addEventListener('resize', () => {
-    setSize(getSize());
-  });
+  useEffect(() => {
+    const handleResize = () => {
+      setSize(getSize());
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <Section marginBottom={true} marginTop={true}>
@@ -60,6 +69,7 @@ const Skills = () => {
 };
 
 export default Skills;
+
 
 
   /* <div className="flex justify-center gap-x-2">
