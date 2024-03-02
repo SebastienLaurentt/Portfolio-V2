@@ -1,4 +1,3 @@
-"use client";
 
 import Section from "@/components/Section/Section";
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
@@ -8,34 +7,9 @@ import NodeJsIcon from "@/components/SvgIcons/NodeJsIcon/NodeJsIcon";
 import ReactIcon from "@/components/SvgIcons/ReactIcon/ReactIcon";
 import TailwindIcon from "@/components/SvgIcons/Tailwind/Tailwind";
 import WordPressIcon from "@/components/SvgIcons/Wordpress/Wordpress";
-import { useEffect, useState } from "react";
 
 const Skills = () => {
   const fillColor = "hsl(var(--primary-foreground))";
-  const [size, setSize] = useState(getSize());
-
-  // Fonction pour obtenir la taille en fonction de la largeur de la fenêtre
-  function getSize() {
-    const width = window.innerWidth;
-    if (width < 768) {
-      return 28; // Taille plus petite pour les appareils mobiles
-    } else if (width >= 768 && width < 1024) {
-      return 40; // Taille moyenne pour les tablettes Taille la plus grande pour les écrans très larges
-    } else {
-      return 52; // Valeur par défaut
-    }
-  }
-
-  // Mettre à jour la taille de l'icône lors du redimensionnement de la fenêtre
-  useEffect(() => {
-    const handleResize = () => {
-      setSize(getSize());
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   return (
     <Section marginBottom={true} marginTop={true}>
@@ -43,21 +17,21 @@ const Skills = () => {
       <div className="flex flex-col xl:flex-row xl:justify-center gap-y-2 md:gap-y-3 lg:gap-y-4 xl:gap-x-4">
         <div className="flex justify-center gap-x-2 md:gap-x-3 lg:gap-x-4">
           <div className="border rounded-xl w-24 md:w-36 lg:w-48 h-16 md:h-24 lg:h-32 flex flex-col justify-center  items-center">
-            <NextJsIcon fillColor={fillColor} width={size} height={size} />
+            <NextJsIcon fillColor={fillColor} />
           </div>
           <div className="border rounded-xl w-24 md:w-36 lg:w-48 h-16 md:h-24 lg:h-32  flex justify-center  items-center">
-            <TailwindIcon fillColor={fillColor} width={size} height={size} />
+            <TailwindIcon fillColor={fillColor} />
           </div>
           <div className="border rounded-xl w-24 md:w-36 lg:w-48 h-16 md:h-24 lg:h-32  flex justify-center items-center">
-            <ReactIcon fillColor={fillColor} width={size} height={size} />
+            <ReactIcon fillColor={fillColor} />
           </div>
         </div>
         <div className="flex justify-center gap-x-2 md:gap-x-3 lg:gap-x-4">
           <div className="border rounded-xl w-24 md:w-36 lg:w-48 h-16 md:h-24 lg:h-32  flex justify-center flex items-center">
-            <WordPressIcon fillColor={fillColor} width={size} height={size} />
+            <WordPressIcon fillColor={fillColor} />
           </div>
           <div className="border rounded-xl w-24 md:w-36 lg:w-48 h-16 md:h-24 lg:h-32  flex justify-center flex items-center">
-            <NodeJsIcon fillColor={fillColor} width={size} height={size} />
+            <NodeJsIcon fillColor={fillColor} />
           </div>
         </div>
       </div>

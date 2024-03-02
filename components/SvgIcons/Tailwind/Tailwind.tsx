@@ -1,14 +1,11 @@
 interface TailwindIconProps {
-  width: number;
-  height: number;
   fillColor: string;
 }
 
-const TailwindIcon = ({ height, width, fillColor }: TailwindIconProps) => {
+const TailwindIcon = ({ fillColor }: TailwindIconProps) => {
   return (
     <svg
-      height={height}
-      width={width}
+      style={{ width: "auto", height: "40%" }}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 256 153.6"
     >
