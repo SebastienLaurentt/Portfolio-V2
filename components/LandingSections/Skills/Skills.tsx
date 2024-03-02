@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Section from "@/components/Section/Section";
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
@@ -8,7 +8,7 @@ import NodeJsIcon from "@/components/SvgIcons/NodeJsIcon/NodeJsIcon";
 import ReactIcon from "@/components/SvgIcons/ReactIcon/ReactIcon";
 import TailwindIcon from "@/components/SvgIcons/Tailwind/Tailwind";
 import WordPressIcon from "@/components/SvgIcons/Wordpress/Wordpress";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Skills = () => {
   const fillColor = "hsl(var(--primary-foreground))";
@@ -16,17 +16,14 @@ const Skills = () => {
 
   // Fonction pour obtenir la taille en fonction de la largeur de la fenêtre
   function getSize() {
-    if (typeof window !== 'undefined') {
-      const width = window.innerWidth;
-      if (width < 768) {
-        return 28; // Taille plus petite pour les appareils mobiles
-      } else if (width >= 768 && width < 1024) {
-        return 40; // Taille moyenne pour les tablettes
-      } else {
-        return 52; // Taille la plus grande pour les écrans très larges
-      }
+    const width = window.innerWidth;
+    if (width < 768) {
+      return 28; // Taille plus petite pour les appareils mobiles
+    } else if (width >= 768 && width < 1024) {
+      return 40; // Taille moyenne pour les tablettes Taille la plus grande pour les écrans très larges
+    } else {
+      return 52; // Valeur par défaut
     }
-    return 32; // Taille par défaut
   }
 
   // Mettre à jour la taille de l'icône lors du redimensionnement de la fenêtre
@@ -34,9 +31,9 @@ const Skills = () => {
     const handleResize = () => {
       setSize(getSize());
     };
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -70,9 +67,7 @@ const Skills = () => {
 
 export default Skills;
 
-
-
-  /* <div className="flex justify-center gap-x-2">
+/* <div className="flex justify-center gap-x-2">
 <div className="border rounded-xl w-24 h-16  justify-center flex items-center">
   <Image src={Next} alt="Logo Next"  width={32} />
 </div>
@@ -91,4 +86,3 @@ export default Skills;
   <Image src={Node} alt="Logo Next" width={32} />
 </div>
 </div> */
-
