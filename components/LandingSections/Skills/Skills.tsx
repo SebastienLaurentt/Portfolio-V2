@@ -21,12 +21,8 @@ const Skills = () => {
       return 28; // Taille plus petite pour les appareils mobiles
     } else if (width >= 768 && width < 1024) {
       return 40; // Taille moyenne pour les tablettes
-    } else if (width >= 1024 && width < 1280) {
-      return 52; // Taille plus grande pour les écrans plus larges
-    } else if (width >= 1280 && width < 1400) {
-      return 48; // Taille encore plus grande pour les écrans plus larges
     } else {
-      return 56; // Taille la plus grande pour les écrans très larges
+      return 52; // Taille la plus grande pour les écrans très larges
     }
   }
 
@@ -40,7 +36,7 @@ const Skills = () => {
       <SectionHeader title="Des compétences" titleHighlight="transverses" />
       <div className="flex flex-col xl:flex-row xl:justify-center gap-y-2 md:gap-y-3 lg:gap-y-4 xl:gap-x-4">
         <div className="flex justify-center gap-x-2 md:gap-x-3 lg:gap-x-4">
-          <div className="border rounded-xl w-24 md:w-36 lg:w-48 h-16 md:h-24 lg:h-32  justify-center flex items-center">
+          <div className="border rounded-xl w-24 md:w-36 lg:w-48 h-16 md:h-24 lg:h-32 flex flex-col justify-center  items-center">
             <NextJsIcon fillColor={fillColor} width={size} height={size} />
           </div>
           <div className="border rounded-xl w-24 md:w-36 lg:w-48 h-16 md:h-24 lg:h-32  flex justify-center  items-center">
@@ -65,7 +61,7 @@ const Skills = () => {
 
 export default Skills;
 
-{
+
   /* <div className="flex justify-center gap-x-2">
 <div className="border rounded-xl w-24 h-16  justify-center flex items-center">
   <Image src={Next} alt="Logo Next"  width={32} />
@@ -85,4 +81,4 @@ export default Skills;
   <Image src={Node} alt="Logo Next" width={32} />
 </div>
 </div> */
-}
+
