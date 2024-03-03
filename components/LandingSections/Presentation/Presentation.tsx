@@ -1,15 +1,17 @@
-import Section from '@/components/Section/Section'
-import SectionHeader from '@/components/SectionHeader/SectionHeader'
-import React from 'react'
+import WordAnimaton from "@/components/Animation/WordAnimation";
+import Section from "@/components/Section/Section";
+import SectionHeader from "@/components/SectionHeader/SectionHeader";
 
 const Presentation = () => {
   return (
     <Section marginBottom={true} marginTop={true}>
-    <SectionHeader
-      title="De la recherche au"
-      titleHighlight="développement"
-    />
-    <div className="text-md md:text-xl lg:text-3xl xl:text-4xl leading-8 md:leading-[48px] lg:leading-[64px] xl:leading-[72px]">
+      <SectionHeader
+        title="De la recherche au"
+        titleHighlight="développement"
+      />
+
+      <WordAnimaton paragraph="Après un doctorat en Sciences Cognitives je me suis tourné vers le développement web. Ce choix s'explique par la volonté d'utiliser ma compréhension du cerveau humain dans un secteur qui m'intéresse particulièrement, celui du numérique. Ainsi, de manière autodidacte mais aussi par le biais d'une formation intensive j'explore ce nouvel environnement. J'adore découvrir et apprendre à réaliser de nouvelles fonctionnalités pouvant améliorer l'expérience des utilisateurs." />
+      {/* <div className="text-md md:text-xl lg:text-3xl xl:text-4xl leading-8 md:leading-[48px] lg:leading-[64px] xl:leading-[72px]">
       Après un doctorat en{" "}
       <span className="text-tertiary-foreground"> Sciences Cognitives</span>{" "}
       je me suis tourné vers le développement web. Ce choix s&apos;explique
@@ -24,9 +26,9 @@ const Presentation = () => {
         nouvelles fonctionnalités
       </span>{" "}
       pouvant améliorer l&apos;expérience des utilisateurs.
-    </div>
-  </Section>
-  )
-}
+    </div> */}
+    </Section>
+  );
+};
 
-export default Presentation
+export default Presentation;
