@@ -9,9 +9,9 @@ const Hero = () => {
     <Section
       marginBottom={false}
       marginTop={false}
-      classname=" flex flex-col items-center mt-36 md:mt-44 lg:mt-60 xl:mt-32  min-h-screen"
+      classname=" flex flex-col justify-center items-center min-h-screen"
     >
-      <div className="lg:mr-60">
+      <div className="">
         <h1>
           Sébastien Laurent <br />{" "}
           <span className="text-tertiary-foreground">Développeur Web</span>{" "}
@@ -23,11 +23,11 @@ const Hero = () => {
           classname="mt-4 flex justify-center lg:justify-start"
         />
       </div>
-      <div className="flex justify-center lg:justify-end mt-12 md:mt-20 lg:mt-0 lg:mr-20  ">
+      <div className="">
         <Image
           src={HeroImg}
           alt="Logo Galopins"
-          className="w-4/5 md:w-3/5 lg:w-2/3  "
+          className="mt-16"
         />
       </div>
     </Section>
