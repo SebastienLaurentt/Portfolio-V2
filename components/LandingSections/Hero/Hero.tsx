@@ -9,7 +9,7 @@ const Hero = () => {
     <Section
       marginBottom={false}
       marginTop={false}
-      classname=" flex flex-col justify-center items-center min-h-screen"
+      classname=" flex flex-col xl:flex-row justify-center items-center min-h-screen"
     >
       <div className="">
         <h1>
@@ -27,7 +27,7 @@ const Hero = () => {
         <Image
           src={HeroImg}
           alt="Logo Galopins"
-          className="mt-16 md:mt-20 lg:mt-4 md:w-3/4 lg:w-2/3  md:mx-auto"
+          className="mt-16 md:mt-20 lg:mt-4 md:w-3/4 lg:w-2/3 xl:w-3/4 md:mx-auto"
         />
       </div>
     </Section>
