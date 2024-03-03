@@ -7,9 +7,9 @@ const CV = `/pdf/CV.pdf`;
 const Hero = () => {
   return (
     <Section
-      marginBottom={true}
+      marginBottom={false}
       marginTop={false}
-      classname=" flex flex-col items-center mt-36 md:mt-44 lg:mt-60 xl:mt-32  "
+      classname=" flex flex-col items-center mt-36 md:mt-44 lg:mt-60 xl:mt-32  min-h-screen"
     >
       <div className="lg:mr-60">
         <h1>
