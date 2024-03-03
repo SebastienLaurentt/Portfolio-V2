@@ -6,7 +6,7 @@ import ScrollToTopButton from "@/components/Button/DownloadButton/ScrollToTopBut
 
 export const metadata = {
   title: 'Sébastien Laurent',
-  description: 'Bienvenue sur mon portfolio, je suis développeur web et mobile. Je suis passionné par le développement et la création de sites web et d\'applications mobiles. Je suis également passionné par le développement de jeux vidéo. Je suis actuellement en recherche d\'emploi. N\'hésitez pas à me contacter pour plus d\'informations.,
+  description: 'Bienvenue sur mon portfolio, je suis développeur web et mobile. Je suis passionné par le développement et la création de sites web et d\'applications mobiles. Je suis également passionné par le développement de jeux vidéo. Je suis actuellement en recherche d\'emploi. N\'hésitez pas à me contacter pour plus d\'informations.'
 }
 
 export default function RootLayout({
