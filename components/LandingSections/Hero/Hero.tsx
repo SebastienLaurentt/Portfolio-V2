@@ -1,7 +1,7 @@
 import DownloadButton from "@/components/Button/DownloadButton/DownloadButton";
 import Section from "@/components/Section/Section";
 import Image from "next/image";
-import HeroImg from "../../../public/images/HeroImg.svg"
+import HeroImg from "../../../public/images/HeroImg.svg";
 const CV = `/pdf/CV.pdf`;
 
 const Hero = () => {
@@ -13,8 +13,7 @@ const Hero = () => {
     >
       <div className="">
         <h1>
-          Sébastien Laurent <br />{" "}
-          <span className="text-tertiary-foreground">Développeur Web</span>{" "}
+          Sébastien Laurent <br /> Développeur Web
         </h1>
         <DownloadButton
           href={CV}
