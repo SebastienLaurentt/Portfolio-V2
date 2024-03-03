@@ -1,4 +1,4 @@
-import WordAnimaton from "@/components/Animation/WordAnimation";
+import WordAnimaton from "@/components/Animation/ParagraphAnimation";
 import Section from "@/components/Section/Section";
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
 
