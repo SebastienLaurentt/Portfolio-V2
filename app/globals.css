@@ -112,24 +112,4 @@
     @apply text-sm md:text-md leading-5 md:leading-6;
   }
 
-  /* Custom class */
-  /* Paragraph Animation */
-  .paragraph {
-    display: flex;
-    font-size: 60px;
-    line-height: 1;
-    padding: 40px;
-    max-width: 1280px;
-    color: white;
-    flex-wrap: wrap;
-  }
-  .word {
-    position: relative;
-    margin-right: 12px;
-    margin-top: 12px;
-  }
-  .wordShadow {
-    position: absolute;
-    opacity: 20%;
-  }
 }
