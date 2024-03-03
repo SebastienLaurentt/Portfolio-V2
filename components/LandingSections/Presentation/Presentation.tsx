@@ -10,7 +10,7 @@ const Presentation = () => {
         titleHighlight="développement"
       />
 
-      <ParagraphAnimaton content="En tant que développeur web, je m'efforce d'intégrer les connaissances acquises sur le fonctionnement du cerveau au cours de mes expériences en recherche. Mon objectif est de concilier une esthétique attrayante avec une expérience utilisateur fluide." />
+      <ParagraphAnimaton />
     </Section>
   );
 };
