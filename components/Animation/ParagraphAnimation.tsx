@@ -15,7 +15,7 @@ export default function ParagraphAnimation({ content }: { content: any }) {
   return (
     <motion.p
       ref={container}
-      className="flex flex-wrap text-white text-md md:text-xl lg:text-3xl xl:text-4xl leading-8 md:leading-[48px] lg:leading-[64px] xl:leading-[72px]"
+      className="flex flex-wrap text-tertiary-foreground text-md md:text-xl lg:text-3xl xl:text-4xl leading-8 md:leading-[48px] lg:leading-[64px] xl:leading-[72px]"
       style={{ opacity }}
     >
       {content}
