@@ -27,7 +27,7 @@ const Hero = () => {
         <Image
           src={HeroImg}
           alt="Logo Galopins"
-          className="mt-16 md:mt-20 w-3/4 mx-auto"
+          className="mt-16 md:mt-20 lg:mt-4 md:w-3/4 lg:w-2/3  md:mx-auto"
         />
       </div>
     </Section>
