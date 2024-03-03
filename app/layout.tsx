@@ -3,11 +3,18 @@ import { Header } from "../src/features/layout/Header/Header";
 import { ThemeProvider } from "../src/theme/ThemeProvider";
 import './globals.css';
 import ScrollToTopButton from "@/components/Button/DownloadButton/ScrollToTopButton/ScrollToTopButton";
+import { Roboto } from 'next/font/google'
 
 export const metadata = {
   title: 'Sébastien Laurent',
   description: 'Bienvenue sur mon portfolio, je suis développeur web et mobile. Je suis passionné par le développement et la création de sites web et d\'applications mobiles. Je suis également passionné par le développement de jeux vidéo. Je suis actuellement en recherche d\'emploi. N\'hésitez pas à me contacter pour plus d\'informations.'
 }
+
+const roboto = Roboto({
+  weight: '400', // if single weight, otherwise you use array like [400, 500, 700],
+  style: 'normal', // if single style, otherwise you use array like ['normal', 'italic']
+  subsets: ['latin'],
+})
 
 export default function RootLayout({
   children,
@@ -18,7 +25,7 @@ export default function RootLayout({
     <>
       <html lang="en" suppressHydrationWarning>
         <head />
-        <body>
+        <body className={roboto.className}>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
