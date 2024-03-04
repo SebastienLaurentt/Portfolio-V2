@@ -22,7 +22,7 @@ const ProjectCard = ({
 
   return (
     <div className={`mb-40 md:mb-36 lg:mb-48 ${classname}`}>
-      <div className={`md:flex ${isRowReverse} md:items-center md:gap-x-12 w-full`}>
+      <div className={`md:flex ${isRowReverse} md:items-center md:gap-x-12 xl:gap-x-20 w-full`}>
         <div className="text-center md:text-left  md:w-4/5 xl:w-3/5 ">
           <h3 className="mb-4 ">{projectTitle}</h3>
           <p className="max-w-[320px] lg:max-w-[300px] mx-auto md:mx-0">{projectDescription}</p>
