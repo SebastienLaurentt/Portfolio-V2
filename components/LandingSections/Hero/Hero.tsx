@@ -27,10 +27,10 @@ const Hero = () => {
         <Image
           src={HeroImg}
           alt="Logo Galopins"
-          className="mt-16 md:mt-20 lg:mt-4 md:w-3/4 lg:w-2/3 xl:w-3/4 md:mx-auto z-10 opacity-100"
+          className="mt-16 md:mt-20 lg:mt-4 md:w-3/4 lg:w-2/3 xl:w-3/4 md:mx-auto "
         />
       </div>
-      <BackgroundBeams className="z--10"/>
+      <BackgroundBeams />
     </Section>
   );
 };
