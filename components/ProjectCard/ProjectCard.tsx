@@ -5,6 +5,7 @@ interface ProjectCardProps {
   src: StaticImageData;
   alt: string;
   rowReverse: boolean;
+  marginBottom?: boolean;
   projectTitle: string;
   projectDescription?: string;
 }
@@ -14,14 +15,16 @@ const ProjectCard = ({
   src,
   alt,
   rowReverse,
+  marginBottom,
   projectTitle,
   projectDescription,
 }: ProjectCardProps) => {
 
   const isRowReverse = rowReverse ? "md:flex-row-reverse" : "";
-
+  const isMarginBottom = marginBottom ? "mb-28 md:mb-36 lg:mb-48" : "";
+  
   return (
-    <div className={`mb-28 md:mb-36 lg:mb-48 ${classname}`}>
+    <div className={`${marginBottom} ${classname}`}>
       <div className={`md:flex ${isRowReverse} md:items-center md:gap-x-12 xl:gap-x-20 w-full`}>
         <div className="text-center md:text-left  md:w-4/5 xl:w-3/5 ">
           <h3 className="mb-4 ">{projectTitle}</h3>
