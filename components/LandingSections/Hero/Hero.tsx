@@ -3,7 +3,10 @@ import Section from "@/components/Section/Section";
 import Image from "next/image";
 import HeroImg from "../../../public/images/HeroImg.svg";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import {  } from 'next/font/google'
 const CV = `/pdf/CV.pdf`;
+
+
 
 const Hero = () => {
   return (
@@ -13,7 +16,7 @@ const Hero = () => {
       classname=" flex flex-col xl:flex-row justify-center items-center min-h-screen xl:mx-16 2xl:mx-auto"
     >
       <div className="">
-        <h1>
+        <h1 >
           Sébastien Laurent <br /> Développeur Web
         </h1>
         <DownloadButton
