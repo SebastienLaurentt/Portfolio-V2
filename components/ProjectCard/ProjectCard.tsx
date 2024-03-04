@@ -23,9 +23,9 @@ const ProjectCard = ({
   return (
     <div className={`mb-40 md:mb-36 lg:mb-48 ${classname}`}>
       <div className={`md:flex ${isRowReverse} md:items-center md:gap-x-12 w-full`}>
-        <div className="text-center  md:w-4/5 xl:w-3/5 ">
-          <h3 className="mb-4 md:mb-3">{projectTitle}</h3>
-          <p className="text-sm md:text-sm max-w-[320px]  mx-auto ">{projectDescription}</p>
+        <div className="text-center md:text-left  md:w-4/5 xl:w-3/5 ">
+          <h3 className="mb-4 ">{projectTitle}</h3>
+          <p className="max-w-[320px]  mx-auto ">{projectDescription}</p>
         </div>
         <div className="mt-[40px] md:mt-0 ">
           <Image src={src} alt={alt} className="rounded-lg" />
