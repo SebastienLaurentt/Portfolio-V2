@@ -10,7 +10,7 @@ const Hero = () => {
     <Section
       marginBottom={false}
       marginTop={false}
-      classname=" flex flex-col xl:flex-row justify-center items-center min-h-screen"
+      classname=" flex flex-col xl:flex-row justify-center items-center min-h-screen xl:mx-16 2xl:mx-auto"
     >
       <div className="">
         <h1>
