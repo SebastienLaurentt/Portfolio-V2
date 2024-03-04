@@ -21,16 +21,16 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
 
   const isRowReverse = rowReverse ? "md:flex-row-reverse" : "";
-  const isMarginBottom = marginBottom ? "mb-28 md:mb-36 lg:mb-48" : "";
+  const isMarginBottom = marginBottom ? "mb-16 md:mb-24 lg:mb-32 xl:mb-40" : "";
   
   return (
     <div className={`${isMarginBottom} ${classname}`}>
       <div className={`md:flex ${isRowReverse} md:items-center md:gap-x-12 xl:gap-x-20 w-full`}>
         <div className="text-center md:text-left  md:w-4/5 xl:w-3/5 ">
-          <h3 className="mb-4 ">{projectTitle}</h3>
+          <h3 className="mb-2 md:mb-4 ">{projectTitle}</h3>
           <p className="max-w-[320px] lg:max-w-[300px] mx-auto md:mx-0">{projectDescription}</p>
         </div>
-        <div className="mt-[40px] md:mt-0 ">
+        <div className="mt-[20px] md:mt-0 ">
           <Image src={src} alt={alt} className="rounded-lg" />
         </div>
       </div>
