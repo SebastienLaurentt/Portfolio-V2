@@ -4,7 +4,7 @@ import SectionHeader from "@/components/SectionHeader/SectionHeader";
 
 const Contact = () => {
   return (
-    <Section marginBottom={true} marginTop={true}>
+    <Section marginBottom={false} marginTop={true}>
       <SectionHeader title="Des questions ? Contactez-moi !" />
       <div className="md:px-8 lg:px-20 xl:px-60">
         <ContactForm />
