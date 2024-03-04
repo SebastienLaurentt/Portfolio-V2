@@ -1,8 +1,10 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useFormState } from "react-dom";
 import { sendEmail } from "../../src/actions";
 import { Button } from "../ui/button";
+import { Input } from "../ui/input";
+import { Textarea } from "../ui/textarea";
 
 export default function ContactForm() {
   const [sendEmailState, sendEmailAction] = useFormState(sendEmail, {
@@ -13,31 +15,31 @@ export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
   });
 
   const [formErrors, setFormErrors] = useState({
     name: false,
     email: false,
-    message: false
+    message: false,
   });
 
   const [formFeedback, setFormFeedback] = useState("");
 
-  const handleInputChange = (event:any) => {
+  const handleInputChange = (event: any) => {
     const { name, value } = event.target;
     setFormData({
       ...formData,
-      [name]: value
+      [name]: value,
     });
     // Clear error message if field is filled
     setFormErrors({
       ...formErrors,
-      [name]: false
+      [name]: false,
     });
   };
 
-  const handleSubmit = (event:any) => {
+  const handleSubmit = (event: any) => {
     event.preventDefault();
     let hasErrors = false;
     // Check if all fields are filled
@@ -45,7 +47,7 @@ export default function ContactForm() {
       if (!value.trim()) {
         setFormErrors((prevErrors) => ({
           ...prevErrors,
-          [key]: true
+          [key]: true,
         }));
         hasErrors = true;
       }
@@ -67,7 +69,7 @@ export default function ContactForm() {
       setFormData({
         name: "",
         email: "",
-        message: ""
+        message: "",
       });
       setFormFeedback("Merci ! Nous vous recontacterons bientôt !");
       // Clear feedback after 5 seconds
@@ -84,58 +86,50 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit}>
       <div className="mb-5">
-        <label htmlFor="name" className="mb-3 block text-base font-medium text-black">
-          Nom - Prénom
-        </label>
-        <input
+        <Input
           type="text"
+          placeholder="Nom"
           id="name"
           name="name"
           value={formData.name}
           onChange={handleInputChange}
-          placeholder="Nom - Prénom"
-          className={`w-full rounded-md border ${formErrors.name ? 'border-red-500' : 'border-gray-300'} bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-accent focus:shadow-md`}
         />
-        {formErrors.name && <p className="text-red-500 text-sm mt-1">Ce champ est requis.</p>}
       </div>
       <div className="mb-5">
-        <label htmlFor="email" className="mb-3 block text-base font-medium text-black">
-          Adresse e-mail
-        </label>
-        <input
+        <Input
           type="email"
+          placeholder="Email"
           id="email"
           name="email"
           value={formData.email}
           onChange={handleInputChange}
-          placeholder="exemple@email.com"
-          className={`w-full rounded-md border ${formErrors.email ? 'border-red-500' : 'border-gray-300'} bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-accent focus:shadow-md`}
         />
-        {formErrors.email && <p className="text-red-500 text-sm mt-1">Ce champ est requis.</p>}
       </div>
       <div className="mb-5">
-        <label htmlFor="message" className="mb-3 block text-base font-medium text-black">
-          Votre Message
-        </label>
-        <textarea
-          rows={4}
+        <Textarea
+          placeholder="Type your message here."
           id="message"
           name="message"
           value={formData.message}
           onChange={handleInputChange}
-          placeholder="Description de votre demande"
-          className={`w-full resize-none rounded-md border ${formErrors.message ? 'border-red-500' : 'border-gray-300'} bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-accent focus:shadow-md`}
         />
-        {formErrors.message && <p className="text-red-500 text-sm mt-1">Ce champ est requis.</p>}
       </div>
       <div className="flex items-center">
-        <Button type="submit" aria-label="Envoyer le formulaire" >
+        <Button type="submit" aria-label="Envoyer le formulaire">
           Envoyer
         </Button>
-        {formFeedback && <p className={`text-sm ml-3 ${sendEmailState.success ? 'text-green-600 font-bold' : 'text-red-600 font-bold'}`}>{formFeedback}</p>}
+        {formFeedback && (
+          <p
+            className={`text-sm ml-3 ${
+              sendEmailState.success
+                ? "text-green-600 font-bold"
+                : "text-red-600 font-bold"
+            }`}
+          >
+            {formFeedback}
+          </p>
+        )}
       </div>
     </form>
   );
 }
-
-
