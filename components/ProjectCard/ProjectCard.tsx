@@ -21,7 +21,7 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
 
   const isRowReverse = rowReverse ? "md:flex-row-reverse" : "";
-  const isMarginBottom = marginBottom ? "mb-16 md:mb-24 lg:mb-32 xl:mb-40" : "";
+  const isMarginBottom = marginBottom ? "mb-32 md:mb-48 lg:mb-64 xl:mb-80" : "";
   
   return (
     <div className={`${isMarginBottom} ${classname}`}>
