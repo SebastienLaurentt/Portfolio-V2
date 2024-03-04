@@ -6,7 +6,10 @@ const Contact = () => {
   return (
     <Section marginBottom={true} marginTop={true}>
       <SectionHeader title="Des questions ? Contactez-moi !" />
-      <ContactForm />
+      <div className="px-8 lg:px-20 xl:px-40">
+        <ContactForm />
+      </div>
+
     </Section>
   );
 };
