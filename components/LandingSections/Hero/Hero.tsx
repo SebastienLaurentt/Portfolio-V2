@@ -2,6 +2,7 @@ import DownloadButton from "@/components/Button/DownloadButton/DownloadButton";
 import Section from "@/components/Section/Section";
 import Image from "next/image";
 import HeroImg from "../../../public/images/HeroImg.svg";
+import { BackgroundBeams } from "@/components/ui/background-beams";
 const CV = `/pdf/CV.pdf`;
 
 const Hero = () => {
@@ -26,9 +27,10 @@ const Hero = () => {
         <Image
           src={HeroImg}
           alt="Logo Galopins"
-          className="mt-16 md:mt-20 lg:mt-4 md:w-3/4 lg:w-2/3 xl:w-3/4 md:mx-auto"
+          className="mt-16 md:mt-20 lg:mt-4 md:w-3/4 lg:w-2/3 xl:w-3/4 md:mx-auto z-10 opacity-100"
         />
       </div>
+      <BackgroundBeams className="z--10"/>
     </Section>
   );
 };
