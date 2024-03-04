@@ -8,8 +8,8 @@ const Presentation = () => {
       <SectionHeader
         title="De la recherche au développement"
       />
-
-      <ParagraphAnimaton />
+      <div className=" md:px-2 text-center"><ParagraphAnimaton /></div>
+      
     </Section>
   );
 };
