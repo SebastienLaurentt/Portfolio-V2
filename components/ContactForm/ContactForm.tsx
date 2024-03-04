@@ -84,8 +84,7 @@ export default function ContactForm() {
   }, [sendEmailState]);
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="mb-5">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-y-8">
         <Input
           type="text"
           placeholder="Nom"
@@ -94,8 +93,6 @@ export default function ContactForm() {
           value={formData.name}
           onChange={handleInputChange}
         />
-      </div>
-      <div className="mb-5">
         <Input
           type="email"
           placeholder="Email"
@@ -104,8 +101,6 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleInputChange}
         />
-      </div>
-      <div className="mb-5">
         <Textarea
           placeholder="Type your message here."
           id="message"
@@ -113,7 +108,6 @@ export default function ContactForm() {
           value={formData.message}
           onChange={handleInputChange}
         />
-      </div>
       <div className="flex items-center">
         <Button type="submit" aria-label="Envoyer le formulaire">
           Envoyer
