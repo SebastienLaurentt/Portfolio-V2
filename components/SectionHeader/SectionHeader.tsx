@@ -10,7 +10,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   titleDescription,
 }) => {
   return (
-    <div className="mb-12 md:mb-24 text-center">
+    <div className="mb-20 md:mb-28 lg:mb-36 xl:mb-48 text-center">
       <h2>
         {title} 
       </h2>
