@@ -5,7 +5,7 @@ interface ProjectCardProps {
   src: StaticImageData;
   alt: string;
   rowReverse: boolean;
-  marginBottom?: boolean;
+  marginBottom: boolean;
   projectTitle: string;
   projectDescription?: string;
 }
@@ -24,7 +24,7 @@ const ProjectCard = ({
   const isMarginBottom = marginBottom ? "mb-28 md:mb-36 lg:mb-48" : "";
   
   return (
-    <div className={`${marginBottom} ${classname}`}>
+    <div className={`${isMarginBottom} ${classname}`}>
       <div className={`md:flex ${isRowReverse} md:items-center md:gap-x-12 xl:gap-x-20 w-full`}>
         <div className="text-center md:text-left  md:w-4/5 xl:w-3/5 ">
           <h3 className="mb-4 ">{projectTitle}</h3>

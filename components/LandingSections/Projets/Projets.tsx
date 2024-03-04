@@ -18,6 +18,7 @@ const Projets = () => {
           src={Stash}
           alt="Impression d'écran de la page d'accueil du Projet Stash"
           rowReverse={true}
+          marginBottom={true}
           projectTitle="Stash"
           projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque adipisci consequatur debitis delectus distinctio ipsum quas quod suscipit voluptate provident?"
         />
@@ -25,6 +26,7 @@ const Projets = () => {
           src={Codit}
           alt="Impression d'écran de la page d'accueil du Projet Codit"
           rowReverse={false}
+          marginBottom={true}
           projectTitle="Codit"
           projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque adipisci consequatur debitis delectus distinctio ipsum quas quod suscipit voluptate provident?"
           classname="xl:mt-64"
@@ -35,6 +37,7 @@ const Projets = () => {
           src={Portfolio}
           alt="Impression d'écran de la page d'accueil de mon Portfolio"
           rowReverse={true}
+          marginBottom={true}
           projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque adipisci consequatur debitis delectus distinctio ipsum quas quod suscipit voluptate provident?"
           projectTitle="Portfolio"
         />
@@ -42,6 +45,7 @@ const Projets = () => {
           src={Galopins}
           alt="Impression d'écran de la page d'accueil du Projet Galopins"
           rowReverse={false}
+          marginBottom={false}
           projectTitle="Galopins"
           projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque adipisci consequatur debitis delectus distinctio ipsum quas quod suscipit voluptate provident?"
           classname="xl:mt-64"
