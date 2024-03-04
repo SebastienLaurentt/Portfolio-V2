@@ -87,7 +87,7 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit} className="flex flex-col gap-y-8">
         <Input
           type="text"
-          placeholder="Nom"
+          placeholder="Votre Nom"
           id="name"
           name="name"
           value={formData.name}
@@ -95,14 +95,14 @@ export default function ContactForm() {
         />
         <Input
           type="email"
-          placeholder="Email"
+          placeholder="Votre Email"
           id="email"
           name="email"
           value={formData.email}
           onChange={handleInputChange}
         />
         <Textarea
-          placeholder="Type your message here."
+          placeholder="Votre Message"
           id="message"
           name="message"
           value={formData.message}
