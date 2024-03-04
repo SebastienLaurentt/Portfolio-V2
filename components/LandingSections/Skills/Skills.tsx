@@ -13,7 +13,7 @@ const Skills = () => {
 
   return (
     <Section marginBottom={true} marginTop={true}>
-      <SectionHeader title="Des compétences" titleHighlight="transverses" />
+      <SectionHeader title="Des compétences transverses" />
       <div className="flex flex-col xl:flex-row xl:justify-center gap-y-2 md:gap-y-3 lg:gap-y-4 xl:gap-x-4">
         <div className="flex justify-center gap-x-2 md:gap-x-3 lg:gap-x-4">
           <div className="border rounded-xl w-24 md:w-36 lg:w-48 h-16 md:h-24 lg:h-32 flex flex-col justify-center  items-center">

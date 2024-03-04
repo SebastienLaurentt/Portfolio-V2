@@ -11,7 +11,7 @@ import Stash from "../../../public/images/Stash.png";
 const Projets = () => {
   return (
     <Section marginBottom={true} marginTop={true}>
-    <SectionHeader title="Mes dernières" titleHighlight="réalisations" />
+    <SectionHeader title="Mes dernières réalisations" />
     <div className="flex flex-col ">
       <div className="">
         <ProjectCard

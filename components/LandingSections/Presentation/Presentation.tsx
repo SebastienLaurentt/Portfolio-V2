@@ -6,8 +6,7 @@ const Presentation = () => {
   return (
     <Section marginBottom={true} marginTop={true}>
       <SectionHeader
-        title="De la recherche au"
-        titleHighlight="développement"
+        title="De la recherche au développement"
       />
 
       <ParagraphAnimaton />
