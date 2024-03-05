@@ -40,7 +40,7 @@ const ProjectCard = ({
         <div className="mt-[20px] md:mt-0 ">
           <Image src={src} alt={alt} className="rounded-lg" />
         </div>
-        <ProjectCardLinks siteHref={siteHref || ""} githubHref={githubHref || ""} classname="md:hidden mt-4 " />
+        <ProjectCardLinks siteHref={siteHref || ""} githubHref={githubHref || ""} classname="md:hidden mt-4 justify-center " />
       </div>
     </div>
   );
