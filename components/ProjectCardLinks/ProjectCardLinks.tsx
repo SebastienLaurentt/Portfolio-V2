@@ -6,18 +6,28 @@ interface ProjectCardLinksProps {
   githubHref?: string;
 }
 
-const ProjectCardLinks = ({classname, siteHref, githubHref}: ProjectCardLinksProps) => {
+const ProjectCardLinks = ({
+  classname,
+  siteHref,
+  githubHref,
+}: ProjectCardLinksProps) => {
   return (
-    <div className={`${classname} text-tertiary-foreground`}>
+    <div
+      className={`${classname} flex flex-row gap-x-4 text-primary-foreground`}
+    >
       {siteHref && (
-        <Link href={siteHref} target="_blank" className="mr-3">
-          Voir le site
-        </Link>
+
+          <Link href={siteHref} target="_blank">
+            Voir le site
+          </Link>
+
       )}
       {githubHref && (
-        <Link href={githubHref} target="_blank">
-          Voir le code
-        </Link>
+
+          <Link href={githubHref} target="_blank">
+            Voir le code
+          </Link>
+
       )}
     </div>
   );
