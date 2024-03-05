@@ -31,7 +31,7 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-10 bg-background transition-transform duration-700 ${
+      className={`fixed top-0 left-0 w-full z-10 bg-background 2xl:bg-transparent transition-transform duration-700 ${
         visible ? "" : "-translate-y-full"
       }`}
     >
