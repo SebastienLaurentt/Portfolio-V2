@@ -21,8 +21,7 @@ const Projets = () => {
           marginBottom={true}
           projectTitle="Stash"
           projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque adipisci consequatur debitis delectus distinctio ipsum quas quod suscipit voluptate provident?"
-          siteHref='https://portfolio-v2-zeta-coral.vercel.app/'
-          githubHref='https://github.com/SebastienLaurentt/Portfolio-V2'
+
         />
         <ProjectCard
           src={Codit}
@@ -32,8 +31,8 @@ const Projets = () => {
           projectTitle="Codit"
           projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque adipisci consequatur debitis delectus distinctio ipsum quas quod suscipit voluptate provident?"
           classname="xl:mt-64"
-          siteHref='https://portfolio-v2-zeta-coral.vercel.app/'
-          githubHref='https://github.com/SebastienLaurentt/Portfolio-V2'
+          siteHref='https://codit-codit.vercel.app/'
+          githubHref='https://github.com/O-clock-Titanium/projet-codit-front'
         />
       </div>
       <div className="">
@@ -44,7 +43,7 @@ const Projets = () => {
           marginBottom={true}
           projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque adipisci consequatur debitis delectus distinctio ipsum quas quod suscipit voluptate provident?"
           projectTitle="Portfolio"
-          siteHref='https://portfolio-v2-zeta-coral.vercel.app/'
+          siteHref="https://portfolio-v2-zeta-coral.vercel.app/"
           githubHref='https://github.com/SebastienLaurentt/Portfolio-V2'
         />
         <ProjectCard
@@ -55,8 +54,8 @@ const Projets = () => {
           projectTitle="Galopins"
           projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque adipisci consequatur debitis delectus distinctio ipsum quas quod suscipit voluptate provident?"
           classname="xl:mt-64"
-          siteHref='https://portfolio-v2-zeta-coral.vercel.app/'
-          githubHref='https://github.com/SebastienLaurentt/Portfolio-V2'
+          siteHref='https://galopins-next-v2.vercel.app/'
+          githubHref='https://github.com/SebastienLaurentt/Galopins-Next-V2'
         />
       </div>
     </div>

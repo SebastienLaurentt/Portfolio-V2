@@ -9,8 +9,8 @@ interface ProjectCardProps {
   marginBottom: boolean;
   projectTitle: string;
   projectDescription?: string;
-  siteHref: string;
-  githubHref: string;
+  siteHref?: string;
+  githubHref?: string;
 }
 
 const ProjectCard = ({
@@ -35,12 +35,12 @@ const ProjectCard = ({
         <div className="text-center md:text-left  max-w-[320px] md:max-w-[300px] mx-auto">
           <h3 className="mb-2 md:mb-4 ">{projectTitle}</h3>
           <p className=" md:mx-0 mb-2 md:mb-4">{projectDescription}</p>
-          <ProjectCardLinks siteHref={siteHref} githubHref={githubHref} classname="hidden md:block" />
+          <ProjectCardLinks siteHref={siteHref || ""} githubHref={githubHref || ""} classname="hidden md:block" />
         </div>
         <div className="mt-[20px] md:mt-0 ">
           <Image src={src} alt={alt} className="rounded-lg" />
         </div>
-        <ProjectCardLinks siteHref={siteHref} githubHref={githubHref} classname="md:hidden" />
+        <ProjectCardLinks siteHref={siteHref || ""} githubHref={githubHref || ""} classname="md:hidden mt-4 text-center" />
       </div>
     </div>
   );
