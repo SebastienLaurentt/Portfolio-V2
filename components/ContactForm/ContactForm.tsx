@@ -84,7 +84,7 @@ export default function ContactForm() {
   }, [sendEmailState]);
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-y-8">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-y-10">
         <Input
           type="text"
           placeholder="Votre Nom"
