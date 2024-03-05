@@ -47,7 +47,7 @@ const Skills = () => {
           <div
             className={`border rounded-xl w-24 md:w-36 lg:w-48 h-16 md:h-24 lg:h-32 flex flex-col justify-center items-center ${
               isVisible
-                ? "opacity-100 transition-opacity duration-150 "
+                ? "opacity-100 transition-opacity duration-200 "
                 : "opacity-0 transition-opacity"
             }`}
           >
