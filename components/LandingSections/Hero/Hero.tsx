@@ -14,12 +14,13 @@ const Hero = () => {
     <Section
       marginBottom={false}
       marginTop={false}
-      classname=" flex flex-col xl:flex-row justify-center items-center min-h-screen xl:mx-16 2xl:mx-auto"
+      classname=" flex flex-col xl:flex-row justify-center items-center min-h-screen xl:mx-20 2xl:mx-auto"
     >
-      <div className="">
+      <div className="flex flex-col justify-center">
         <h1 >
-          Sébastien Laurent <br /> Développeur Web
+          Développeur Web
         </h1>
+        <span className="text-center lg:text-left text-lg lg:text-xl xl:text-2xl">Bienvenue sur mon portfolio !</span>
         <DownloadButton
           href={CV}
           fileName="Sebastien_Laurent_CV.pdf"
