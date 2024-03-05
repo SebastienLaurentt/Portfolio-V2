@@ -71,7 +71,7 @@ export default function ContactForm() {
         email: "",
         message: "",
       });
-      setFormFeedback("Merci ! Nous vous recontacterons bientôt !");
+      setFormFeedback("Merci pour votre message ! ");
       // Clear feedback after 5 seconds
       const timer = setTimeout(() => {
         setFormFeedback("");
@@ -85,6 +85,7 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-y-10">
+      <div className="relative">
         <Input
           type="text"
           placeholder="Votre Nom"
@@ -93,6 +94,13 @@ export default function ContactForm() {
           value={formData.name}
           onChange={handleInputChange}
         />
+        {formErrors.name && (
+          <p className="text-red-500 text-sm mt-1 absolute top-10">
+            Ce champ est requis.
+          </p>
+        )}
+      </div>
+      <div className="relative">
         <Input
           type="email"
           placeholder="Votre Email"
@@ -101,6 +109,13 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleInputChange}
         />
+        {formErrors.email && (
+          <p className="text-red-500 text-sm mt-1 absolute top-10">
+            Ce champ est requis.
+          </p>
+        )}
+      </div>
+      <div className="relative">
         <Textarea
           placeholder="Votre Message"
           id="message"
@@ -108,6 +123,13 @@ export default function ContactForm() {
           value={formData.message}
           onChange={handleInputChange}
         />
+        {formErrors.message && (
+          <p className="text-red-500 text-sm mt-1 absolute top-16">
+            Ce champ est requis.
+          </p>
+        )}
+      </div>
+
       <div className="flex items-center">
         <Button type="submit" aria-label="Envoyer le formulaire">
           Envoyer
