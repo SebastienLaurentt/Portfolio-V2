@@ -122,6 +122,7 @@ export default function ContactForm() {
           name="message"
           value={formData.message}
           onChange={handleInputChange}
+          className="overflow-y-hidden"
         />
         {formErrors.message && (
           <p className="textAreaError">
