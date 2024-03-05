@@ -8,7 +8,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   title,
 }) => {
   return (
-    <div className="mb-20 md:mb-28 lg:mb-36 xl:mb-48 text-center">
+    <div className="mb-20 md:mb-28 lg:mb-36 xl:mb-44 text-center">
       <h2>
         {title} 
       </h2>
