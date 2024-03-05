@@ -95,7 +95,7 @@ export default function ContactForm() {
           onChange={handleInputChange}
         />
         {formErrors.name && (
-          <p className="text-red-500 text-sm mt-1 absolute top-10">
+          <p className="inputError">
             Ce champ est requis.
           </p>
         )}
@@ -110,7 +110,7 @@ export default function ContactForm() {
           onChange={handleInputChange}
         />
         {formErrors.email && (
-          <p className="text-red-500 text-sm mt-1 absolute top-10">
+          <p className="inputError">
             Ce champ est requis.
           </p>
         )}
@@ -124,7 +124,7 @@ export default function ContactForm() {
           onChange={handleInputChange}
         />
         {formErrors.message && (
-          <p className="text-red-500 text-sm mt-1 absolute top-18">
+          <p className="textAreaError">
             Ce champ est requis.
           </p>
         )}
