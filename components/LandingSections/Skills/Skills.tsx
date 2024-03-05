@@ -23,7 +23,7 @@ const Skills = () => {
         }
       },
       {
-        threshold: 1, // Modifiez le seuil selon vos besoins
+        threshold: 1,
       }
     );
 
