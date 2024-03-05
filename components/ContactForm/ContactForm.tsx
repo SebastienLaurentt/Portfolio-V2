@@ -84,7 +84,7 @@ export default function ContactForm() {
   }, [sendEmailState]);
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-y-10">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-y-12">
       <div className="relative">
         <Input
           type="text"
@@ -124,7 +124,7 @@ export default function ContactForm() {
           onChange={handleInputChange}
         />
         {formErrors.message && (
-          <p className="text-red-500 text-sm mt-1 absolute top-16">
+          <p className="text-red-500 text-sm mt-1 absolute top-18">
             Ce champ est requis.
           </p>
         )}
