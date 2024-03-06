@@ -1,12 +1,13 @@
 import React from 'react'
 
 interface ProjectChipProps {
+  classname: string
   chipName: string
 }
 
-const ProjectChip = ({chipName}:ProjectChipProps) => {
+const ProjectChip = ({classname, chipName}:ProjectChipProps) => {
   return (
-    <div>{chipName}</div>
+    <div className={`${classname} absolute`}>{chipName}</div>
   )
 }
 
