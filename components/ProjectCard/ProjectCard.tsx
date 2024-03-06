@@ -13,6 +13,8 @@ interface ProjectCardProps {
   marginBottom: boolean;
   projectTitle: string;
   projectDescription?: string;
+  chipName: string;
+  chipClassname: string;
   siteHref?: string;
   githubHref?: string;
 }
@@ -25,6 +27,8 @@ const ProjectCard = ({
   marginBottom,
   projectTitle,
   projectDescription,
+  chipName,
+  chipClassname,
   siteHref,
   githubHref,
 }: ProjectCardProps) => {
@@ -74,7 +78,7 @@ const ProjectCard = ({
         </div>
         <div className="mt-[20px] md:mt-0 relative">
           <Image src={src} alt={alt} className="rounded-lg" />
-          <ProjectChip chipName="NEXT.JS" classname="top-10 left-5"/>
+          <ProjectChip chipName={chipName} classname={chipClassname}/>
         </div>
         <ProjectCardLinks siteHref={siteHref || ""} githubHref={githubHref || ""} classname="md:hidden mt-4 justify-center" />
       </div>
