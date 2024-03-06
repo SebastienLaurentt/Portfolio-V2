@@ -7,7 +7,7 @@ interface ProjectChipProps {
 
 const ProjectChip = ({classname, chipName}:ProjectChipProps) => {
   return (
-    <div className={`${classname} absolute bg-secondary rounded-full px-2 py-1 text-secondary-foreground `}>{chipName}</div>
+    <div className={`${classname} absolute bg-secondary rounded-full px-2 py-1 text-secondary-foreground text-xs `}>{chipName}</div>
   )
 }
 

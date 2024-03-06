@@ -72,9 +72,9 @@ const ProjectCard = ({
           <p className="md:mx-0 mb-2 md:mb-4">{projectDescription}</p>
           <ProjectCardLinks siteHref={siteHref || ""} githubHref={githubHref || ""} classname="hidden md:flex" />
         </div>
-        <div className="mt-[20px] md:mt-0">
+        <div className="mt-[20px] md:mt-0 relative">
           <Image src={src} alt={alt} className="rounded-lg" />
-          <ProjectChip chipName="NEXT" />
+          <ProjectChip chipName="NEXT.JS" classname="top-10 left-5"/>
         </div>
         <ProjectCardLinks siteHref={siteHref || ""} githubHref={githubHref || ""} classname="md:hidden mt-4 justify-center" />
       </div>
