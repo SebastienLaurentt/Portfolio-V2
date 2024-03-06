@@ -14,7 +14,9 @@ interface ProjectCardProps {
   projectTitle: string;
   projectDescription?: string;
   chipName: string;
+  chipName2?: string;
   chipClassname: string;
+  chipClassname2?: string;
   siteHref?: string;
   githubHref?: string;
 }
@@ -28,7 +30,9 @@ const ProjectCard = ({
   projectTitle,
   projectDescription,
   chipName,
+  chipName2,
   chipClassname,
+  chipClassname2,
   siteHref,
   githubHref,
 }: ProjectCardProps) => {
@@ -79,6 +83,7 @@ const ProjectCard = ({
         <div className="mt-[20px] md:mt-0 relative">
           <Image src={src} alt={alt} className="rounded-lg" />
           <ProjectChip chipName={chipName} classname={chipClassname}/>
+          <ProjectChip chipName={chipName2} classname={chipClassname2}/>
         </div>
         <ProjectCardLinks siteHref={siteHref || ""} githubHref={githubHref || ""} classname="md:hidden mt-4 justify-center" />
       </div>
