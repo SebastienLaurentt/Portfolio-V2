@@ -21,7 +21,7 @@ const Projets = () => {
             projectTitle="Stash"
             projectDescription="Agence de design web. Présentation de l'agence, de ses services et de ses réalisations."
             chipName="WordPress"
-            chipClassname="top-4 left-4"
+            chipClassname="bottom-4 left-4"
           />
           <ProjectCard
             src={Galopins}
@@ -31,7 +31,7 @@ const Projets = () => {
             projectTitle="Galopins"
             projectDescription="Club de randonnée. Présentation du club, de ses activités et des photos des randonnées réalisées."
             chipName="NEXT.JS"
-            chipClassname="top-4 left-4"
+            chipClassname="bottom-4 left-4"
             siteHref="https://galopins-next-v2.vercel.app/"
             githubHref="https://github.com/SebastienLaurentt/Galopins-Next-V2"
           />
@@ -45,7 +45,7 @@ const Projets = () => {
             projectDescription="Mon portfolio personnel."
             projectTitle="Portfolio"
             chipName="NEXT.JS"
-            chipClassname="top-4 left-4"
+            chipClassname="bottom-4 left-4"
             siteHref="https://portfolio-v2-zeta-coral.vercel.app/"
             githubHref="https://github.com/SebastienLaurentt/Portfolio-V2"
             
@@ -58,7 +58,7 @@ const Projets = () => {
             projectTitle="Codit"
             projectDescription="Réseau social pour développeurs. Permettant de partager les illustrations de ses projets tout en rendant disponibles les codes sources."
             chipName="SYMPHONY"
-            chipClassname="top-6 left-2"
+            chipClassname="top-10 left-4"
             siteHref="https://codit-codit.vercel.app/"
             githubHref="https://github.com/O-clock-Titanium/projet-codit-front"
           />
