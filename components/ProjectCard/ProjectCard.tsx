@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import ProjectCardLinks from "../ProjectCardLinks/ProjectCardLinks";
+import ProjectChip from "../ProjectChip/ProjectChip";
 
 interface ProjectCardProps {
   classname?: string;
@@ -73,6 +74,7 @@ const ProjectCard = ({
         </div>
         <div className="mt-[20px] md:mt-0">
           <Image src={src} alt={alt} className="rounded-lg" />
+          <ProjectChip chipName="NEXT" />
         </div>
         <ProjectCardLinks siteHref={siteHref || ""} githubHref={githubHref || ""} classname="md:hidden mt-4 justify-center" />
       </div>
