@@ -14,6 +14,7 @@ interface ProjectCardProps {
   projectTitle: string;
   projectDescription?: string;
   border?: boolean;
+  projectStack: string;
   siteHref?: string;
   githubHref?: string;
 }
@@ -27,6 +28,7 @@ const ProjectCard = ({
   projectTitle,
   projectDescription,
   border,
+  projectStack,
   siteHref,
   githubHref,
 }: ProjectCardProps) => {
@@ -72,7 +74,8 @@ const ProjectCard = ({
       <div className={`md:flex md:flex-row ${isRowReverse} md:items-center md:justify-center md:gap-x-12  lg:gap-x-16 xl:gap-x-4 w-full`}>
         <div className="text-center md:text-left w-[320px] xl:w-[380px]  mx-auto">
           <h3 className="mb-2 md:mb-4">{projectTitle}</h3>
-          <p className="md:mx-0 mb-2 md:mb-4">{projectDescription}</p>
+          <p className="md:mx-0 mb-2 md:mb-2">{projectDescription}</p>
+          <p className="text-secondary md:mb-4 md:text-sm"> {projectStack} </p>
           <ProjectCardLinks siteHref={siteHref || ""} githubHref={githubHref || ""} classname="hidden md:flex" />
         </div>
         <div className="mt-[20px] md:mt-0  md:w-4/5 lg:w-3/5 xl:w-2/5 mx-auto  ">
