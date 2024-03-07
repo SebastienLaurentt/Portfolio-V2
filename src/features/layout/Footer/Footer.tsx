@@ -18,6 +18,7 @@ export const Footer = () => {
               href="https://twitter.com/Seb_webdev"
               target="_blank"
               className="socialIcon"
+              aria-label="Accéder à mon profil Twitter / X"
             >
               <XIcon fillColor={fillColor} />
             </Link>
@@ -28,6 +29,7 @@ export const Footer = () => {
               href="https://www.linkedin.com/in/s%C3%A9bastien-laurent-3a007328a/"
               target="_blank"
               className="socialIcon"
+              aria-label="Accéder à mon profil LinkedIn"
             >
               <LinkedInIcon fillColor={fillColor} />
             </Link>
@@ -38,6 +40,7 @@ export const Footer = () => {
               href="https://github.com/SebastienLaurentt"
               target="_blank"
               className="socialIcon"
+              aria-label="Accéder à mon profil GitHub"
             >
               <GitHubIcon fillColor={fillColor} />
             </Link>
