@@ -20,6 +20,7 @@ const Projets = () => {
             marginBottom={true}
             projectTitle="Stash"
             projectDescription="Agence de design web. Présentation de l'agence, de ses services et de ses réalisations."
+            projectStack="WordPress • Elementor • Figma"
 
           />
           <ProjectCard
@@ -29,6 +30,7 @@ const Projets = () => {
             marginBottom={true}
             projectTitle="Galopins"
             projectDescription="Club de randonnée. Présentation du club, de ses activités et des photos réalisées."
+            projectStack="Next.Js • TypeScript • Node.Js"
             siteHref="https://galopins-next-v2.vercel.app/"
             githubHref="https://github.com/SebastienLaurentt/Galopins-Next-V2"
           />
@@ -42,6 +44,7 @@ const Projets = () => {
             projectDescription="Mon portfolio personnel."
             projectTitle="Portfolio"
             border={true}
+            projectStack="Next.Js • TypeScript • TailwindCSS"
             siteHref="https://portfolio-v2-zeta-coral.vercel.app/"
             githubHref="https://github.com/SebastienLaurentt/Portfolio-V2"
           />
@@ -52,6 +55,7 @@ const Projets = () => {
             marginBottom={false}
             projectTitle="Codit"
             projectDescription="Réseau social pour développeurs. Permet de partager les illustrations de ses projets tout en rendant disponibles les codes sources."
+            projectStack="React • TypeScript • Symphony"
             siteHref="https://codit-codit.vercel.app/"
             githubHref="https://github.com/O-clock-Titanium/projet-codit-front"
           />
