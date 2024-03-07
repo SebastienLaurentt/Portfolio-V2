@@ -70,7 +70,7 @@ const ProjectCard = ({
       style={{ opacity: opacity }}
     >
       <div className={`md:flex md:flex-row ${isRowReverse} md:items-center md:justify-center md:gap-x-12  lg:gap-x-16 w-full`}>
-        <div className="text-center md:text-left max-w-[340px]  mx-auto">
+        <div className="text-center md:text-left w-[320px]  mx-auto">
           <h3 className="mb-2 md:mb-4">{projectTitle}</h3>
           <p className="md:mx-0 mb-2 md:mb-4">{projectDescription}</p>
           <ProjectCardLinks siteHref={siteHref || ""} githubHref={githubHref || ""} classname="hidden md:flex" />
