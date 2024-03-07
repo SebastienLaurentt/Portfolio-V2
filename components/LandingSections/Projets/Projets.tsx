@@ -3,8 +3,8 @@ import Section from "@/components/Section/Section";
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
 
 import Codit from "../../../public/images/Codit.png";
-import Galopins from "../../../public/images/GalopinsV2.png";
-import Portfolio from "../../../public/images/PortfolioV2.png";
+import Galopins from "../../../public/images/Galopins.png";
+import Portfolio from "../../../public/images/Portfolio.png";
 import Stash from "../../../public/images/Stash.png";
 
 const Projets = () => {
