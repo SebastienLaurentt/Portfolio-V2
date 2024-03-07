@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import ProjectCardLinks from "../ProjectCardLinks/ProjectCardLinks";
-import ProjectChip from "../ProjectChip/ProjectChip";
+
 
 interface ProjectCardProps {
   classname?: string;
@@ -13,10 +13,6 @@ interface ProjectCardProps {
   marginBottom: boolean;
   projectTitle: string;
   projectDescription?: string;
-  chipName: string;
-  chipName2?: string;
-  chipClassname: string;
-  chipClassname2?: string;
   siteHref?: string;
   githubHref?: string;
 }
@@ -30,10 +26,6 @@ const ProjectCard = ({
   marginBottom,
   projectTitle,
   projectDescription,
-  chipName,
-  chipName2,
-  chipClassname,
-  chipClassname2,
   siteHref,
   githubHref,
 }: ProjectCardProps) => {
@@ -81,10 +73,8 @@ const ProjectCard = ({
           <p className="md:mx-0 mb-2 md:mb-4">{projectDescription}</p>
           <ProjectCardLinks siteHref={siteHref || ""} githubHref={githubHref || ""} classname="hidden md:flex" />
         </div>
-        <div className="mt-[20px] md:mt-0 relative md:w-4/5 lg:w-3/5 xl:w-2/5 mx-auto  ">
+        <div className="mt-[20px] md:mt-0  md:w-4/5 lg:w-3/5 xl:w-2/5 mx-auto  ">
           <Image src={src} alt={alt} className="rounded-lg" quality={100} />
-          {/* <ProjectChip chipName={chipName} classname={chipClassname}/>
-          <ProjectChip chipName={chipName2 || ""} classname={chipClassname2 || ""}/> */}
         </div>
         <ProjectCardLinks siteHref={siteHref || ""} githubHref={githubHref || ""} classname="md:hidden mt-4 justify-center" />
       </div>
