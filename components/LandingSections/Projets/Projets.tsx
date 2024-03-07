@@ -5,6 +5,7 @@ import SectionHeader from "@/components/SectionHeader/SectionHeader";
 import Codit from "../../../public/images/Codit.png";
 import Galopins from "../../../public/images/Galopins.png";
 import Portfolio from "../../../public/images/Portfolio.png";
+import PortfolioLight from "../../../public/images/PortfolioLight.png";
 import Stash from "../../../public/images/Stash.png";
 
 const Projets = () => {
@@ -44,6 +45,7 @@ const Projets = () => {
         <div className="">
           <ProjectCard
             src={Portfolio}
+            src2={PortfolioLight}
             alt="Impression d'écran de la page d'accueil de mon Portfolio"
             rowReverse={true}
             marginBottom={true}
