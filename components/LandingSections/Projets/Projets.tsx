@@ -22,7 +22,7 @@ const Projets = () => {
             projectDescription="Agence de design web. Présentation de l'agence, de ses services et de ses réalisations."
             chipName="WordPress"
             chipClassname="bottom-4 left-4"
-            chipName2="FIGMA"
+            chipName2="Figma"
             chipClassname2="bottom-4 right-4"
             
           />
@@ -33,9 +33,9 @@ const Projets = () => {
             marginBottom={true}
             projectTitle="Galopins"
             projectDescription="Club de randonnée. Présentation du club, de ses activités et des photos des randonnées réalisées."
-            chipName="NEXT.JS"
+            chipName="Next.js"
             chipClassname="bottom-4 left-4"
-            chipName2="NODE.JS"
+            chipName2="Node.js"
             chipClassname2="bottom-4 right-4"
             siteHref="https://galopins-next-v2.vercel.app/"
             githubHref="https://github.com/SebastienLaurentt/Galopins-Next-V2"
@@ -49,7 +49,7 @@ const Projets = () => {
             marginBottom={true}
             projectDescription="Mon portfolio personnel."
             projectTitle="Portfolio"
-            chipName="NEXT.JS"
+            chipName="Next.js"
             chipClassname="bottom-4 left-4"
             chipName2="SHADCN"
             chipClassname2="top-14 right-4"
@@ -64,9 +64,9 @@ const Projets = () => {
             marginBottom={false}
             projectTitle="Codit"
             projectDescription="Réseau social pour développeurs. Permettant de partager les illustrations de ses projets tout en rendant disponibles les codes sources."
-            chipName="SYMPHONY"
+            chipName="Symphony"
             chipClassname="top-10 left-4"
-            chipName2="REACT.JS"
+            chipName2="React.js"
             chipClassname2="top-20 right-4"
             siteHref="https://codit-codit.vercel.app/"
             githubHref="https://github.com/O-clock-Titanium/projet-codit-front"
