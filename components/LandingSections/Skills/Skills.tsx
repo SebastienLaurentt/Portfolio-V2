@@ -45,22 +45,21 @@ const Skills = () => {
         className="flex flex-col xl:flex-row xl:justify-center gap-y-2 md:gap-y-3 lg:gap-y-4 xl:gap-x-4"
       >
         <div className="flex justify-center">
-        <div
-          className={`border rounded-xl w-24 md:w-36 lg:w-48 h-16 md:h-24 lg:h-32 flex flex-col justify-center items-center ${
-            isVisible
-              ? "opacity-100 transition-opacity duration-200 "
-              : "opacity-0 transition-opacity"
-          }`}
-        >
-          <NextJsIcon fillColor={fillColor} />
-        </div>
-        </div>
-
-        <div className="flex justify-center gap-x-2 md:gap-x-3 lg:gap-x-4">
           <div
             className={`border rounded-xl w-24 md:w-36 lg:w-48 h-16 md:h-24 lg:h-32 flex flex-col justify-center items-center ${
               isVisible
                 ? "opacity-100 transition-opacity duration-200 "
+                : "opacity-0 transition-opacity"
+            }`}
+          >
+            <NextJsIcon fillColor={fillColor} />
+          </div>
+        </div>
+        <div className="flex justify-center gap-x-2 md:gap-x-3 lg:gap-x-4">
+          <div
+            className={`border rounded-xl w-24 md:w-36 lg:w-48 h-16 md:h-24 lg:h-32 flex flex-col justify-center items-center ${
+              isVisible
+                ? "opacity-100 transition-opacity duration-500 "
                 : "opacity-0 transition-opacity"
             }`}
           >
@@ -69,7 +68,7 @@ const Skills = () => {
           <div
             className={`border rounded-xl w-24 md:w-36 lg:w-48 h-16 md:h-24 lg:h-32  flex justify-center items-center ${
               isVisible
-                ? "opacity-100 transition-opacity duration-300 "
+                ? "opacity-100 transition-opacity duration-1000 "
                 : "opacity-0 transition-opacity"
             }`}
           >
@@ -89,7 +88,7 @@ const Skills = () => {
           <div
             className={`border rounded-xl w-24 md:w-36 lg:w-48 h-16 md:h-24 lg:h-32  flex justify-center flex items-center ${
               isVisible
-                ? "opacity-100 transition-opacity duration-700 "
+                ? "opacity-100 transition-opacity duration-1000 "
                 : "opacity-0 transition-opacity"
             }`}
           >
