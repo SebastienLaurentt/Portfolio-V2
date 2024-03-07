@@ -74,13 +74,13 @@ const ProjectCard = ({
       className={`${isMarginBottom} ${classname}`}
       style={{ opacity: opacity }}
     >
-      <div className={`md:flex ${isRowReverse} md:items-center md:gap-x-12  w-full`}>
+      <div className={`md:flex md:flex-row ${isRowReverse} md:items-center md:justify-center md:gap-x-12  lg:gap-x-16 w-full`}>
         <div className="text-center md:text-left w-[320px]  mx-auto">
           <h3 className="mb-2 md:mb-4">{projectTitle}</h3>
           <p className="md:mx-0 mb-2 md:mb-4">{projectDescription}</p>
           <ProjectCardLinks siteHref={siteHref || ""} githubHref={githubHref || ""} classname="hidden md:flex" />
         </div>
-        <div className="mt-[20px] md:mt-0 relative">
+        <div className="mt-[20px] md:mt-0 relative md:w-4/5 lg:w-3/5 xl:w-2/5 mx-auto  ">
           <Image src={src} alt={alt} className="rounded-lg" quality={100} />
           <ProjectChip chipName={chipName} classname={chipClassname}/>
           <ProjectChip chipName={chipName2 || ""} classname={chipClassname2 || ""}/>
