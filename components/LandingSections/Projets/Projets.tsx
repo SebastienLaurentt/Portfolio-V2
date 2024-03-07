@@ -44,7 +44,6 @@ const Projets = () => {
             marginBottom={true}
             projectDescription="Mon portfolio personnel."
             projectTitle="Portfolio"
-            border={true}
             projectStack="Next.Js • TypeScript • TailwindCSS"
             siteHref="https://sebastienlaurent.fr/"
             githubHref="https://github.com/SebastienLaurentt/Portfolio-V2"
@@ -57,7 +56,6 @@ const Projets = () => {
             marginBottom={true}
             projectDescription="Mon portfolio personnel."
             projectTitle="Portfolio"
-            border={true}
             projectStack="Next.Js • TypeScript • TailwindCSS"
             siteHref="https://sebastienlaurent.fr/"
             githubHref="https://github.com/SebastienLaurentt/Portfolio-V2"
