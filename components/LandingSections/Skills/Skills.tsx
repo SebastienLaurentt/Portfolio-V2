@@ -46,7 +46,7 @@ const Skills = () => {
       >
         <div className="flex justify-center">
           <div
-            className={`border rounded-xl w-24 md:w-36 lg:w-48 h-16 md:h-24 lg:h-32 flex flex-col justify-center items-center ${
+            className={`skillsIcon ${
               isVisible
                 ? "opacity-100 transition-opacity duration-200 "
                 : "opacity-0 transition-opacity"
@@ -57,7 +57,7 @@ const Skills = () => {
         </div>
         <div className="flex justify-center gap-x-2 md:gap-x-3 lg:gap-x-4">
           <div
-            className={`border rounded-xl w-24 md:w-36 lg:w-48 h-16 md:h-24 lg:h-32 flex flex-col justify-center items-center ${
+            className={`skillsIcon ${
               isVisible
                 ? "opacity-100 transition-opacity duration-500 "
                 : "opacity-0 transition-opacity"
@@ -66,7 +66,7 @@ const Skills = () => {
             <TypeScriptIcon fillColor={fillColor} />
           </div>
           <div
-            className={`border rounded-xl w-24 md:w-36 lg:w-48 h-16 md:h-24 lg:h-32  flex justify-center items-center ${
+            className={`skillsIcon ${
               isVisible
                 ? "opacity-100 transition-opacity duration-1000 "
                 : "opacity-0 transition-opacity"
@@ -75,7 +75,7 @@ const Skills = () => {
             <TailwindIcon fillColor={fillColor} />
           </div>
           <div
-            className={`border rounded-xl w-24 md:w-36 lg:w-48 h-16 md:h-24 lg:h-32  flex justify-center items-center ${
+            className={`skillsIcon ${
               isVisible
                 ? "opacity-100 transition-opacity duration-500 "
                 : "opacity-0 transition-opacity"
@@ -86,7 +86,7 @@ const Skills = () => {
         </div>
         <div className="flex justify-center gap-x-2 md:gap-x-3 lg:gap-x-4">
           <div
-            className={`border rounded-xl w-24 md:w-36 lg:w-48 h-16 md:h-24 lg:h-32  flex justify-center flex items-center ${
+            className={`skillsIcon ${
               isVisible
                 ? "opacity-100 transition-opacity duration-1000 "
                 : "opacity-0 transition-opacity"
@@ -95,7 +95,7 @@ const Skills = () => {
             <WordPressIcon fillColor={fillColor} />
           </div>
           <div
-            className={`border rounded-xl w-24 md:w-36 lg:w-48 h-16 md:h-24 lg:h-32  flex justify-center flex items-center ${
+            className={`skillsIcon ${
               isVisible
                 ? "opacity-100 transition-opacity duration-1000 "
                 : "opacity-0 transition-opacity"

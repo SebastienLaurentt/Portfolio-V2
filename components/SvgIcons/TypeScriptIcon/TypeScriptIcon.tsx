@@ -1,3 +1,4 @@
+
 interface TypeScriptIconProps {
   fillColor: string;
 }
@@ -5,7 +6,7 @@ interface TypeScriptIconProps {
 const TypeScriptIcon = ({ fillColor }: TypeScriptIconProps) => {
   return (
     <svg
-      fill={fillColor}
+    fill={fillColor}
       style={{ width: "auto", height: "50%" }}
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
