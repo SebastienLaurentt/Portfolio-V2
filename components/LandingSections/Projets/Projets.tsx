@@ -41,6 +41,7 @@ const Projets = () => {
             marginBottom={true}
             projectDescription="Mon portfolio personnel."
             projectTitle="Portfolio"
+            border={true}
             siteHref="https://portfolio-v2-zeta-coral.vercel.app/"
             githubHref="https://github.com/SebastienLaurentt/Portfolio-V2"
           />
