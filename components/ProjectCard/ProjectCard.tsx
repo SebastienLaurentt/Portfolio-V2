@@ -12,7 +12,6 @@ interface ProjectCardProps {
   rowReverse: boolean;
   marginBottom: boolean;
   projectTitle: string;
-  projectTheme?: string;
   projectDescription?: string;
   border?: boolean;
   siteHref?: string;
@@ -26,7 +25,6 @@ const ProjectCard = ({
   rowReverse,
   marginBottom,
   projectTitle,
-  projectTheme,
   projectDescription,
   border,
   siteHref,
@@ -72,10 +70,9 @@ const ProjectCard = ({
       style={{ opacity: opacity }}
     >
       <div className={`md:flex md:flex-row ${isRowReverse} md:items-center md:justify-center md:gap-x-12  lg:gap-x-16 w-full`}>
-        <div className="text-center md:text-left w-[320px]  mx-auto">
+        <div className="text-center md:text-left max-w-[340px]  mx-auto">
           <h3 className="mb-2 md:mb-4">{projectTitle}</h3>
-          <p className="md:mx-0 mb-2 md:mb-4 flex flex-col md:flex-row"><span>{projectTheme}
-            </span> <span>{projectDescription}</span></p>
+          <p className="md:mx-0 mb-2 md:mb-4">{projectDescription}</p>
           <ProjectCardLinks siteHref={siteHref || ""} githubHref={githubHref || ""} classname="hidden md:flex" />
         </div>
         <div className="mt-[20px] md:mt-0  md:w-4/5 lg:w-3/5 xl:w-2/5 mx-auto  ">
