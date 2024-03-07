@@ -20,7 +20,6 @@ interface ProjectCardProps {
 const ProjectCard = ({
   classname,
   src,
-  src2,
   alt,
   rowReverse,
   marginBottom,
