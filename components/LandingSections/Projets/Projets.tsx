@@ -28,7 +28,7 @@ const Projets = () => {
             rowReverse={false}
             marginBottom={true}
             projectTitle="Galopins"
-            projectDescription="Club de randonnée. Présentation du club, de ses activités et des photos des randonnées réalisées."
+            projectDescription="Club de randonnée. Présentation du club, de ses activités et des photos réalisées."
             siteHref="https://galopins-next-v2.vercel.app/"
             githubHref="https://github.com/SebastienLaurentt/Galopins-Next-V2"
           />
@@ -51,7 +51,7 @@ const Projets = () => {
             rowReverse={false}
             marginBottom={false}
             projectTitle="Codit"
-            projectDescription="Réseau social pour développeurs. Permettant de partager les illustrations de ses projets tout en rendant disponibles les codes sources."
+            projectDescription="Réseau social pour développeurs. Permet de partager les illustrations de ses projets tout en rendant disponibles les codes sources."
             siteHref="https://codit-codit.vercel.app/"
             githubHref="https://github.com/O-clock-Titanium/projet-codit-front"
           />
