@@ -42,7 +42,7 @@ const Skills = () => {
       <SectionHeader title="Des compétences transverses" />
       <div
         ref={sectionRef}
-        className="flex flex-col xl:flex-row xl:justify-center gap-y-2 md:gap-y-3 lg:gap-y-4 xl:gap-x-4"
+        className="flex flex-col  gap-y-2 md:gap-y-3 lg:gap-y-4 xl:gap-x-4"
       >
         <div className="flex justify-center">
           <div
