@@ -9,10 +9,8 @@ const Contact = () => {
       <div className="md:px-8 lg:px-20 xl:px-60">
         <ContactForm />
       </div>
-
     </Section>
   );
 };
 
 export default Contact;
-

@@ -22,7 +22,6 @@ const Projets = () => {
             projectTitle="Stash"
             projectDescription="Agence de design web. Présentation de l'agence, de ses services et de ses réalisations."
             projectStack="WordPress • Elementor • Figma"
-
           />
           <ProjectCard
             src={Galopins}
@@ -49,7 +48,7 @@ const Projets = () => {
             githubHref="https://github.com/SebastienLaurentt/Portfolio-V2"
             classname="dark:hidden"
           />
-            <ProjectCard
+          <ProjectCard
             src={PortfolioLight}
             alt="Impression d'écran de la page d'accueil de mon Portfolio"
             rowReverse={true}

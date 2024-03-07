@@ -1,13 +1,10 @@
 import DownloadButton from "@/components/Button/DownloadButton/DownloadButton";
 import Section from "@/components/Section/Section";
+import { BackgroundBeams } from "@/components/ui/background-beams";
+import {} from "next/font/google";
 import Image from "next/image";
 import HeroImg from "../../../public/images/HeroImg.svg";
-import { BackgroundBeams } from "@/components/ui/background-beams";
-import {  } from 'next/font/google'
 const CV = `/pdf/CV.pdf`;
-
-
-
 
 const Hero = () => {
   return (
@@ -16,11 +13,12 @@ const Hero = () => {
       marginTop={false}
       classname=" flex flex-col xl:flex-row justify-center items-center min-h-screen xl:mx-20 2xl:mx-auto"
     >
+      {/* Text Hero */}
       <div className="flex flex-col justify-center">
-        <h1 >
-          Développeur Web
-        </h1>
-        <span className="text-center xl:text-left text-lg lg:text-xl xl:text-2xl">Bienvenue sur mon portfolio !</span>
+        <h1>Développeur Web</h1>
+        <span className="text-center xl:text-left text-lg lg:text-xl xl:text-2xl">
+          Bienvenue sur mon portfolio !
+        </span>
         <DownloadButton
           href={CV}
           fileName="Sebastien_Laurent_CV.pdf"
@@ -28,6 +26,8 @@ const Hero = () => {
           classname="mt-4 flex justify-center xl:justify-start z-10"
         />
       </div>
+
+      {/* SVG Hero */}
       <div className="">
         <Image
           src={HeroImg}

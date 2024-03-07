@@ -11,7 +11,10 @@ import WordPressIcon from "@/components/SvgIcons/Wordpress/Wordpress";
 import { useEffect, useRef, useState } from "react";
 
 const Skills = () => {
+  // Color for the svg icons
   const fillColor = "hsl(var(--primary-foreground))";
+
+  // Intersection Observer state
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
@@ -44,6 +47,8 @@ const Skills = () => {
         ref={sectionRef}
         className="flex flex-col  gap-y-2 md:gap-y-3 lg:gap-y-4 xl:gap-x-4"
       >
+        {/* SVG Lists */}
+        {/* First Row - 1 Icon */}
         <div className="flex justify-center">
           <div
             className={`skillsIcon ${
@@ -55,6 +60,8 @@ const Skills = () => {
             <NextJsIcon fillColor={fillColor} />
           </div>
         </div>
+
+        {/* Second Row - 3 Icons */}
         <div className="flex justify-center gap-x-2 md:gap-x-3 lg:gap-x-4">
           <div
             className={`skillsIcon ${
@@ -84,6 +91,8 @@ const Skills = () => {
             <ReactIcon fillColor={fillColor} />
           </div>
         </div>
+
+        {/* Third Row - 2 Icons */}
         <div className="flex justify-center gap-x-2 md:gap-x-3 lg:gap-x-4">
           <div
             className={`skillsIcon ${
