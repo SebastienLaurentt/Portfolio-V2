@@ -36,6 +36,7 @@ const ScrollToTopButton = () => {
         isVisible ? "opacity-100" : "opacity-0"
       }`}
       onClick={scrollToTop}
+      aria-label="Retourner en haut de la page"
     >
       <ChevronUp />
     </Button>
