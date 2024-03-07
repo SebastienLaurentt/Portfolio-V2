@@ -8,7 +8,6 @@ import ProjectChip from "../ProjectChip/ProjectChip";
 interface ProjectCardProps {
   classname?: string;
   src: StaticImageData;
-  src2?: StaticImageData;
   alt: string;
   rowReverse: boolean;
   marginBottom: boolean;
@@ -70,9 +69,6 @@ const ProjectCard = ({
     };
   }, []);
 
-  //Image alternative pour le dark mode
-  const isDarkMode = document.body.classList.contains("dark");
-
   return (
     <div
       ref={projectCardRef}
@@ -86,7 +82,7 @@ const ProjectCard = ({
           <ProjectCardLinks siteHref={siteHref || ""} githubHref={githubHref || ""} classname="hidden md:flex" />
         </div>
         <div className="mt-[20px] md:mt-0 relative md:w-4/5 lg:w-3/5 xl:w-2/5 mx-auto  ">
-          <Image src={isDarkMode && src2 ? src2 : src} alt={alt} className="rounded-lg" quality={100} />
+          <Image src={src} alt={alt} className="rounded-lg" quality={100} />
           {/* <ProjectChip chipName={chipName} classname={chipClassname}/>
           <ProjectChip chipName={chipName2 || ""} classname={chipClassname2 || ""}/> */}
         </div>

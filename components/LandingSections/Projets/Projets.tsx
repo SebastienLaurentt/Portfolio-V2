@@ -5,7 +5,6 @@ import SectionHeader from "@/components/SectionHeader/SectionHeader";
 import Codit from "../../../public/images/Codit.png";
 import Galopins from "../../../public/images/Galopins.png";
 import Portfolio from "../../../public/images/Portfolio.png";
-import PortfolioLight from "../../../public/images/PortfolioLight.png";
 import Stash from "../../../public/images/Stash.png";
 
 const Projets = () => {
@@ -25,7 +24,6 @@ const Projets = () => {
             chipClassname="bottom-4 left-4"
             chipName2="Figma"
             chipClassname2="bottom-4 right-4"
-            
           />
           <ProjectCard
             src={Galopins}
@@ -45,7 +43,6 @@ const Projets = () => {
         <div className="">
           <ProjectCard
             src={Portfolio}
-            src2={PortfolioLight}
             alt="Impression d'écran de la page d'accueil de mon Portfolio"
             rowReverse={true}
             marginBottom={true}
@@ -57,7 +54,6 @@ const Projets = () => {
             chipClassname2="top-14 right-4"
             siteHref="https://portfolio-v2-zeta-coral.vercel.app/"
             githubHref="https://github.com/SebastienLaurentt/Portfolio-V2"
-            
           />
           <ProjectCard
             src={Codit}
