@@ -75,7 +75,7 @@ const ProjectCard = ({
         <div className="text-center md:text-left w-[320px] md:w-[340px] xl:w-[380px]  mx-auto">
           <h3 className="mb-4">{projectTitle}</h3>
           <p className="md:mx-0 mb-2 md:mb-2">{projectDescription}</p>
-          <p className="text-secondary md:mb-4 md:text-sm"> {projectStack} </p>
+          <p className="text-secondary md:mb-4 md:text-sm font-semibold"> {projectStack} </p>
           <ProjectCardLinks siteHref={siteHref || ""} githubHref={githubHref || ""} classname="hidden md:flex" />
         </div>
         <div className="mt-[20px] md:mt-0  md:w-4/5 lg:w-3/5 xl:w-2/5 mx-auto  ">
