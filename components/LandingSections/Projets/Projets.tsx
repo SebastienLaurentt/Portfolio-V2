@@ -31,7 +31,7 @@ const Projets = () => {
             projectTitle="Galopins"
             projectDescription="Club de randonnée. Présentation du club, de ses activités et des photos réalisées."
             projectStack="Next.Js • TypeScript • Node.Js"
-            siteHref="https://galopins-next-v2.vercel.app/"
+            siteHref="https://lesgalopinsdemontelimar.com/"
             githubHref="https://github.com/SebastienLaurentt/Galopins-Next-V2"
           />
         </div>
@@ -45,7 +45,7 @@ const Projets = () => {
             projectTitle="Portfolio"
             border={true}
             projectStack="Next.Js • TypeScript • TailwindCSS"
-            siteHref="https://portfolio-v2-zeta-coral.vercel.app/"
+            siteHref="https://sebastienlaurent.fr/"
             githubHref="https://github.com/SebastienLaurentt/Portfolio-V2"
           />
           <ProjectCard
