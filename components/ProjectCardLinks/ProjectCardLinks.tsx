@@ -1,4 +1,6 @@
+import { Github, Globe } from "lucide-react";
 import Link from "next/link";
+import { Button } from "../ui/button";
 
 interface ProjectCardLinksProps {
   classname?: string;
@@ -16,18 +18,20 @@ const ProjectCardLinks = ({
       className={`${classname} flex flex-row gap-x-4 text-primary-foreground`}
     >
       {siteHref && (
-
-          <Link href={siteHref} target="_blank">
-            Voir le site
+        <Button variant="links" size="links">
+          <Link href={siteHref} target="_blank" className="flex gap-x-1">
+            <Globe size={16} />
+            <span>Site Web</span>
           </Link>
-
+        </Button>
       )}
       {githubHref && (
-
-          <Link href={githubHref} target="_blank">
-            Voir le code
+        <Button variant="links" size="links">
+          <Link href={githubHref} target="_blank" className=" flex gap-x-1">
+            <Github size={16} />
+            <span>GitHub</span>
           </Link>
-
+        </Button>
       )}
     </div>
   );
