@@ -13,6 +13,7 @@ interface ProjectCardProps {
   marginBottom: boolean;
   projectTitle: string;
   projectDescription?: string;
+  border?: boolean;
   siteHref?: string;
   githubHref?: string;
 }
@@ -25,10 +26,12 @@ const ProjectCard = ({
   marginBottom,
   projectTitle,
   projectDescription,
+  border,
   siteHref,
   githubHref,
 }: ProjectCardProps) => {
   const isRowReverse = rowReverse ? "md:flex-row-reverse" : "";
+  const hasBorder = border ? "border" : "";
   const isMarginBottom = marginBottom ? "mb-32 md:mb-48 lg:mb-64 xl:mb-80" : "";
   const projectCardRef = useRef<HTMLDivElement>(null);
   const [opacity, setOpacity] = useState(0);
@@ -73,7 +76,7 @@ const ProjectCard = ({
           <ProjectCardLinks siteHref={siteHref || ""} githubHref={githubHref || ""} classname="hidden md:flex" />
         </div>
         <div className="mt-[20px] md:mt-0  md:w-4/5 lg:w-3/5 xl:w-2/5 mx-auto  ">
-          <Image src={src} alt={alt} className="rounded-lg" quality={100} />
+          <Image src={src} alt={alt} className={`rounded-lg ${hasBorder}`} quality={100} />
         </div>
         <ProjectCardLinks siteHref={siteHref || ""} githubHref={githubHref || ""} classname="md:hidden mt-4 justify-center" />
       </div>
