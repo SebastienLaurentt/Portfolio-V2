@@ -55,7 +55,7 @@ const Projets = () => {
             marginBottom={false}
             projectTitle="Codit"
             projectDescription="Réseau social pour développeurs. Permet de partager les illustrations de ses projets tout en rendant disponibles les codes sources."
-            projectStack="React • TypeScript • Symphony"
+            projectStack="React • TypeScript • Symfony"
             siteHref="https://codit-codit.vercel.app/"
             githubHref="https://github.com/O-clock-Titanium/projet-codit-front"
           />
