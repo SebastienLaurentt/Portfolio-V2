@@ -21,7 +21,7 @@ const Projets = () => {
             marginBottom={true}
             projectTitle="Stash"
             projectDescription="Agence de design web. Présentation de l'agence, de ses services et de ses réalisations."
-            projectStack="WordPress • Elementor • Figma"
+            projectStack="WordPress • Figma • Elementor  "
           />
           <ProjectCard
             src={Galopins}
@@ -43,7 +43,7 @@ const Projets = () => {
             marginBottom={true}
             projectDescription="Mon portfolio personnel."
             projectTitle="Portfolio"
-            projectStack="Next.Js • TypeScript • TailwindCSS"
+            projectStack="Next.Js • TailwindCSS • TypeScript  "
             siteHref="https://sebastienlaurent.fr/"
             githubHref="https://github.com/SebastienLaurentt/Portfolio-V2"
             classname="dark:hidden"
@@ -55,7 +55,7 @@ const Projets = () => {
             marginBottom={true}
             projectDescription="Mon portfolio personnel."
             projectTitle="Portfolio"
-            projectStack="Next.Js • TypeScript • TailwindCSS"
+            projectStack="Next.Js • TailwindCSS • TypeScript  "
             siteHref="https://sebastienlaurent.fr/"
             githubHref="https://github.com/SebastienLaurentt/Portfolio-V2"
             classname="hidden dark:block"
@@ -67,7 +67,7 @@ const Projets = () => {
             marginBottom={false}
             projectTitle="Codit"
             projectDescription="Réseau social pour développeurs. Permet de partager les illustrations de ses projets tout en rendant disponibles les codes sources."
-            projectStack="React • TypeScript • Symfony"
+            projectStack="React • Symfony • Redux "
             siteHref="https://codit-codit.vercel.app/"
             githubHref="https://github.com/O-clock-Titanium/projet-codit-front"
           />
