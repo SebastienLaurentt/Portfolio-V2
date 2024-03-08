@@ -47,7 +47,7 @@ const Skills = () => {
         ref={sectionRef}
         className="flex flex-col  gap-y-2 md:gap-y-3 lg:gap-y-4 xl:gap-x-4"
       >
-        {/* SVG Lists */}
+        {/* Skills SVG Lists */}
         {/* First Row - 1 Icon */}
         <div className="flex justify-center">
           <div

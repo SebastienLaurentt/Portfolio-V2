@@ -94,12 +94,10 @@ export default function ContactForm() {
           value={formData.name}
           onChange={handleInputChange}
         />
-        {formErrors.name && (
-          <p className="inputError">
-            Ce champ est requis.
-          </p>
-        )}
+        {/* If name is null when submit */}
+        {formErrors.name && <p className="inputError">Ce champ est requis.</p>}
       </div>
+
       <div className="relative">
         <Input
           type="email"
@@ -109,12 +107,10 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleInputChange}
         />
-        {formErrors.email && (
-          <p className="inputError">
-            Ce champ est requis.
-          </p>
-        )}
+        {/* If email is null when submit */}
+        {formErrors.email && <p className="inputError">Ce champ est requis.</p>}
       </div>
+
       <div className="relative">
         <Textarea
           placeholder="Votre Message"
@@ -124,10 +120,9 @@ export default function ContactForm() {
           onChange={handleInputChange}
           className="overflow-y-hidden"
         />
+        {/* If textarea is null when submit */}
         {formErrors.message && (
-          <p className="textAreaError">
-            Ce champ est requis.
-          </p>
+          <p className="textAreaError">Ce champ est requis.</p>
         )}
       </div>
 
@@ -135,6 +130,7 @@ export default function ContactForm() {
         <Button type="submit" aria-label="Envoyer le formulaire">
           Envoyer
         </Button>
+        {/* If no formErrors and submission */}
         {formFeedback && (
           <p
             className={`text-sm ml-3 ${
