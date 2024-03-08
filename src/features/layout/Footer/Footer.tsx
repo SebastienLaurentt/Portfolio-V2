@@ -12,6 +12,7 @@ export const Footer = () => {
         <span className="">&#169;2024 - Sébastien Laurent</span>
 
         {/* Social Icons list */}
+        {/* X Profile */}
         <ul className="flex justify-center mt-2 gap-x-2">
           <li>
             <Link
@@ -24,6 +25,7 @@ export const Footer = () => {
             </Link>
           </li>
 
+          {/* LinkedIn Profile */}
           <li>
             <Link
               href="https://www.linkedin.com/in/s%C3%A9bastien-laurent-3a007328a/"
@@ -35,6 +37,7 @@ export const Footer = () => {
             </Link>
           </li>
 
+          {/* GitHub Profile */}
           <li>
             <Link
               href="https://github.com/SebastienLaurentt"

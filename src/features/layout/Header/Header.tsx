@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import { ThemeToggle } from "../../../theme/ThemeToggle";
 
 const Bebas = Bebas_Neue({
-  weight: "400", // if single weight, otherwise you use array like [400, 500, 700],
-  style: "normal", // if single style, otherwise you use array like ['normal', 'italic']
+  weight: "400",
+  style: "normal",
   subsets: ["latin"],
 });
 
@@ -14,6 +14,7 @@ export function Header() {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
+    //  Define when Header is visible
     if (typeof window !== "undefined") {
       const handleScroll = () => {
         const currentScrollPos = window.scrollY;
@@ -36,9 +37,7 @@ export function Header() {
       }`}
     >
       <div className="flex items-center justify-between px-6 md:px-10 xl:px-16 xl:mx-auto py-4 lg:py-6">
-        <span
-          className={`${Bebas.className} text-md text-tertiary-foreground`}
-        >
+        <span className={`${Bebas.className} text-md text-tertiary-foreground`}>
           SÉBASTIEN.LAURENT
         </span>
         <ThemeToggle />
@@ -46,6 +45,3 @@ export function Header() {
     </header>
   );
 }
-
-
-

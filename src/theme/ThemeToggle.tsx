@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { Button } from '@/components/ui/button';
-import { Moon, SunMedium } from 'lucide-react';
-import { useTheme } from 'next-themes';
+import { Button } from "@/components/ui/button";
+import { Moon, SunMedium } from "lucide-react";
+import { useTheme } from "next-themes";
 
 export function ThemeToggle() {
   const { setTheme, theme } = useTheme();
@@ -11,7 +11,7 @@ export function ThemeToggle() {
     <Button
       variant="icons"
       size="icons"
-      onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
       <SunMedium
         size={20}
