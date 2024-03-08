@@ -25,9 +25,7 @@ export default function RootLayout({
   return (
     <>
       <html lang="fr" suppressHydrationWarning>
-        <head>
-          <link rel="icon" href="/favicon.png" sizes="any" />
-        </head>
+        <head />
         <body className={roboto.className}>
           <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
             <div className=" flex flex-col h-full">
