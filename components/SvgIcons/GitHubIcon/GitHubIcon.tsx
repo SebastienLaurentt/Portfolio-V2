@@ -2,7 +2,7 @@ interface GitHubIconProps {
   fillColor: string;
 }
 
-const GitHubIcon = ({fillColor}: GitHubIconProps) => {
+const GitHubIcon = ({ fillColor }: GitHubIconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

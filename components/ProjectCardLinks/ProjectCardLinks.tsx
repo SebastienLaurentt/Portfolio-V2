@@ -17,6 +17,7 @@ const ProjectCardLinks = ({
     <div
       className={`${classname} flex flex-row gap-x-4 text-primary-foreground`}
     >
+      {/* Website Link  */}
       {siteHref && (
         <Button variant="links" size="links">
           <Link href={siteHref} target="_blank" className="flex gap-x-1">
@@ -25,6 +26,8 @@ const ProjectCardLinks = ({
           </Link>
         </Button>
       )}
+
+      {/* GitHub profil Link  */}
       {githubHref && (
         <Button variant="links" size="links">
           <Link href={githubHref} target="_blank" className=" flex gap-x-1">
