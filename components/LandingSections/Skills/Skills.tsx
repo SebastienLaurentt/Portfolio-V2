@@ -2,6 +2,7 @@
 
 import Section from "@/components/Section/Section";
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
+import SkillsIcon from "@/components/SkillsIcon/SkillsIcon";
 import NextJsIcon from "@/components/SvgIcons/NextJsIcon/NextJsIcon";
 import NodeJsIcon from "@/components/SvgIcons/NodeJsIcon/NodeJsIcon";
 import ReactIcon from "@/components/SvgIcons/ReactIcon/ReactIcon";
@@ -50,68 +51,20 @@ const Skills = () => {
         {/* Skills SVG Lists */}
         {/* First Row - 1 Icon */}
         <div className="flex justify-center">
-          <div
-            className={`skillsIcon ${
-              isVisible
-                ? "opacity-100 transition-opacity duration-200 "
-                : "opacity-0 transition-opacity"
-            }`}
-          >
-            <NextJsIcon fillColor={fillColor} />
-          </div>
+          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={NextJsIcon} transitionDuration="200" />
         </div>
 
         {/* Second Row - 3 Icons */}
         <div className="flex justify-center gap-x-2 md:gap-x-3 lg:gap-x-4">
-          <div
-            className={`skillsIcon ${
-              isVisible
-                ? "opacity-100 transition-opacity duration-500 "
-                : "opacity-0 transition-opacity"
-            }`}
-          >
-            <TypeScriptIcon fillColor={fillColor} />
-          </div>
-          <div
-            className={`skillsIcon ${
-              isVisible
-                ? "opacity-100 transition-opacity duration-1000 "
-                : "opacity-0 transition-opacity"
-            }`}
-          >
-            <TailwindIcon fillColor={fillColor} />
-          </div>
-          <div
-            className={`skillsIcon ${
-              isVisible
-                ? "opacity-100 transition-opacity duration-500 "
-                : "opacity-0 transition-opacity"
-            }`}
-          >
-            <ReactIcon fillColor={fillColor} />
-          </div>
+          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={TypeScriptIcon} transitionDuration="500" />
+          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={TailwindIcon} transitionDuration="1000" />
+          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={ReactIcon} transitionDuration="500" />
         </div>
 
         {/* Third Row - 2 Icons */}
         <div className="flex justify-center gap-x-2 md:gap-x-3 lg:gap-x-4">
-          <div
-            className={`skillsIcon ${
-              isVisible
-                ? "opacity-100 transition-opacity duration-1000 "
-                : "opacity-0 transition-opacity"
-            }`}
-          >
-            <WordPressIcon fillColor={fillColor} />
-          </div>
-          <div
-            className={`skillsIcon ${
-              isVisible
-                ? "opacity-100 transition-opacity duration-1000 "
-                : "opacity-0 transition-opacity"
-            }`}
-          >
-            <NodeJsIcon fillColor={fillColor} />
-          </div>
+          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={WordPressIcon} transitionDuration="1000" />
+          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={NodeJsIcon} transitionDuration="1000" />
         </div>
       </div>
     </Section>
