@@ -15,7 +15,7 @@ export default function ParagraphAnimation() {
   return (
     <motion.p
       ref={container}
-      className="flex flex-wrap text-tertiary-foreground text-md md:text-xl lg:text-3xl xl:text-4xl leading-8 md:leading-[48px] lg:leading-[64px] xl:leading-[72px]"
+      className="flex flex-wrap text-md leading-8 text-tertiary-foreground md:text-xl md:leading-[48px] lg:text-3xl lg:leading-[64px] xl:text-4xl xl:leading-[72px]"
       style={{ opacity }}
     >
       En tant que développeur web, je m&apos;efforce d&apos;intégrer les

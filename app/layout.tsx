@@ -50,7 +50,7 @@ export default function RootLayout({
         </head>
         <body className={roboto.className}>
           <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-            <div className=" flex flex-col h-full">
+            <div className=" flex h-full flex-col">
               <Header />
               <div>{children}</div>
               <Footer />

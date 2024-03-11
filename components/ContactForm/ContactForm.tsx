@@ -133,10 +133,10 @@ export default function ContactForm() {
         {/* If no formErrors and submission */}
         {formFeedback && (
           <p
-            className={`text-sm ml-3 ${
+            className={`ml-3 text-sm ${
               sendEmailState.success
-                ? "text-green-600 font-bold"
-                : "text-red-600 font-bold"
+                ? "font-bold text-green-600"
+                : "font-bold text-red-600"
             }`}
           >
             {formFeedback}

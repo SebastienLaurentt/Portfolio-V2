@@ -16,7 +16,7 @@ const Hero = () => {
       {/* Text Hero */}
       <div className="flex flex-col justify-center">
         <h1>Développeur Web</h1>
-        <span className="text-center xl:text-left text-lg lg:text-xl xl:text-2xl">
+        <span className="text-center text-lg lg:text-xl xl:text-left xl:text-2xl">
           Bienvenue sur mon portfolio !
         </span>
         <DownloadButton
@@ -32,7 +32,7 @@ const Hero = () => {
         <Image
           src={HeroImg}
           alt="Logo Galopins"
-          className="mt-16 md:mt-20 lg:mt-20 xl:mt-0 md:w-3/4 lg:w-2/3 xl:w-3/4 md:mx-auto xl:mr-0 "
+          className="mt-16 md:mx-auto md:mt-20 md:w-3/4 lg:mt-20 lg:w-2/3 xl:mr-0 xl:mt-0 xl:w-3/4 "
         />
       </div>
       <BackgroundBeams />
