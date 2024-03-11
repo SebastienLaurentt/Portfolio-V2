@@ -51,20 +51,20 @@ const Skills = () => {
         {/* Skills SVG Lists */}
         {/* First Row - 1 Icon */}
         <div className="flex justify-center">
-          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={NextJsIcon} transitionDuration="200" />
+          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={NextJsIcon} visibleClassname="duration-200" />
         </div>
 
         {/* Second Row - 3 Icons */}
         <div className="flex justify-center gap-x-2 md:gap-x-3 lg:gap-x-4">
-          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={TypeScriptIcon} transitionDuration="500" />
-          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={TailwindIcon} transitionDuration="1000" />
-          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={ReactIcon} transitionDuration="500" />
+          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={TypeScriptIcon} visibleClassname="duration-500" />
+          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={TailwindIcon} visibleClassname="duration-1000" />
+          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={ReactIcon} visibleClassname="duration-500" />
         </div>
 
         {/* Third Row - 2 Icons */}
         <div className="flex justify-center gap-x-2 md:gap-x-3 lg:gap-x-4">
-          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={WordPressIcon} transitionDuration="1000" />
-          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={NodeJsIcon} transitionDuration="1000" />
+          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={WordPressIcon} visibleClassname="duration-1000" />
+          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={NodeJsIcon} visibleClassname="duration-1000" />
         </div>
       </div>
     </Section>

@@ -1,26 +1,30 @@
-import React from 'react';
-
 interface SkillsIconProps {
   isVisible: boolean;
   fillColor: string;
   Icon: any;
-  transitionDuration: string;
+  visibleClassname: string;
 }
 
-const SkillsIcon = ({ isVisible, fillColor, Icon, transitionDuration }:SkillsIconProps) => {
-  const IconComponent = Icon; 
+const SkillsIcon = ({
+  isVisible,
+  fillColor,
+  Icon,
+  visibleClassname,
+}: SkillsIconProps) => {
+  const IconComponent = Icon;
+
 
   return (
     <div
       className={`skillsIcon ${
         isVisible
-          ? "opacity-100 transition-opacity duration-" + transitionDuration
+          ? `${visibleClassname} opacity-100 transition-opacity`
           : "opacity-0 transition-opacity"
       }`}
     >
       <IconComponent fillColor={fillColor} />
     </div>
   );
-}
+};
 
 export default SkillsIcon;
