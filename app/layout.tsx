@@ -10,9 +10,6 @@ export const metadata = {
   title: "Sébastien Laurent - Développeur Web",
   description:
     "Bienvenue sur mon portfolio ! Venez découvrir mon histoire et les derniers projets que j'ai réalisés.",
-  icons: {
-    icon: "/favicon.png",
-  },
 };
 
 const roboto = Roboto({
