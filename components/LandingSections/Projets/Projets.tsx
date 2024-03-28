@@ -7,6 +7,7 @@ import Galopins from "../../../public/images/Galopins.png";
 import Portfolio from "../../../public/images/Portfolio.png";
 import PortfolioLight from "../../../public/images/PortfolioLight.png";
 import Stash from "../../../public/images/Stash.png";
+import TechHaven from "../../../public/images/TechHaven.png";
 
 const Projets = () => {
   return (
@@ -61,12 +62,22 @@ const Projets = () => {
             classname="hidden dark:block"
           />
           <ProjectCard
+            src={TechHaven}
+            alt="Impression d'écran de la page d'accueil du Projet TechHaven"
+            rowReverse={false}
+            marginBottom={true}
+            projectTitle="Tech Haven"
+            projectDescription="Concept E-Commerce de vente de produits high-tech."
+            projectStack="Next.Js • PayloadCMS • Stripe"
+            githubHref="https://github.com/SebastienLaurentt/Tech-Haven"
+          />
+          <ProjectCard
             src={Codit}
             alt="Impression d'écran de la page d'accueil du Projet Codit"
-            rowReverse={false}
+            rowReverse={true}
             marginBottom={false}
             projectTitle="Codit"
-            projectDescription="Réseau social pour développeurs. Permet de partager les illustrations de ses projets tout en rendant disponibles les codes sources."
+            projectDescription="Réseau social pour développeurs. Permet de partager les illustrations de ses projets tout en rendant disponible les codes sources."
             projectStack="React • Symfony • Redux "
             siteHref="https://codit-codit.vercel.app/"
             githubHref="https://github.com/O-clock-Titanium/projet-codit-front"
