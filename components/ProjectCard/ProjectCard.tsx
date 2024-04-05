@@ -88,8 +88,8 @@ const ProjectCard = ({
         </div>
 
         {/* Project Image */}
-        <div className={`mx-auto mt-[20px]  md:mt-0 md:w-4/5 lg:w-3/5 xl:w-2/5 ${imgClassname} `}>
-          <Image src={src} alt={alt} className="rounded-lg" quality={100} />
+        <div className="mx-auto mt-[20px]  md:mt-0 md:w-4/5 lg:w-3/5 xl:w-2/5">
+          <Image src={src} alt={alt} className={`rounded-lg ${imgClassname} `} quality={100} />
         </div>
 
         {/* Project Links */}
