@@ -8,6 +8,7 @@ import Portfolio from "../../../public/images/Portfolio.png";
 import PortfolioLight from "../../../public/images/PortfolioLight.png";
 import Stash from "../../../public/images/Stash.png";
 import TechHaven from "../../../public/images/TechHaven.png";
+import Fintech from "../../../public/images/Fintech.png";
 
 const Projets = () => {
   return (
@@ -72,9 +73,19 @@ const Projets = () => {
             githubHref="https://github.com/SebastienLaurentt/Tech-Haven"
           />
           <ProjectCard
+            src={Fintech}
+            alt="Impression d'écran de la page d'accueil du Projet Fintech"
+            rowReverse={true}
+            marginBottom={true}
+            projectTitle="Fintech"
+            projectDescription="Concept d'application mobile de gestion de crypto-monnaies."
+            projectStack="React Native • Expo • Clerk"
+            githubHref="https://github.com/SebastienLaurentt/Fintech-ReactN"
+          />
+          <ProjectCard
             src={Codit}
             alt="Impression d'écran de la page d'accueil du Projet Codit"
-            rowReverse={true}
+            rowReverse={false}
             marginBottom={false}
             projectTitle="Codit"
             projectDescription="Réseau social pour développeurs. Permet de partager les illustrations de ses projets tout en rendant disponible les codes sources."
