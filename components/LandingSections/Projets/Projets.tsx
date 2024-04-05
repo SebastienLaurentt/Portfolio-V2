@@ -8,7 +8,7 @@ import Portfolio from "../../../public/images/Portfolio.png";
 import PortfolioLight from "../../../public/images/PortfolioLight.png";
 import Stash from "../../../public/images/Stash.png";
 import TechHaven from "../../../public/images/TechHaven.png";
-import Fintech from "../../../public/images/Fintech.png";
+import Fintech from "../../../public/images/Fintech2.png";
 
 const Projets = () => {
   return (
@@ -80,6 +80,7 @@ const Projets = () => {
             projectTitle="Fintech"
             projectDescription="Concept d'application mobile de gestion de crypto-monnaies."
             projectStack="React Native • Expo • Clerk"
+            imgClassname="w-4/5 xl:w-3/5 mx-auto"
             githubHref="https://github.com/SebastienLaurentt/Fintech-ReactN"
           />
           <ProjectCard
