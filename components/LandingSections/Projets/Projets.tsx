@@ -38,41 +38,7 @@ const Projets = () => {
           />
         </div>
         <div className="">
-          <ProjectCard
-            src={Portfolio}
-            alt="Impression d'écran de la page d'accueil de mon Portfolio"
-            rowReverse={true}
-            marginBottom={true}
-            projectDescription="Mon portfolio personnel."
-            projectTitle="Portfolio"
-            projectStack="Next.Js • TailwindCSS • TypeScript  "
-            siteHref="https://sebastienlaurent.fr/"
-            githubHref="https://github.com/SebastienLaurentt/Portfolio-V2"
-            classname="dark:hidden"
-          />
-          <ProjectCard
-            src={PortfolioLight}
-            alt="Impression d'écran de la page d'accueil de mon Portfolio"
-            rowReverse={true}
-            marginBottom={true}
-            projectDescription="Mon portfolio personnel."
-            projectTitle="Portfolio"
-            projectStack="Next.Js • TailwindCSS • TypeScript  "
-            siteHref="https://sebastienlaurent.fr/"
-            githubHref="https://github.com/SebastienLaurentt/Portfolio-V2"
-            classname="hidden dark:block"
-          />
-          <ProjectCard
-            src={TechHaven}
-            alt="Impression d'écran de la page d'accueil du Projet TechHaven"
-            rowReverse={false}
-            marginBottom={true}
-            projectTitle="Tech Haven"
-            projectDescription="Concept E-Commerce de vente de produits high-tech."
-            projectStack="Next.Js • PayloadCMS • Stripe"
-            githubHref="https://github.com/SebastienLaurentt/Tech-Haven"
-          />
-          <ProjectCard
+        <ProjectCard
             src={Fintech}
             alt="Impression d'écran de la page d'accueil du Projet Fintech"
             rowReverse={true}
@@ -84,9 +50,20 @@ const Projets = () => {
             githubHref="https://github.com/SebastienLaurentt/Fintech-ReactN"
           />
           <ProjectCard
+            src={TechHaven}
+            alt="Impression d'écran de la page d'accueil du Projet TechHaven"
+            rowReverse={false}
+            marginBottom={true}
+            projectTitle="Tech Haven"
+            projectDescription="Concept E-Commerce de vente de produits high-tech."
+            projectStack="Next.Js • PayloadCMS • Stripe"
+            githubHref="https://github.com/SebastienLaurentt/Tech-Haven"
+          />
+
+          <ProjectCard
             src={Codit}
             alt="Impression d'écran de la page d'accueil du Projet Codit"
-            rowReverse={false}
+            rowReverse={true}
             marginBottom={false}
             projectTitle="Codit"
             projectDescription="Réseau social pour développeurs. Permet de partager les illustrations de ses projets tout en rendant disponible les codes sources."
