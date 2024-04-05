@@ -8,7 +8,7 @@ import Portfolio from "../../../public/images/Portfolio.png";
 import PortfolioLight from "../../../public/images/PortfolioLight.png";
 import Stash from "../../../public/images/Stash.png";
 import TechHaven from "../../../public/images/TechHaven.png";
-import Fintech from "../../../public/images/Fintech2.png";
+import Fintech from "../../../public/images/Fintech.png";
 
 const Projets = () => {
   return (
