@@ -15,7 +15,7 @@ const Hero = () => {
     >
       {/* Text Hero */}
       <div className="flex flex-col justify-center">
-        <h1>Développeur Web</h1>
+        <h1>Développeurr Web</h1>
         <span className="text-center text-lg lg:text-xl xl:text-left xl:text-2xl">
           Bienvenue sur mon portfolio !
         </span>
