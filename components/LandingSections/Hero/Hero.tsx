@@ -9,24 +9,30 @@ const Hero = () => {
     <Section
       marginBottom={false}
       marginTop={false}
-      classname="min-h-screen my-16"
+      classname="min-h-screen p-0 flex flex-row justify-around uppercase"
     >
       {/* Text Hero */}
-      <div className="">
-        <h1>WEB DEVELOPPEUR </h1>
-        <span className="">
-          Bienvenue sur mon portfolio !
+      <div className="mb-16 mt-24 flex w-1/2 flex-col justify-end">
+        <div>
+          <h1 className="">
+            Web <br /> Developer{" "}
+          </h1>
+        </div>
+        <div className="mt-12">
+          <Image src={HeroImg} alt="Logo Galopins" className=" w-4/5" />
+        </div>
+      </div>
+
+      <div className="mb-16 flex w-1/2 flex-col justify-end text-right">
+        <span className="mb-4 text-2xl leading-8">
+          Des interfaces esthétiques sans impacter l expérience utilisateur{" "}
+        </span>
+        <span className="m-0 p-0 font-extrabold text-primary-foreground xl:text-11xl xl:leading-[96px]">
+          Sebastien <br /> Laurent{" "}
         </span>
       </div>
 
       {/* SVG Hero */}
-      {/* <div className="">
-        <Image
-          src={HeroImg}
-          alt="Logo Galopins"
-          className="mt-16 md:mx-auto md:mt-20 md:w-3/4 lg:mt-20 lg:w-2/3 xl:mr-0 xl:mt-0 xl:w-3/4 "
-        />
-      </div> */}
     </Section>
   );
 };

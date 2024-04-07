@@ -42,6 +42,8 @@ const config: Config = {
         "8xl": "80px",
         "9xl": "88px",
         "10xl": "96px",
+        "11xl": "112px",
+        "12xl": "128px",
       },
       colors: {
         border: "hsl(var(--border))",
