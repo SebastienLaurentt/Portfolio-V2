@@ -1,4 +1,5 @@
 import Section from "@/components/Section/Section";
+import { MoveDown } from "lucide-react";
 import {} from "next/font/google";
 import Image from "next/image";
 import HeroImg from "../../../public/images/HeroImg.svg";
@@ -9,26 +10,36 @@ const Hero = () => {
     <Section
       marginBottom={false}
       marginTop={false}
-      classname="min-h-screen p-0 flex flex-row justify-around uppercase"
+      classname="min-h-screen  flex flex-col xl:flex-row xl:justify-around uppercase"
     >
       {/* Text Hero */}
-      <div className="mb-16 mt-24 flex w-1/2 flex-col justify-end">
+      <div className="mt-28 w-full xl:mb-16 xl:flex xl:w-1/2 xl:flex-col xl:justify-end">
         <div>
-          <h1 className="">
+          <h1 className="mb-2">
             Web <br /> Developer{" "}
           </h1>
         </div>
+        <span className=" block w-[280px] text-lg leading-6 xl:hidden">
+          Des interfaces esthetiques sans impacter l&apos;experience utilisateur{" "}
+        </span>
         <div className="mt-12">
-          <Image src={HeroImg} alt="Logo Galopins" className=" w-4/5" />
+          <Image
+            src={HeroImg}
+            alt="Logo Galopins"
+            className="pr-2 xl:w-4/5 xl:pr-0"
+          />
         </div>
       </div>
 
-      <div className="mb-16 flex w-1/2 flex-col justify-end text-right">
-        <span className="mb-4 text-2xl leading-8">
-          Des interfaces esthétiques sans impacter l expérience utilisateur{" "}
+      <div className=" mt-12 flex items-center  xl:mb-16 xl:mt-0 xl:w-1/2 xl:flex-col xl:items-end xl:justify-end xl:text-right">
+        <span className="hidden xl:mb-4 xl:block xl:max-w-[400px] xl:text-2xl xl:leading-8">
+          Des interfaces esthetiques sans impacter l&apos;experience utilisateur{" "}
         </span>
-        <span className="m-0 p-0 font-extrabold text-primary-foreground xl:text-11xl xl:leading-[96px]">
+        <span className="  text-6xl font-extrabold leading-[56px] text-primary-foreground  xl:text-12xl xl:leading-[100px]">
           Sebastien <br /> Laurent{" "}
+        </span>
+        <span>
+          <MoveDown className="ml-16 xl:hidden" size={80} color="white" />
         </span>
       </div>
 
