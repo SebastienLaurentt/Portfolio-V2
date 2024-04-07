@@ -40,6 +40,7 @@ const config: Config = {
         "6xl": "64px",
         "7xl": "72px",
         "8xl": "80px",
+        
       },
       colors: {
         border: "hsl(var(--border))",
