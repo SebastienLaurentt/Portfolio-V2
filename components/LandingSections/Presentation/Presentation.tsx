@@ -5,7 +5,7 @@ import SectionHeader from "@/components/SectionHeader/SectionHeader";
 const Presentation = () => {
   return (
     <Section marginBottom={true} marginTop={true}>
-      <SectionHeader title="De la recherche au développement" />
+      <SectionHeader title="Histoire" />
       <div className=" text-center md:px-2">
         <ParagraphAnimaton />
       </div>

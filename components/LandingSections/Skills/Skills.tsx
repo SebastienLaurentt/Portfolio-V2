@@ -43,7 +43,7 @@ const Skills = () => {
 
   return (
     <Section marginBottom={true} marginTop={true}>
-      <SectionHeader title="Mes compétences techniques" />
+      <SectionHeader title="Competences" />
       <div
         ref={sectionRef}
         className="flex flex-col  gap-y-2 md:gap-y-3 lg:gap-y-4 xl:gap-x-4"
