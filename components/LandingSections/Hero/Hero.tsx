@@ -19,27 +19,27 @@ const Hero = () => {
             Web <br /> Developer{" "}
           </h1>
         </div>
-        <span className=" block w-[280px] text-lg leading-6 xl:hidden">
+        <span className=" block w-[280px] text-lg leading-6 md:w-[320px] md:text-xl md:leading-7 xl:hidden">
           Des interfaces esthetiques sans impacter l&apos;experience utilisateur{" "}
         </span>
         <div className="mt-12">
           <Image
             src={HeroImg}
             alt="Logo Galopins"
-            className="pr-2 xl:w-4/5 xl:pr-0"
+            className="pr-2 md:w-[520px] xl:w-4/5 xl:pr-0"
           />
         </div>
       </div>
 
-      <div className=" mt-12 flex items-center  xl:mb-16 xl:mt-0 xl:w-1/2 xl:flex-col xl:items-end xl:justify-end xl:text-right">
+      <div className=" mt-12 flex items-center justify-between  xl:mb-16 xl:mt-0 xl:w-1/2 xl:flex-col xl:items-end xl:justify-end xl:text-right">
         <span className="hidden xl:mb-4 xl:block xl:max-w-[400px] xl:text-2xl xl:leading-8">
           Des interfaces esthetiques sans impacter l&apos;experience utilisateur{" "}
         </span>
-        <span className="  text-6xl font-extrabold leading-[56px] text-primary-foreground  xl:text-12xl xl:leading-[100px]">
+        <span className="  text-6xl font-extrabold leading-[56px] text-primary-foreground md:text-8xl md:leading-[64px]  xl:text-12xl xl:leading-[100px]">
           Sebastien <br /> Laurent{" "}
         </span>
         <span>
-          <MoveDown className="ml-16 xl:hidden" size={80} color="white" />
+          <MoveDown className=" xl:hidden" size={80} color="white" />
         </span>
       </div>
 
