@@ -13,20 +13,20 @@ const Hero = () => {
       classname="min-h-screen  flex flex-col xl:flex-row xl:justify-around uppercase"
     >
       {/* Text Hero */}
-      <div className="mt-28 w-full xl:mb-16 xl:flex xl:w-1/2 xl:flex-col xl:justify-end">
+      <div className="mt-28 w-full lg:mt-40 xl:mb-16 xl:flex xl:w-1/2 xl:flex-col xl:justify-end">
         <div>
           <h1 className="mb-2">
             Web <br /> Developer{" "}
           </h1>
         </div>
-        <span className=" block w-[280px] text-lg leading-6 md:w-[320px] md:text-xl md:leading-7 xl:hidden">
+        <span className=" block w-[280px] text-lg leading-6 md:w-[320px] lg:w-[460px] md:text-xl lg:text-3xl md:leading-7 lg:leading-9 xl:hidden">
           Des interfaces esthetiques sans impacter l&apos;experience utilisateur{" "}
         </span>
         <div className="mt-12">
           <Image
             src={HeroImg}
             alt="Logo Galopins"
-            className="pr-2 md:w-[520px] xl:w-4/5 xl:pr-0"
+            className="pr-2 md:w-[520px] lg:w-[700px] xl:w-4/5 xl:pr-0"
           />
         </div>
       </div>
@@ -35,11 +35,14 @@ const Hero = () => {
         <span className="hidden xl:mb-4 xl:block xl:max-w-[400px] xl:text-2xl xl:leading-8">
           Des interfaces esthetiques sans impacter l&apos;experience utilisateur{" "}
         </span>
-        <span className="  text-6xl font-extrabold leading-[56px] text-primary-foreground md:text-8xl md:leading-[64px]  xl:text-12xl xl:leading-[100px]">
+        <span className="  text-6xl font-extrabold leading-[56px] text-primary-foreground md:text-8xl md:leading-[64px] lg:text-10xl lg:leading-[80px]  xl:text-12xl xl:leading-[100px]">
           Sebastien <br /> Laurent{" "}
         </span>
         <span>
-          <MoveDown className=" xl:hidden" size={80} color="white" />
+          <MoveDown
+            className=" size-20 md:size-24 lg:size-28 xl:hidden"
+            color="white"
+          />
         </span>
       </div>
 
