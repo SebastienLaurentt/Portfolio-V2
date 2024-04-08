@@ -45,7 +45,7 @@ const Projets = () => {
             marginBottom={true}
             projectTitle="Fintech"
             projectDescription="Concept d'application mobile de gestion de crypto-monnaies."
-            projectStack="React Native • Expo • Clerk"
+            projectStack=" Expo • React Native • Clerk"
             imgClassname="w-4/5 xl:w-3/5 mx-auto"
             githubHref="https://github.com/SebastienLaurentt/Fintech-ReactN"
           />
@@ -66,7 +66,7 @@ const Projets = () => {
             rowReverse={true}
             marginBottom={false}
             projectTitle="Codit"
-            projectDescription="Réseau social pour développeurs. Permet de partager les illustrations de ses projets tout en rendant disponible les codes sources."
+            projectDescription="Réseau social pour développeurs. Partager les illustrations de ses projets avec le code source."
             projectStack="React • Symfony • Redux "
             siteHref="https://codit-codit.vercel.app/"
             githubHref="https://github.com/O-clock-Titanium/projet-codit-front"
