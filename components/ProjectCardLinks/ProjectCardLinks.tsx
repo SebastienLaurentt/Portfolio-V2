@@ -20,9 +20,13 @@ const ProjectCardLinks = ({
       {/* Website Link  */}
       {siteHref && (
         <Button variant="links" size="links">
-          <Link href={siteHref} target="_blank" className="flex gap-x-1">
-            <Globe size={16} />
-            <span>Site Web</span>
+          <Link
+            href={siteHref}
+            target="_blank"
+            className="flex flex-row items-center gap-x-1"
+          >
+            <Globe size={16} className="" />
+            <span className="mt-[2.25px]">Site Web</span>
           </Link>
         </Button>
       )}
@@ -30,9 +34,9 @@ const ProjectCardLinks = ({
       {/* GitHub profil Link  */}
       {githubHref && (
         <Button variant="links" size="links">
-          <Link href={githubHref} target="_blank" className=" flex gap-x-1">
+          <Link href={githubHref} target="_blank" className=" flex flex-row items-center gap-x-1">
             <Github size={16} />
-            <span>GitHub</span>
+            <span className="mt-[2.25px] ">GitHub</span>
           </Link>
         </Button>
       )}
