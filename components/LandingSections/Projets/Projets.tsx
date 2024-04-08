@@ -13,7 +13,7 @@ import Fintech from "../../../public/images/Fintech.png";
 const Projets = () => {
   return (
     <Section marginBottom={true} marginTop={true}>
-      <SectionHeader number={2} title="Realisations" />
+      <SectionHeader title="Realisations" />
       <div className="flex flex-col ">
         <div className="">
           <ProjectCard

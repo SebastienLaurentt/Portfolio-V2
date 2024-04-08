@@ -8,7 +8,7 @@ const CV = `/pdf/CV.pdf`;
 const Hero = () => {
   return (
     <Section
-      marginBottom={false}
+      marginBottom={true}
       marginTop={false}
       classname="min-h-screen flex flex-col xl:flex-row xl:justify-around uppercase"
     >
