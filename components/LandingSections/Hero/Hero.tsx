@@ -10,16 +10,16 @@ const Hero = () => {
     <Section
       marginBottom={false}
       marginTop={false}
-      classname="min-h-screen  flex flex-col xl:flex-row xl:justify-around uppercase"
+      classname="min-h-screen flex flex-col xl:flex-row xl:justify-around uppercase"
     >
       {/* Text Hero */}
-      <div className="mt-28 w-full lg:mt-40 xl:mb-16 xl:flex xl:w-1/2 xl:flex-col xl:justify-end">
+      <div className="mt-28 w-full lg:mt-40 xl:mb-16 xl:mt-28 xl:flex xl:w-1/2 xl:flex-col xl:justify-end">
         <div>
           <h1 className="mb-2">
             Web <br /> Developer{" "}
           </h1>
         </div>
-        <span className=" block w-[280px] text-lg leading-6 md:w-[320px] lg:w-[460px] md:text-xl lg:text-3xl md:leading-7 lg:leading-9 xl:hidden">
+        <span className=" block w-[280px] text-lg leading-6 md:w-[320px] md:text-xl md:leading-7 lg:w-[460px] lg:text-3xl lg:leading-9 xl:hidden">
           Des interfaces esthetiques sans impacter l&apos;experience utilisateur{" "}
         </span>
         <div className="mt-12">
