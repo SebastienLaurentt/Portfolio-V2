@@ -74,9 +74,11 @@ const ProjectCard = ({
       >
         {/* Project text content */}
         <div className="mx-auto w-[320px] text-center md:w-[340px] md:text-left  xl:w-[380px]">
-          <h3 className="mb-4">{projectTitle}</h3>
-          <p className="mb-2 md:mx-0 md:mb-2">{projectDescription}</p>
-          <p className="font-semibold text-secondary md:mb-4 md:text-sm lg:text-md">
+          <h3 className="mb-4 inline-block xl:border-b-4 xl:border-white">
+            {projectTitle}
+          </h3>
+          <p className="mb-2 md:mx-0 md:mb-2 xl:text-xl">{projectDescription}</p>
+          <p className="font-semibold text-secondary md:mb-4 md:text-sm lg:text-md xl:text-lg">
             {" "}
             {projectStack}{" "}
           </p>
@@ -89,7 +91,12 @@ const ProjectCard = ({
 
         {/* Project Image */}
         <div className="mx-auto mt-[20px]  md:mt-0 md:w-4/5 lg:w-3/5 xl:w-2/5">
-          <Image src={src} alt={alt} className={`rounded-lg ${imgClassname} `} quality={100} />
+          <Image
+            src={src}
+            alt={alt}
+            className={`rounded-lg ${imgClassname} `}
+            quality={100}
+          />
         </div>
 
         {/* Project Links */}
