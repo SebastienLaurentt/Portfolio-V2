@@ -36,7 +36,7 @@ const Projets = () => {
           <ProjectCard
             src={Galopins}
             alt="Impression d'écran de la page d'accueil du Projet Galopins"
-            rowReverse={false}
+            rowReverse={true}
             marginBottom={true}
             projectTitle="Galopins"
             projectDescription="Club de randonnée. Présentation du club, de ses activités et des photos réalisées."
@@ -49,7 +49,7 @@ const Projets = () => {
           <ProjectCard
             src={Fintech}
             alt="Impression d'écran de la page d'accueil du Projet Fintech"
-            rowReverse={true}
+            rowReverse={false}
             marginBottom={true}
             projectTitle="Fintech"
             projectDescription="Concept d'application mobile de gestion de crypto-monnaies."
@@ -60,7 +60,7 @@ const Projets = () => {
           <ProjectCard
             src={TechHaven}
             alt="Impression d'écran de la page d'accueil du Projet TechHaven"
-            rowReverse={false}
+            rowReverse={true}
             marginBottom={true}
             projectTitle="Tech Haven"
             projectDescription="Concept E-Commerce de vente de produits high-tech."
@@ -71,7 +71,7 @@ const Projets = () => {
           <ProjectCard
             src={Codit}
             alt="Impression d'écran de la page d'accueil du Projet Codit"
-            rowReverse={true}
+            rowReverse={false}
             marginBottom={false}
             projectTitle="Codit"
             projectDescription="Réseau social pour développeurs. Permet de partager les illustrations de ses projets tout en rendant disponible les codes sources."
