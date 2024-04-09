@@ -3,12 +3,11 @@ import Section from "@/components/Section/Section";
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
 
 import Codit from "../../../public/images/Codit.png";
+import Fintech from "../../../public/images/Fintech.png";
 import Galopins from "../../../public/images/Galopins.png";
-import Portfolio from "../../../public/images/Portfolio.png";
-import PortfolioLight from "../../../public/images/PortfolioLight.png";
 import Stash from "../../../public/images/Stash.png";
 import TechHaven from "../../../public/images/TechHaven.png";
-import Fintech from "../../../public/images/Fintech.png";
+import Sandamal from "../../../public/images/Sandamal.png";
 
 const Projets = () => {
   return (
@@ -26,6 +25,15 @@ const Projets = () => {
             projectStack="WordPress • Figma • Elementor  "
           />
           <ProjectCard
+            src={Sandamal}
+            alt="Impression d'écran de la page d'accueil du Projet Sandamal"
+            rowReverse={false}
+            marginBottom={true}
+            projectTitle="Sandamal"
+            projectDescription="Site d'art professionel. Présentation de l'artiste, de ses oeuvres et de ses expositions."
+            projectStack="Next.Js • TypeScript • Sanity"
+          />
+          <ProjectCard
             src={Galopins}
             alt="Impression d'écran de la page d'accueil du Projet Galopins"
             rowReverse={false}
@@ -38,7 +46,7 @@ const Projets = () => {
           />
         </div>
         <div className="">
-        <ProjectCard
+          <ProjectCard
             src={Fintech}
             alt="Impression d'écran de la page d'accueil du Projet Fintech"
             rowReverse={true}
