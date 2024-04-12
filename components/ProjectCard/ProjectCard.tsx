@@ -80,7 +80,7 @@ const ProjectCard = ({
           <p className="mb-2 md:mx-0 md:mb-2 xl:text-2xl">
             {projectDescription}
           </p>
-          <p className="font-semibold text-secondary md:mb-2 md:text-sm lg:text-md xl:text-lg">
+          <p className="font-medium text-secondary md:mb-2 md:text-sm lg:text-md xl:text-lg">
             {" "}
             {projectStack}{" "}
           </p>
