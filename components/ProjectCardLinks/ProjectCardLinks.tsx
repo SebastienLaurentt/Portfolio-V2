@@ -15,7 +15,7 @@ const ProjectCardLinks = ({
 }: ProjectCardLinksProps) => {
   return (
     <div
-      className={`${classname} flex flex-row gap-x-4 text-primary-foreground`}
+      className={`${classname} flex flex-row gap-x-2 text-primary-foreground`}
     >
       {/* Website Link  */}
       {siteHref && (
