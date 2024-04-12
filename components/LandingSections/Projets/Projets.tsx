@@ -32,6 +32,7 @@ const Projets = () => {
             projectTitle="Sandamal"
             projectDescription="Site d'art professionel. Présentation de l'artiste, de ses oeuvres et de ses expositions."
             projectStack="Next.Js • TypeScript • Sanity"
+            githubHref="https://github.com/SebastienLaurentt/Sandamal"
           />
           <ProjectCard
             src={Galopins}
