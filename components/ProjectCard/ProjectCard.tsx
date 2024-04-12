@@ -73,11 +73,11 @@ const ProjectCard = ({
         className={`md:flex md:flex-row ${isRowReverse} w-full md:items-center md:justify-center  md:gap-x-12 lg:gap-x-16 xl:gap-x-4`}
       >
         {/* Project text content */}
-        <div className="mx-auto w-[320px] text-center md:w-[340px] md:text-left  xl:w-[380px]">
-          <h3 className="mb-4 inline-block border-black dark:border-white xl:border-b-4">
+        <div className="mx-auto w-[320px] text-center md:w-[340px] md:text-left  xl:w-[440px]">
+          <h3 className="mb-4 inline-block border-black dark:border-white md:border-b-4">
             {projectTitle}
           </h3>
-          <p className="mb-2 md:mx-0 md:mb-2 xl:text-2xl">
+          <p className="mb-2 md:mx-0 md:mb-2 lg:text-xl lg:leading-7 xl:text-2xl xl:leading-8">
             {projectDescription}
           </p>
           <p className="font-medium text-secondary md:mb-2 md:text-sm lg:text-md xl:text-lg">
