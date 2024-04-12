@@ -74,10 +74,12 @@ const ProjectCard = ({
       >
         {/* Project text content */}
         <div className="mx-auto w-[320px] text-center md:w-[340px] md:text-left  xl:w-[380px]">
-          <h3 className="mb-4 inline-block xl:border-b-4 xl:border-white">
+          <h3 className="mb-4 inline-block border-black dark:border-white xl:border-b-4">
             {projectTitle}
           </h3>
-          <p className="mb-2 md:mx-0 md:mb-2 xl:text-xl">{projectDescription}</p>
+          <p className="mb-2 md:mx-0 md:mb-2 xl:text-xl">
+            {projectDescription}
+          </p>
           <p className="font-semibold text-secondary md:mb-4 md:text-sm lg:text-md xl:text-lg">
             {" "}
             {projectStack}{" "}
