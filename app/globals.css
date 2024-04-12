@@ -6,8 +6,8 @@
   :root {
     /* Off White */
     --background: 50 12% 90%;
-    /* Warm Grey */
-    --foreground: 51 3% 57%;
+    /* Dark */
+    --foreground: 0 0% 3%;
 
     --card: 50 12% 90%;
     --card-foreground: 0 0% 3%;
