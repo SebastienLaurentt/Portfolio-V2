@@ -10,7 +10,7 @@ const Hero = () => {
     <Section
       marginBottom={true}
       marginTop={false}
-      classname="min-h-screen flex flex-col xl:flex-row xl:justify-around uppercase"
+      classname="min-h-screen  flex flex-col xl:flex-row xl:justify-around uppercase"
     >
       {/* Text Hero */}
       <div className="mt-28 w-full lg:mt-40 xl:mb-16 xl:mt-28 xl:flex xl:w-1/2 xl:flex-col xl:justify-end">
@@ -22,7 +22,7 @@ const Hero = () => {
         <span className=" block w-[280px] text-lg leading-6 md:w-[320px] md:text-xl md:leading-7 lg:w-[460px] lg:text-3xl lg:leading-9 xl:hidden">
           Des interfaces esthetiques sans impacter l&apos;experience utilisateur{" "}
         </span>
-        <div className="mt-12">
+        <div className="mt-12 xl:mt-4 2xl:mt-12">
           <Image
             src={HeroImg}
             alt="Logo Galopins"
