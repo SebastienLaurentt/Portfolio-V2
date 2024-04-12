@@ -51,20 +51,20 @@ const Skills = () => {
         {/* Skills SVG Lists */}
         {/* First Row - 1 Icon */}
         <div className="flex justify-center">
-          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={NextJsIcon} visibleClassname="duration-200" />
+          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={NextJsIcon} visibleClassname="duration-200" skillName="Next Js" />
         </div>
 
         {/* Second Row - 3 Icons */}
         <div className="flex justify-center gap-x-2 md:gap-x-3 lg:gap-x-4">
-          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={TypeScriptIcon} visibleClassname="duration-500" />
-          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={TailwindIcon} visibleClassname="duration-1000" />
-          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={ReactIcon} visibleClassname="duration-500" />
+          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={TypeScriptIcon} visibleClassname="duration-500" skillName="TypeScript" />
+          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={TailwindIcon} visibleClassname="duration-1000" skillName="Tailwind" />
+          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={ReactIcon} visibleClassname="duration-500" skillName="React" />
         </div>
 
         {/* Third Row - 2 Icons */}
         <div className="flex justify-center gap-x-2 md:gap-x-3 lg:gap-x-4">
-          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={WordPressIcon} visibleClassname="duration-1000" />
-          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={NodeJsIcon} visibleClassname="duration-1000" />
+          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={WordPressIcon} visibleClassname="duration-1000" skillName="WordPress" />
+          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={NodeJsIcon} visibleClassname="duration-1000" skillName="Node Js" />
         </div>
       </div>
     </Section>

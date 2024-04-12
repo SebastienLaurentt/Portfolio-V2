@@ -3,6 +3,7 @@ interface SkillsIconProps {
   fillColor: string;
   Icon: any;
   visibleClassname: string;
+  skillName: string;
 }
 
 const SkillsIcon = ({
@@ -10,6 +11,7 @@ const SkillsIcon = ({
   fillColor,
   Icon,
   visibleClassname,
+  skillName,
 }: SkillsIconProps) => {
   const IconComponent = Icon;
 
@@ -23,6 +25,7 @@ const SkillsIcon = ({
       }`}
     >
       <IconComponent fillColor={fillColor} />
+      <span className="text-xs md:text-sm xl:text-md leading-[8px] md:leading-3 xl:leading-4">{skillName}</span>
     </div>
   );
 };
