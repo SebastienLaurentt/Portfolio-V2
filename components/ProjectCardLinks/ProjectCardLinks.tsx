@@ -25,7 +25,7 @@ const ProjectCardLinks = ({
             target="_blank"
             className="flex flex-row items-center gap-x-1"
           >
-            <Globe size={16} className="" />
+            <Globe  className="w-4 lg:w-5" />
             <span className="mt-[3px]">Site Web</span>
           </Link>
         </Button>
@@ -35,7 +35,7 @@ const ProjectCardLinks = ({
       {githubHref && (
         <Button variant="links" size="links">
           <Link href={githubHref} target="_blank" className=" flex flex-row items-center gap-x-1">
-            <Github size={16} />
+            <Github className="w-4 lg:w-5" />
             <span className="mt-[3px] ">GitHub</span>
           </Link>
         </Button>
