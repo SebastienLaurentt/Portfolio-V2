@@ -40,8 +40,8 @@ const Hero = () => {
         </span>
         <span>
           <MoveDown
-            className=" size-20 md:size-24 lg:size-28 xl:hidden"
-            color="white"
+            className="dark:text-white size-24 md:size-28 lg:size-32 xl:hidden"
+  
           />
         </span>
       </div>
