@@ -77,10 +77,10 @@ const ProjectCard = ({
           <h3 className="mb-4 inline-block border-black dark:border-white xl:border-b-4">
             {projectTitle}
           </h3>
-          <p className="mb-2 md:mx-0 md:mb-2 xl:text-xl">
+          <p className="mb-2 md:mx-0 md:mb-2 xl:text-2xl">
             {projectDescription}
           </p>
-          <p className="font-semibold text-secondary md:mb-4 md:text-sm lg:text-md xl:text-lg">
+          <p className="font-semibold text-secondary md:mb-2 md:text-sm lg:text-md xl:text-lg">
             {" "}
             {projectStack}{" "}
           </p>
