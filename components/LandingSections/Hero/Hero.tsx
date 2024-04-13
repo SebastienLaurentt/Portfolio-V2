@@ -3,7 +3,6 @@ import { MoveDown } from "lucide-react";
 import {} from "next/font/google";
 import Image from "next/image";
 import HeroImg from "../../../public/images/HeroImg.svg";
-const CV = `/pdf/CV.pdf`;
 
 const Hero = () => {
   return (
@@ -39,10 +38,7 @@ const Hero = () => {
           Sebastien <br /> Laurent{" "}
         </span>
         <span>
-          <MoveDown
-            className="dark:text-white size-24 md:size-28 lg:size-32 xl:hidden"
-  
-          />
+          <MoveDown className="size-24 dark:text-white md:size-28 lg:size-32 xl:hidden" />
         </span>
       </div>
 
