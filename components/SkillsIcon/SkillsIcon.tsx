@@ -15,7 +15,6 @@ const SkillsIcon = ({
 }: SkillsIconProps) => {
   const IconComponent = Icon;
 
-
   return (
     <div
       className={`skillsIcon ${
@@ -25,7 +24,9 @@ const SkillsIcon = ({
       }`}
     >
       <IconComponent fillColor={fillColor} />
-      <span className="text-xs md:text-sm xl:text-md leading-[8px] md:leading-3 xl:leading-4">{skillName}</span>
+      <span className="text-xs leading-[8px] md:text-sm md:leading-3  xl:text-md xl:leading-4">
+        {skillName}
+      </span>
     </div>
   );
 };

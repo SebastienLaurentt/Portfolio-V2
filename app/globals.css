@@ -127,6 +127,6 @@
   }
 
   .skillsIcon {
-    @apply border rounded-xl w-24 md:w-36 lg:w-48 h-16 md:h-24 lg:h-32 flex flex-col justify-center items-center gap-y-2 md:gap-y-3 xl:gap-y-4;
+    @apply border rounded-xl w-24 md:w-36 lg:w-48 h-16 md:h-24 lg:h-32 flex flex-col justify-center items-center gap-y-2 md:gap-y-3 xl:gap-y-4 md:hover:border-black dark:md:hover:border-white;
   }
 }
