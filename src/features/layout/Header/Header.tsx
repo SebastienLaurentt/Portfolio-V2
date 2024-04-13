@@ -2,6 +2,7 @@
 import { Bebas_Neue } from "next/font/google";
 import { useEffect, useState } from "react";
 import { ThemeToggle } from "../../../theme/ThemeToggle";
+import { gsap } from 'gsap';
 
 const Bebas = Bebas_Neue({
   weight: "400",
@@ -30,8 +31,17 @@ export function Header() {
     }
   }, [prevScrollPos, visible]);
 
+  useEffect(() => {
+    // Animation pour la fleche
+    gsap.fromTo('#header', { opacity: 0 }, { opacity: 1, duration: 1, delay:1.5 });
+
+    
+    
+  }, []); // Déclencher l'effet une seule fois au montage du composant
+
+
   return (
-    <header
+    <header id="header"
       className={`fixed top-0 left-0 w-full z-20 bg-background 2xl:bg-transparent transition-transform duration-700 ${
         visible ? "" : "-translate-y-full"
       }`}

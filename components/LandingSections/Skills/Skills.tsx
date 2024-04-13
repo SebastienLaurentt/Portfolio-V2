@@ -43,7 +43,7 @@ const Skills = () => {
 
   return (
     <Section marginBottom={true} marginTop={true}>
-      <SectionHeader title="Mes compétences techniques" />
+      <SectionHeader title="Competences" />
       <div
         ref={sectionRef}
         className="flex flex-col  gap-y-2 md:gap-y-3 lg:gap-y-4 xl:gap-x-4"
@@ -51,20 +51,62 @@ const Skills = () => {
         {/* Skills SVG Lists */}
         {/* First Row - 1 Icon */}
         <div className="flex justify-center">
-          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={NextJsIcon} visibleClassname="duration-200" />
+          <SkillsIcon
+            isVisible={isVisible}
+            fillColor={fillColor}
+            hoverFillColor="#68a063"
+            Icon={NodeJsIcon}
+            visibleClassname="duration-200"
+            skillName="Node Js"
+          />
         </div>
 
         {/* Second Row - 3 Icons */}
         <div className="flex justify-center gap-x-2 md:gap-x-3 lg:gap-x-4">
-          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={TypeScriptIcon} visibleClassname="duration-500" />
-          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={TailwindIcon} visibleClassname="duration-1000" />
-          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={ReactIcon} visibleClassname="duration-500" />
+          <SkillsIcon
+            isVisible={isVisible}
+            fillColor={fillColor}
+            hoverFillColor="#06b6d4"
+            Icon={TailwindIcon}
+            visibleClassname="duration-500"
+            skillName="Tailwind"
+          />
+          <SkillsIcon
+            isVisible={isVisible}
+            fillColor={fillColor}
+            hoverFillColor="#358ef1"
+            Icon={TypeScriptIcon}
+            visibleClassname="duration-1000"
+            skillName="TypeScript"
+          />
+          <SkillsIcon
+            isVisible={isVisible}
+            fillColor={fillColor}
+            hoverFillColor="#06b6d4"
+            Icon={ReactIcon}
+            visibleClassname="duration-500"
+            skillName="React"
+          />
         </div>
 
         {/* Third Row - 2 Icons */}
         <div className="flex justify-center gap-x-2 md:gap-x-3 lg:gap-x-4">
-          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={WordPressIcon} visibleClassname="duration-1000" />
-          <SkillsIcon isVisible={isVisible} fillColor={fillColor} Icon={NodeJsIcon} visibleClassname="duration-1000" />
+          <SkillsIcon
+            isVisible={isVisible}
+            fillColor={fillColor}
+            hoverFillColor="#6B7280"
+            Icon={WordPressIcon}
+            visibleClassname="duration-1000"
+            skillName="WordPress"
+          />
+          <SkillsIcon
+            isVisible={isVisible}
+            fillColor={fillColor}
+            hoverFillColor="#6B7280"
+            Icon={NextJsIcon}
+            visibleClassname="duration-1000"
+            skillName="Next Js"
+          />
         </div>
       </div>
     </Section>

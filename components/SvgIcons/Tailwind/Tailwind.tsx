@@ -5,7 +5,7 @@ interface TailwindIconProps {
 const TailwindIcon = ({ fillColor }: TailwindIconProps) => {
   return (
     <svg
-      style={{ width: "auto", height: "40%" }}
+      style={{ width: "auto", height: "50%" }}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 256 153.6"
     >

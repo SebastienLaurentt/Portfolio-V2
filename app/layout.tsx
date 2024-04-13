@@ -1,6 +1,6 @@
 import ScrollToTopButton from "@/components/Button/DownloadButton/ScrollToTopButton/ScrollToTopButton";
 import { Footer } from "@/src/features/layout/Footer/Footer";
-import { Roboto } from "next/font/google";
+import { Bebas_Neue } from "next/font/google";
 import { Header } from "../src/features/layout/Header/Header";
 import { ThemeProvider } from "../src/theme/ThemeProvider";
 import "./globals.css";
@@ -11,9 +11,9 @@ export const metadata = {
     "Bienvenue sur mon portfolio ! Venez découvrir mon histoire et les derniers projets que j'ai réalisés.",
 };
 
-const roboto = Roboto({
-  weight: "400", // if single weight, otherwise you use array like [400, 500, 700],
-  style: "normal", // if single style, otherwise you use array like ['normal', 'italic']
+const Bebas = Bebas_Neue({
+  weight: "400",
+  style: "normal",
   subsets: ["latin"],
 });
 
@@ -48,7 +48,7 @@ export default function RootLayout({
           <meta name="msapplication-TileColor" content="#000000" />
           <meta name="theme-color" content="#ffffff" />
         </head>
-        <body className={roboto.className}>
+        <body className={Bebas.className}>
           <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
             <div className=" flex h-full flex-col">
               <Header />

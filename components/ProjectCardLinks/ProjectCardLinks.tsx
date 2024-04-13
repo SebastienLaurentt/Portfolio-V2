@@ -15,14 +15,18 @@ const ProjectCardLinks = ({
 }: ProjectCardLinksProps) => {
   return (
     <div
-      className={`${classname} flex flex-row gap-x-4 text-primary-foreground`}
+      className={`${classname} flex flex-row gap-x-2 text-primary-foreground`}
     >
       {/* Website Link  */}
       {siteHref && (
         <Button variant="links" size="links">
-          <Link href={siteHref} target="_blank" className="flex gap-x-1">
-            <Globe size={16} />
-            <span>Site Web</span>
+          <Link
+            href={siteHref}
+            target="_blank"
+            className="flex flex-row items-center gap-x-1"
+          >
+            <Globe  className="w-4 lg:w-5" />
+            <span className="mt-[3px]">Site Web</span>
           </Link>
         </Button>
       )}
@@ -30,9 +34,9 @@ const ProjectCardLinks = ({
       {/* GitHub profil Link  */}
       {githubHref && (
         <Button variant="links" size="links">
-          <Link href={githubHref} target="_blank" className=" flex gap-x-1">
-            <Github size={16} />
-            <span>GitHub</span>
+          <Link href={githubHref} target="_blank" className=" flex flex-row items-center gap-x-1">
+            <Github className="w-4 lg:w-5" />
+            <span className="mt-[3px] ">GitHub</span>
           </Link>
         </Button>
       )}

@@ -88,7 +88,7 @@ export default function ContactForm() {
       <div className="relative">
         <Input
           type="text"
-          placeholder="Votre Nom"
+          placeholder="Nom"
           id="name"
           name="name"
           value={formData.name}
@@ -101,7 +101,7 @@ export default function ContactForm() {
       <div className="relative">
         <Input
           type="email"
-          placeholder="Votre Email"
+          placeholder="Email"
           id="email"
           name="email"
           value={formData.email}
@@ -113,7 +113,7 @@ export default function ContactForm() {
 
       <div className="relative">
         <Textarea
-          placeholder="Votre Message"
+          placeholder="Message"
           id="message"
           name="message"
           value={formData.message}
