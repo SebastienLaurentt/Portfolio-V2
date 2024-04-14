@@ -65,7 +65,7 @@ const ProjectCard = ({
 
   return (
     <div
-      ref={projectCardRef}
+      
       className={`${isMarginBottom} ${classname}`}
       style={{ opacity: opacity }}
     >
@@ -73,7 +73,7 @@ const ProjectCard = ({
         className={`md:flex md:flex-row ${isRowReverse} w-full md:items-center md:justify-center  md:gap-x-12 lg:gap-x-16 xl:gap-x-4`}
       >
         {/* Project text content */}
-        <div className="mx-auto w-[280px] text-center md:w-[340px] md:text-left  xl:w-[440px]">
+        <div ref={projectCardRef} className="mx-auto w-[280px] text-center md:w-[340px] md:text-left  xl:w-[440px]">
           <h3 className="mb-4 inline-block border-black dark:border-white md:border-b-4">
             {projectTitle}
           </h3>
