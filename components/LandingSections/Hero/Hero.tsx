@@ -55,7 +55,7 @@ const Hero = () => {
       classname="min-h-screen  flex flex-col xl:flex-row xl:justify-around uppercase"
     >
       {/* Text Hero */}
-      <div className="mt-28 w-full lg:mt-40 xl:mb-16 xl:mt-28 xl:flex xl:w-1/2 xl:flex-col xl:justify-end">
+      <div className="mt-24 w-full lg:mt-40 xl:mb-16 xl:mt-28 xl:flex xl:w-1/2 xl:flex-col xl:justify-end">
         <div>
           <h1 id="hero-text" className="mb-2">
             Web <br /> Developer{" "}
