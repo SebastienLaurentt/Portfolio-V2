@@ -7,10 +7,8 @@ import Fintech from "../../../public/images/Fintech.png";
 import Galopins from "../../../public/images/Galopins.png";
 import Stash from "../../../public/images/Stash.png";
 import TechHaven from "../../../public/images/TechHaven.png";
-<<<<<<< HEAD
-=======
 import Sandamal from "../../../public/images/Sandamal.png";
->>>>>>> e456a431cc20e087f907ba192469eedaf83b307a
+
 
 const Projets = () => {
   return (
