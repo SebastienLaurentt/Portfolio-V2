@@ -8,12 +8,12 @@ export const Footer = () => {
 
   return (
     <footer className="">
-      <div className="text-center text-xs md:text-sm items-center px-6 md:px-10 xl:px-16 w-[210px] md:w-[400px] lg:w-[600px] mx-auto py-6  border-t">
+      <div className="mx-auto w-[210px] items-center border-t p-6 text-center text-xs md:w-[400px] md:px-10 md:text-sm lg:w-[600px] xl:px-16">
         <span className="">&#169;2024 - Sébastien Laurent</span>
 
         {/* Social Icons list */}
         {/* X Profile */}
-        <ul className="flex justify-center mt-2 gap-x-2">
+        <ul className="mt-2 flex justify-center gap-x-2">
           <li>
             <Link
               href="https://twitter.com/Seb_webdev"
