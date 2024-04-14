@@ -33,7 +33,7 @@ export function Header() {
 
   useEffect(() => {
     // Animation pour la fleche
-    gsap.fromTo('#header', { opacity: 0 }, { opacity: 1, duration: 1, delay:1.5 });
+    gsap.fromTo('#header', { opacity: 0 }, { opacity: 1, duration: 1, delay:0.80 });
 
     
     
