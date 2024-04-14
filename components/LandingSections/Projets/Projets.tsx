@@ -21,7 +21,7 @@ const Projets = () => {
             rowReverse={true}
             marginBottom={true}
             projectTitle="Stash"
-            projectDescription="Agence de design web. Présentation de l'agence, de ses services et de ses réalisations."
+            projectDescription="Agence de design web. Presentation de l'agence, de ses services et de ses realisations."
             projectStack="WordPress • Figma • Elementor  "
           />
           <ProjectCard
@@ -40,7 +40,7 @@ const Projets = () => {
             rowReverse={true}
             marginBottom={true}
             projectTitle="Galopins"
-            projectDescription="Club de randonnée. Présentation du club, de ses activités et des photos réalisées."
+            projectDescription="Club de randonnee. Presentation du club, de ses activites et des photos realisees."
             projectStack="Next.Js • TypeScript • Node.Js"
             siteHref="https://lesgalopinsdemontelimar.com/"
             githubHref="https://github.com/SebastienLaurentt/Galopins-Next-V2"
@@ -49,8 +49,8 @@ const Projets = () => {
         <div className="">
           <ProjectCard
             src={Fintech}
-            alt="Impression d'écran de la page d'accueil du Projet Fintech"
-            rowReverse={false}
+            alt="Impression d'ecran de la page d'accueil du Projet Fintech"
+            rowReverse={true}
             marginBottom={true}
             projectTitle="Fintech"
             projectDescription="Concept d'application mobile de gestion de crypto-monnaies."
@@ -60,8 +60,8 @@ const Projets = () => {
           />
           <ProjectCard
             src={TechHaven}
-            alt="Impression d'écran de la page d'accueil du Projet TechHaven"
-            rowReverse={true}
+            alt="Impression d'ecran de la page d'accueil du Projet TechHaven"
+            rowReverse={false}
             marginBottom={true}
             projectTitle="Tech Haven"
             projectDescription="Concept E-Commerce de vente de produits high-tech."
@@ -75,7 +75,7 @@ const Projets = () => {
             rowReverse={false}
             marginBottom={false}
             projectTitle="Codit"
-            projectDescription="Réseau social pour développeurs. Partager les illustrations de ses projets avec le code source."
+            projectDescription="Reseau social pour developpeurs. Partager les illustrations de ses projets avec le code source."
             projectStack="React • Symfony • Redux "
             siteHref="https://codit-codit.vercel.app/"
             githubHref="https://github.com/O-clock-Titanium/projet-codit-front"
