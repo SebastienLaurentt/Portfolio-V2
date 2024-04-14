@@ -1,8 +1,8 @@
 "use client";
+import { gsap } from "gsap";
 import { Bebas_Neue } from "next/font/google";
 import { useEffect, useState } from "react";
 import { ThemeToggle } from "../../../theme/ThemeToggle";
-import { gsap } from 'gsap';
 
 const Bebas = Bebas_Neue({
   weight: "400",
@@ -33,20 +33,21 @@ export function Header() {
 
   useEffect(() => {
     // Animation pour la fleche
-    gsap.fromTo('#header', { opacity: 0 }, { opacity: 1, duration: 1, delay:0.80 });
-
-    
-    
+    gsap.fromTo(
+      "#header",
+      { opacity: 0 },
+      { opacity: 1, duration: 1, delay: 0.8 }
+    );
   }, []); // Déclencher l'effet une seule fois au montage du composant
 
-
   return (
-    <header id="header"
-      className={`fixed top-0 left-0 w-full z-20 bg-background 2xl:bg-transparent transition-transform duration-700 ${
+    <header
+      id="header"
+      className={`fixed left-0 top-0 z-20 w-full bg-background transition-transform duration-700 2xl:bg-transparent ${
         visible ? "" : "-translate-y-full"
       }`}
     >
-      <div className="flex items-center justify-between px-6 md:px-10 xl:px-16 xl:mx-auto py-4 lg:py-6">
+      <div className="flex items-center justify-between px-6 py-4 md:px-10 lg:py-6 xl:mx-auto xl:px-16">
         <span className={`${Bebas.className} text-md text-tertiary-foreground`}>
           SÉBASTIEN.LAURENT
         </span>

@@ -9,6 +9,7 @@ import Stash from "../../../public/images/Stash.png";
 import TechHaven from "../../../public/images/TechHaven.png";
 import Sandamal from "../../../public/images/Sandamal.png";
 
+
 const Projets = () => {
   return (
     <Section marginBottom={true} marginTop={true}>
