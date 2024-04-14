@@ -77,7 +77,7 @@ const ProjectCard = ({
           <h3 className="mb-4 inline-block border-black dark:border-white md:border-b-4">
             {projectTitle}
           </h3>
-          <p className="mb-2 md:mx-0 md:mb-2 text-md lg:text-xl lg:leading-7 xl:text-2xl xl:leading-8">
+          <p className="mb-2 md:mx-0 md:mb-2 text-md  lg:text-xl lg:leading-7 xl:text-2xl xl:leading-8">
             {projectDescription}
           </p>
           <p className=" text-secondary md:mb-2 md:text-sm lg:text-md xl:text-lg">
