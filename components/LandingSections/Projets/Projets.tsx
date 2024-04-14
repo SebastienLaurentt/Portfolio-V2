@@ -7,6 +7,10 @@ import Fintech from "../../../public/images/Fintech.png";
 import Galopins from "../../../public/images/Galopins.png";
 import Stash from "../../../public/images/Stash.png";
 import TechHaven from "../../../public/images/TechHaven.png";
+<<<<<<< HEAD
+=======
+import Sandamal from "../../../public/images/Sandamal.png";
+>>>>>>> e456a431cc20e087f907ba192469eedaf83b307a
 
 const Projets = () => {
   return (
@@ -24,9 +28,19 @@ const Projets = () => {
             projectStack="WordPress • Figma • Elementor  "
           />
           <ProjectCard
+            src={Sandamal}
+            alt="Impression d'écran de la page d'accueil du Projet Sandamal"
+            rowReverse={false}
+            marginBottom={true}
+            projectTitle="Sandamal"
+            projectDescription="Site d'art professionel. Présentation de l'artiste, de ses oeuvres et de ses expositions."
+            projectStack="Next.Js • TypeScript • Sanity"
+            githubHref="https://github.com/SebastienLaurentt/Sandamal"
+          />
+          <ProjectCard
             src={Galopins}
             alt="Impression d'écran de la page d'accueil du Projet Galopins"
-            rowReverse={false}
+            rowReverse={true}
             marginBottom={true}
             projectTitle="Galopins"
             projectDescription="Club de randonnee. Presentation du club, de ses activites et des photos realisees."
@@ -61,7 +75,7 @@ const Projets = () => {
           <ProjectCard
             src={Codit}
             alt="Impression d'écran de la page d'accueil du Projet Codit"
-            rowReverse={true}
+            rowReverse={false}
             marginBottom={false}
             projectTitle="Codit"
             projectDescription="Reseau social pour developpeurs. Partager les illustrations de ses projets avec le code source."
