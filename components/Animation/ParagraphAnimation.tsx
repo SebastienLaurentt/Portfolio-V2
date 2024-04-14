@@ -15,7 +15,7 @@ export default function ParagraphAnimation() {
   return (
     <motion.p
       ref={container}
-      className="flex max-w-[330px] md:max-w-[600px] lg:max-w-[800px] xl:max-w-[1200px] mx-auto flex-wrap text-lg leading-9 text-tertiary-foreground md:text-2xl md:leading-[48px] lg:text-4xl lg:leading-[68px] xl:text-5xl xl:leading-[72px]"
+      className="mx-auto flex max-w-[330px] flex-wrap text-lg leading-9 text-tertiary-foreground md:max-w-[600px] md:text-2xl md:leading-[48px] lg:max-w-[800px] lg:text-4xl lg:leading-[68px] xl:max-w-[1200px] xl:text-5xl xl:leading-[72px]"
       style={{ opacity }}
     >
       En tant que developpeur web, je m&apos;efforce d&apos;integrer les
