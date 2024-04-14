@@ -18,10 +18,10 @@ export default function ParagraphAnimation() {
       className="flex flex-wrap text-md leading-8 text-tertiary-foreground md:text-xl md:leading-[48px] lg:text-3xl lg:leading-[64px] xl:text-4xl xl:leading-[72px]"
       style={{ opacity }}
     >
-      En tant que développeur web, je m&apos;efforce d&apos;intégrer les
+      En tant que developpeur web, je m&apos;efforce d&apos;integrer les
       connaissances acquises sur le fonctionnement du cerveau au cours de mes
-      expériences en recherche. Mon objectif est de concilier une esthétique
-      attrayante avec une expérience utilisateur fluide.
+      experiences en recherche. Mon objectif est de concilier une esthetique
+      attrayante avec une experience utilisateur fluide.
     </motion.p>
   );
 }
