@@ -33,6 +33,7 @@ const Projets = () => {
             projectTitle="Sandamal"
             projectDescription="Site d'art professionel. Présentation de l'artiste, de ses oeuvres et de ses expositions."
             projectStack="Next.Js • TypeScript • Sanity"
+            siteHref="https://sandamal-lilac.vercel.app/"
             githubHref="https://github.com/SebastienLaurentt/Sandamal"
           />
           <ProjectCard
