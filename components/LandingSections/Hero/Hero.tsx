@@ -63,9 +63,9 @@ const Hero = () => {
         </div>
         <span
           id="hero-description"
-          className=" block w-[280px] text-lg leading-6 md:w-[320px] md:text-xl md:leading-7 lg:w-[460px] lg:text-3xl lg:leading-9 xl:hidden"
+          className=" block w-[300px] text-lg leading-6 md:w-[340px] md:text-xl md:leading-7 lg:w-[480px] lg:text-3xl lg:leading-9 xl:hidden"
         >
-          Des interfaces esthetiques sans impacter l&apos;experience utilisateur{" "}
+          Creer des applications permettant une experience fluide et intuitive
         </span>
         <div id="hero-image" className="mt-12 xl:mt-4 2xl:mt-12">
           <Image
@@ -81,7 +81,7 @@ const Hero = () => {
           id="hero-description"
           className="hidden xl:mb-4 xl:block xl:max-w-[400px] xl:text-2xl xl:leading-8"
         >
-          Des interfaces esthetiques sans impacter l&apos;experience utilisateur{" "}
+          Creer des applications permettant une experience fluide et intuitive
         </span>
         <span
           id="hero-name"
