@@ -71,7 +71,7 @@ export default function ContactForm() {
         email: "",
         message: "",
       });
-      setFormFeedback("Merci ! ");
+      setFormFeedback("Merci pour votre message ! ");
       // Clear feedback after 5 seconds
       const timer = setTimeout(() => {
         setFormFeedback("");
@@ -79,7 +79,7 @@ export default function ContactForm() {
       return () => clearTimeout(timer);
     }
     if (sendEmailState.error) {
-      setFormFeedback("Erreur. Veuillez réessayer.");
+      setFormFeedback("Erreur lors de l'envoi de l'email. Veuillez réessayer.");
     }
   }, [sendEmailState]);
 
