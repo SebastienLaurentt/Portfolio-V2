@@ -11,10 +11,10 @@ export default function Page({
   const slug = params.slug;
   const project = projectsData[slug as keyof typeof projectsData] as { nom: string; description: string; date: string; tech: string[]; images: string[]; };
   return (
-    <Section>
+    <Section classname="my-16 lg:my-20">
       <div>
         {project ? (
-          <p>{project.description}</p>
+          <h2>{project.description}</h2>
         ) : (
           <p>Aucune description disponible pour ce projet</p>
         )}
