@@ -4,15 +4,21 @@ import projectsData from "@/data/projectsData";
 import Image, { StaticImageData } from "next/image";
 import { useEffect, useState } from "react";
 
+type ProjectData = {
+  name: string;
+  description: string;
+  date: string;
+  tech: string[];
+  images: {
+    src: StaticImageData;
+    description: string;
+  }[];
+};
+
 export default function Page({ params }: { params: { slug: string } }) {
   const slug = params.slug;
-  const project = projectsData[slug as keyof typeof projectsData] as {
-    name: string;
-    description: string;
-    date: string;
-    tech: string[];
-    images: StaticImageData[];
-  };
+  const project = projectsData[slug as keyof typeof projectsData] as ProjectData;
+
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -55,7 +61,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           </ul>
         </div>
         <div className="">
-
+        {project.images[currentIndex].description}
         </div>
       </div>
       <div className="">
