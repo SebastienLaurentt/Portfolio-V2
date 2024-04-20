@@ -11,22 +11,26 @@ export default function Page({ params }: { params: { slug: string } }) {
     images: StaticImageData[];
   };
   return (
-    <div className=" mb-16 mt-20 flex w-max flex-col px-6 md:px-10 lg:mt-36  xl:flex-row xl:px-16 ">
-      <div className="xl:w-[700px]">
-        <h2 className="text-left">{project.name}</h2>
-        <p>{project.description}</p>
-        <span>{project.date}</span>
-        <ul>
-          {project.tech.map((tech) => (
-            <li key={tech}>{tech}</li>
-          ))}
-        </ul>
+    <div className=" flex h-screen w-max flex-col px-6 pb-16 pt-20 md:px-10 lg:pt-36  xl:flex-row xl:items-center xl:px-16 ">
+      <div className="h-full justify-around flex flex-col xl:w-[700px]">
+        <div className="">
+          <h2 className="mb-4 text-left">{project.name}</h2>
+          <p className="xl:mb-4 xl:w-[450px] xl:text-xl">{project.description}</p>
+        </div>
+        <div className="text-xl">
+          <span>{project.date}</span>
+          <ul className="flex flex-row gap-x-6">
+            {project.tech.map((tech) => (
+              <li key={tech}>{tech}</li>
+            ))}
+          </ul>
+        </div>
       </div>
       <div className="">
         <ul className=" gap-x-10 xl:flex xl:flex-row">
           {project.images.map((image, index) => (
             <li key={index}>
-              <Image src={image.src} alt="" width={1000} height={700} />
+              <Image src={image.src} alt="" width={1100} height={700} />
             </li>
           ))}
         </ul>
