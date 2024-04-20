@@ -47,43 +47,46 @@ export default function Page({ params }: { params: { slug: string } }) {
   }, [currentIndex, project.images.length]);
 
   return (
-    <div className=" flex h-screen flex-col px-6 py-20 md:px-10 lg:pt-36  xl:flex-row xl:items-center xl:px-16 ">
-      <div className="flex h-full flex-col justify-around xl:w-[700px]">
+    <div className=" flex h-screen w-full flex-col px-6 py-20 md:px-10 lg:pt-36  xl:flex-row xl:items-center xl:px-16 ">
+      <div className="flex h-full flex-col justify-around py-8 xl:w-1/3 xl:justify-around 2xl:px-4">
         <div className="">
-          <h2 className="mb-4 text-left">
-            <span>{project.name}</span> <span>{project.date}</span>
+          <h2 className="mb-2 flex justify-between text-left text-4xl md:text-6xl lg:text-8xl xl:flex-col xl:text-8xl xl:leading-[68px] 2xl:mb-4 2xl:text-11xl 2xl:leading-[88px]">
+            <span>{project.name}</span>
+            <span>{project.date}</span>
           </h2>
-          <p className="xl:mb-4 xl:w-[450px] xl:text-xl">
+          <p className=" mb-2 w-[280px] text-lg leading-6 md:w-[480px] md:text-xl md:leading-7 lg:w-[540px] lg:text-2xl lg:leading-8 xl:w-[350px] xl:leading-6 2xl:mb-4 2xl:w-[450px] 2xl:text-xl">
             {project.description}
           </p>
-          <ul className="flex flex-row gap-x-6">
-            {project.tech.map((tech) => (
-              <li key={tech}>{tech}</li>
-            ))}
-          </ul>
+          <div>
+            <span className="border-b-2">Tech Stack</span>
+            <ul className="flex flex-row gap-x-6">
+              {project.tech.map((tech) => (
+                <li key={tech}>{tech}</li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <span className="border-b-2">Liens</span>
+          </div>
         </div>
         <div className="flex flex-row items-end justify-between text-primary-foreground">
-          <div>
-            <span className="xl:text-7xl">{currentIndex + 1}</span>
-            <p> {project.images[currentIndex].description}</p>
+          <div className="text-xl md:text-2xl lg:text-4xl  2xl:text-7xl">
+            <span>{currentIndex + 1}</span>
+            <p className="text-xl md:text-2xl lg:text-4xl 2xl:text-7xl">
+              {project.images[currentIndex].description}
+            </p>
           </div>
           <span>
-            <MoveDown className="size-24 dark:text-white md:size-28 lg:size-32 " />
+            <MoveDown className="size-16 dark:text-white md:size-20 lg:size-24 xl:size-28 2xl:size-32 " />
           </span>
         </div>
       </div>
-      <div className="">
-        <ul className=" gap-x-10 xl:flex xl:flex-row">
-          <li>
-            <Image
-              src={project.images[currentIndex].src}
-              alt=""
-              width={1100}
-              height={700}
-              className="rounded-lg"
-            />
-          </li>
-        </ul>
+      <div className="xl:w-2/3 2xl:pr-4">
+        <Image
+          src={project.images[currentIndex].src}
+          alt=""
+          className="rounded-lg"
+        />
       </div>
     </div>
   );
