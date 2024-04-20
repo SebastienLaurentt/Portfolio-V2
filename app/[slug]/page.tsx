@@ -1,6 +1,7 @@
-'use client'
+"use client";
 
 import projectsData from "@/data/projectsData";
+import { MoveDown } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 import { useEffect, useState } from "react";
 
@@ -17,8 +18,9 @@ type ProjectData = {
 
 export default function Page({ params }: { params: { slug: string } }) {
   const slug = params.slug;
-  const project = projectsData[slug as keyof typeof projectsData] as ProjectData;
-
+  const project = projectsData[
+    slug as keyof typeof projectsData
+  ] as ProjectData;
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -26,12 +28,12 @@ export default function Page({ params }: { params: { slug: string } }) {
     const handleScroll = (event: WheelEvent) => {
       if (event.deltaY > 0) {
         // Scroll down
-        setCurrentIndex((prevIndex:any) =>
+        setCurrentIndex((prevIndex: any) =>
           prevIndex === project.images.length - 1 ? 0 : prevIndex + 1
         );
       } else {
         // Scroll up
-        setCurrentIndex((prevIndex:any) =>
+        setCurrentIndex((prevIndex: any) =>
           prevIndex === 0 ? project.images.length - 1 : prevIndex - 1
         );
       }
@@ -44,29 +46,35 @@ export default function Page({ params }: { params: { slug: string } }) {
     };
   }, [currentIndex, project.images.length]);
 
-
   return (
     <div className=" flex h-screen flex-col px-6 py-20 md:px-10 lg:pt-36  xl:flex-row xl:items-center xl:px-16 ">
       <div className="flex h-full flex-col justify-around xl:w-[700px]">
         <div className="">
-          <h2 className="mb-4 text-left">{project.name}</h2>
+          <h2 className="mb-4 text-left">
+            <span>{project.name}</span> <span>{project.date}</span>
+          </h2>
           <p className="xl:mb-4 xl:w-[450px] xl:text-xl">
             {project.description}
           </p>
-          <span>{project.date}</span>
           <ul className="flex flex-row gap-x-6">
             {project.tech.map((tech) => (
               <li key={tech}>{tech}</li>
             ))}
           </ul>
         </div>
-        <div className="">
-        {project.images[currentIndex].description}
+        <div className="flex flex-row items-end justify-between text-primary-foreground">
+          <div>
+            <span className="xl:text-7xl">{currentIndex + 1}</span>
+            <p> {project.images[currentIndex].description}</p>
+          </div>
+          <span>
+            <MoveDown className="size-24 dark:text-white md:size-28 lg:size-32 " />
+          </span>
         </div>
       </div>
       <div className="">
         <ul className=" gap-x-10 xl:flex xl:flex-row">
-          <li >
+          <li>
             <Image
               src={project.images[currentIndex].src}
               alt=""
