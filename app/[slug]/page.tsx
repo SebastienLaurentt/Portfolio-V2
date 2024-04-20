@@ -111,6 +111,16 @@ export default function Page({ params }: { params: { slug: string } }) {
           className="rounded-lg"
         />
       </div>
+      <div className="xl:hidden">
+        <ul className="flex flex-col gap-y-8">
+          {project.images.map((image, index) => (
+            <li key={index}>
+              <span className="text-md">{image.description}</span>
+              <Image src={image.src} alt="" className="rounded-lg" />
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
