@@ -8,21 +8,33 @@ const projectsData = {
     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab odio id doloremque sunt optio, ex officia perspiciatis voluptate corrupti necessitatibus.",
     date: "2022-03-15",
     tech: ["React", "Next.js", "Tailwind CSS"],
-    images: [SandamalLarge, SandamalLarge2, SandamalLarge3],
+    images: [
+      { src: SandamalLarge, description: "Description de l'image 1" },
+      { src: SandamalLarge2, description: "Description de l'image 2" },
+      { src: SandamalLarge3, description: "Description de l'image 3" }
+    ],
   },
   sandamal: {
     name: "Sandamal",
     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab odio id doloremque sunt optio, ex officia perspiciatis voluptate corrupti necessitatibus.",
     date: "2022-05-20",
     tech: ["Vue.js", "Express", "MongoDB"],
-    images: [SandamalLarge, SandamalLarge, SandamalLarge],
+    images: [
+      { src: SandamalLarge, description: "Description de l'image 1" },
+      { src: SandamalLarge, description: "Description de l'image 2" },
+      { src: SandamalLarge, description: "Description de l'image 3" }
+    ],
   },
   galopins: {
     name: "Galopins",
     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab odio id doloremque sunt optio, ex officia perspiciatis voluptate corrupti necessitatibus.",
     date: "2022-08-10",
     tech: ["Angular", "Node.js", "PostgreSQL"],
-    images: [SandamalLarge, SandamalLarge, SandamalLarge],
+    images: [
+      { src: SandamalLarge, description: "Description de l'image 1" },
+      { src: SandamalLarge, description: "Description de l'image 2" },
+      { src: SandamalLarge, description: "Description de l'image 3" }
+    ],
   },
 };
 
