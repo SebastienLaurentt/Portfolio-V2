@@ -9,9 +9,9 @@ const projectsData = {
     date: "2024",
     tech: ["WordPress", "Figma", "Elementor"],
     images: [
-      { src: SandamalLarge, description: "Description de l'image 1" },
-      { src: SandamalLarge, description: "Description de l'image 2" },
-      { src: SandamalLarge, description: "Description de l'image 3" }
+      { src: SandamalLarge, description: "Image 1" },
+      { src: SandamalLarge, description: "Image 2" },
+      { src: SandamalLarge, description: "Image 3" }
     ],
   },
   sandamal: {
@@ -35,9 +35,9 @@ const projectsData = {
     siteHref: "https://lesgalopinsdemontelimar.com/",
     githubHref: "https://github.com/SebastienLaurentt/Galopins-Next-V2",
     images: [
-      { src: SandamalLarge, description: "Description de l'image 1" },
-      { src: SandamalLarge, description: "Description de l'image 2" },
-      { src: SandamalLarge, description: "Description de l'image 3" }
+      { src: SandamalLarge, description: "Image 1" },
+      { src: SandamalLarge, description: "Image 2" },
+      { src: SandamalLarge, description: "Image 3" }
     ],
   },
   codit: {
@@ -48,9 +48,9 @@ const projectsData = {
     siteHref: "https://codit-codit.vercel.app/",
     githubHref: "https://github.com/O-clock-Titanium/projet-codit-front",
     images: [
-      { src: SandamalLarge, description: "Description de l'image 1" },
-      { src: SandamalLarge, description: "Description de l'image 2" },
-      { src: SandamalLarge, description: "Description de l'image 3" }
+      { src: SandamalLarge, description: "Image 1" },
+      { src: SandamalLarge, description: "Image 2" },
+      { src: SandamalLarge, description: "Image 3" }
     ],
   },
 };
