@@ -52,11 +52,12 @@ export default function Page({ params }: { params: { slug: string } }) {
   return (
     <div className=" flex w-full flex-col px-6 py-20  md:px-10 lg:pt-36 xl:h-screen  xl:flex-row xl:items-center xl:px-16 ">
       {/* Textual Infos */}
-      <div className="flex flex-col justify-around py-20 lg:py-28 xl:h-full xl:w-2/5  xl:justify-between xl:py-20 2xl:w-1/3 2xl:px-4">
+      <div className="flex flex-col justify-around py-20 lg:py-28 xl:h-full xl:w-2/5  xl:justify-between xl:py-20 xl:pr-4 2xl:w-1/3 2xl:px-4 ">
         {/* First Div : Name and Date  */}
         <div>
-          <h2 className="mb-4 text-left text-6xl md:mb-6 md:text-7xl lg:text-9xl xl:mb-0 xl:flex-col xl:text-8xl xl:leading-[68px] 2xl:text-11xl 2xl:leading-[88px]">
-            {project.name}
+          <h2 className="mb-4 flex text-left text-6xl md:mb-6 md:text-7xl lg:text-9xl xl:mb-0 xl:flex-row 2xl:flex-col xl:justify-between xl:text-8xl xl:leading-[68px] 2xl:text-10xl 2xl:leading-[88px]">
+            <span>{project.name}</span>
+            <span>{project.date}</span>
           </h2>
         </div>
 
