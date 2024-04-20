@@ -11,11 +11,13 @@ export default function Page({ params }: { params: { slug: string } }) {
     images: StaticImageData[];
   };
   return (
-    <div className=" flex h-screen w-max flex-col px-6 pb-16 pt-20 md:px-10 lg:pt-36  xl:flex-row xl:items-center xl:px-16 ">
-      <div className="h-full justify-around flex flex-col xl:w-[700px]">
+    <div className=" flex h-screen w-max flex-col bg-slate-700 px-6 py-20 md:px-10 lg:pt-36  xl:flex-row xl:items-center xl:px-16 ">
+      <div className="flex h-full flex-col justify-around xl:w-[700px]">
         <div className="">
           <h2 className="mb-4 text-left">{project.name}</h2>
-          <p className="xl:mb-4 xl:w-[450px] xl:text-xl">{project.description}</p>
+          <p className="xl:mb-4 xl:w-[450px] xl:text-xl">
+            {project.description}
+          </p>
         </div>
         <div className="text-xl">
           <span>{project.date}</span>
