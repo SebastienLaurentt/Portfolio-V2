@@ -55,25 +55,23 @@ export default function Page({ params }: { params: { slug: string } }) {
       <div className="flex h-full flex-col justify-around py-8 xl:w-1/3 xl:justify-around 2xl:px-4">
         {/* First Div : Name and Date  */}
         <div className="">
-          <h2 className="mb-2 text-left text-4xl md:text-6xl lg:text-8xl xl:flex-col xl:text-8xl xl:leading-[68px] 2xl:mb-4 2xl:text-11xl 2xl:leading-[88px]">
+          <h2 className="text-left text-4xl md:text-6xl lg:text-8xl xl:flex-col xl:text-8xl xl:leading-[68px] 2xl:text-11xl 2xl:leading-[88px]">
             {project.name}
           </h2>
         </div>
 
         {/* Second Div : Description, Tech Stack and Links */}
-        <div>
+        <div className="flex flex-col gap-y-2 2xl:gap-y-4">
           {/* Description */}
           <div>
-            <span className="border-b-2">Description</span>
-            <p className=" mb-2 w-[280px] text-lg leading-6 md:w-[480px] md:text-xl md:leading-7 lg:w-[540px] lg:text-2xl lg:leading-8 xl:w-[350px] xl:leading-6 2xl:mb-4 2xl:w-[450px] 2xl:text-xl">
+            <p className="w-[280px] text-lg leading-6 md:w-[480px] md:text-xl md:leading-7 lg:w-[540px] lg:leading-8 xl:w-[300px] xl:text-lg xl:leading-5 2xl:w-[400px]  2xl:text-xl 2xl:leading-6">
               {project.description}
             </p>
           </div>
 
           {/* Tech Stack */}
           <div>
-            <span className="border-b-2">Tech Stack</span>
-            <ul className="flex flex-row gap-x-6">
+            <ul className="flex flex-row gap-x-4 2xl:text-md">
               {project.tech.map((tech) => (
                 <li key={tech}>{tech}</li>
               ))}
@@ -83,7 +81,6 @@ export default function Page({ params }: { params: { slug: string } }) {
           {/* Links */}
           {project.siteHref || project.githubHref ? (
             <div>
-              <span className="border-b-2">Liens</span>
               <ProjectCardLinks
                 siteHref={project.siteHref}
                 githubHref={project.githubHref}
