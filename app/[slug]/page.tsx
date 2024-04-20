@@ -50,18 +50,18 @@ export default function Page({ params }: { params: { slug: string } }) {
   }, [currentIndex, project.images.length]);
 
   return (
-    <div className=" flex w-full flex-col px-6 py-20 md:py-28 md:px-10 lg:pt-36 xl:h-screen  xl:flex-row xl:items-center xl:px-16 ">
+    <div className=" flex w-full flex-col px-6 py-20  md:px-10 lg:pt-36 xl:h-screen  xl:flex-row xl:items-center xl:px-16 ">
       {/* Textual Infos */}
-      <div className="flex flex-col justify-around py-12 xl:h-full xl:w-1/3 xl:justify-around 2xl:px-4">
+      <div className="flex flex-col justify-around py-20  xl:h-full xl:w-1/3 xl:justify-around 2xl:px-4">
         {/* First Div : Name and Date  */}
         <div>
-          <h2 className="mb-4 text-left text-6xl md:text-7xl lg:text-8xl xl:mb-0 xl:flex-col xl:text-8xl xl:leading-[68px] 2xl:text-11xl 2xl:leading-[88px]">
+          <h2 className="mb-4 text-left text-6xl md:mb-6 md:text-7xl lg:text-8xl xl:mb-0 xl:flex-col xl:text-8xl xl:leading-[68px] 2xl:text-11xl 2xl:leading-[88px]">
             {project.name}
           </h2>
         </div>
 
         {/* Second Div : Description, Tech Stack and Links */}
-        <div className="flex flex-col gap-y-4">
+        <div className="flex flex-col gap-y-2 md:gap-y-3">
           {/* Description */}
           <div>
             <p className="w-[320px] text-xl leading-7 md:w-[480px] md:text-2xl md:leading-8 lg:w-[540px] lg:text-2xl lg:leading-8 xl:w-[300px] xl:text-lg xl:leading-5 2xl:w-[400px]  2xl:text-xl 2xl:leading-6">
