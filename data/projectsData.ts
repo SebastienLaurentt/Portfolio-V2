@@ -19,6 +19,8 @@ const projectsData = {
     description: "Site d'art professionel. Presentation de l'artiste, de ses oeuvres et de ses expositions.",
     date: "2024",
     tech: ["Next.Js", "TypeScript ", "Sanity"],
+    siteHref: "https://sandamal-lilac.vercel.app/",
+    githubHref: "https://github.com/SebastienLaurentt/Sandamal",
     images: [
       { src: SandamalLarge, description: "HOME PAGE" },
       { src: SandamalLarge2, description: "PAGE D'UN PROJET" },
@@ -30,6 +32,8 @@ const projectsData = {
     description: "Club de randonnee. Presentation du club, de ses activites et des photos realisees.",
     date: "2023",
     tech: ["Next.Js", "TypeScript ", "Node.Js"],
+    siteHref: "https://lesgalopinsdemontelimar.com/",
+    githubHref: "https://github.com/SebastienLaurentt/Galopins-Next-V2",
     images: [
       { src: SandamalLarge, description: "Description de l'image 1" },
       { src: SandamalLarge, description: "Description de l'image 2" },
@@ -41,6 +45,8 @@ const projectsData = {
     description: "Reseau social pour developpeurs. Partager les illustrations de ses projets avec le code source.",
     date: "2023",
     tech: ["React ", "Symfony", "Redux"],
+    siteHref: "https://codit-codit.vercel.app/",
+    githubHref: "https://github.com/O-clock-Titanium/projet-codit-front",
     images: [
       { src: SandamalLarge, description: "Description de l'image 1" },
       { src: SandamalLarge, description: "Description de l'image 2" },
