@@ -1,4 +1,3 @@
-import Section from "@/components/Section/Section";
 import projectsData from "@/data/projectsData";
 import Image, { StaticImageData } from "next/image";
 
@@ -12,8 +11,8 @@ export default function Page({ params }: { params: { slug: string } }) {
     images: StaticImageData[];
   };
   return (
-    <Section classname="my-16 lg:my-20 flex flex-col xl:flex-row ">
-      <div className="w-1/3">
+    <div className=" mb-16 mt-20 flex w-max flex-col px-6 md:px-10 lg:mt-36  xl:flex-row xl:px-16 ">
+      <div className="xl:w-[700px]">
         <h2 className="text-left">{project.name}</h2>
         <p>{project.description}</p>
         <span>{project.date}</span>
@@ -23,15 +22,15 @@ export default function Page({ params }: { params: { slug: string } }) {
           ))}
         </ul>
       </div>
-      <div >
-        <ul className="gap-y-10 xl:flex xl:flex-row">
+      <div className="">
+        <ul className=" gap-x-10 xl:flex xl:flex-row">
           {project.images.map((image, index) => (
             <li key={index}>
-              <Image src={image.src} alt="" width={500} height={500} />
+              <Image src={image.src} alt="" width={1000} height={700} />
             </li>
           ))}
         </ul>
       </div>
-    </Section>
+    </div>
   );
 }
