@@ -50,11 +50,11 @@ export default function Page({ params }: { params: { slug: string } }) {
   }, [currentIndex, project.images.length]);
 
   return (
-    <div className=" flex h-screen w-full flex-col px-6 py-20 md:px-10 lg:pt-36  xl:flex-row xl:items-center xl:px-16 ">
+    <div className=" flex w-full flex-col px-6 py-20 md:px-10 lg:pt-36 xl:h-screen  xl:flex-row xl:items-center xl:px-16 ">
       {/* Textual Infos */}
-      <div className="flex h-full flex-col justify-around py-8 xl:w-1/3 xl:justify-around 2xl:px-4">
+      <div className="flex flex-col justify-around py-8 xl:h-full xl:w-1/3 xl:justify-around 2xl:px-4">
         {/* First Div : Name and Date  */}
-        <div className="">
+        <div>
           <h2 className="text-left text-4xl md:text-6xl lg:text-8xl xl:flex-col xl:text-8xl xl:leading-[68px] 2xl:text-11xl 2xl:leading-[88px]">
             {project.name}
           </h2>
@@ -90,7 +90,7 @@ export default function Page({ params }: { params: { slug: string } }) {
         </div>
 
         {/* Third Block : Textuals Images Related Infos */}
-        <div className="flex flex-row items-end justify-between text-primary-foreground">
+        <div className="hidden flex-row items-end justify-between text-primary-foreground xl:flex">
           <div className="text-xl md:text-2xl lg:text-4xl  2xl:text-7xl">
             <span>{currentIndex + 1}</span>
             <p className="text-xl md:text-2xl lg:text-4xl 2xl:text-7xl">
@@ -104,7 +104,7 @@ export default function Page({ params }: { params: { slug: string } }) {
       </div>
 
       {/* Images */}
-      <div className="xl:w-2/3 2xl:pr-4">
+      <div className="hidden xl:block xl:w-2/3 2xl:pr-4">
         <Image
           src={project.images[currentIndex].src}
           alt=""
