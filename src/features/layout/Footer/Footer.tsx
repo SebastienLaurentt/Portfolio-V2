@@ -10,7 +10,7 @@ export const Footer = () => {
   const fillColor = "hsl(var(--primary-foreground))";
   const pathname = usePathname();
 
-  const footerPosition = pathname !== "/" ? "absolute w-full mx-auto bottom-0" : "";
+  const footerPosition = pathname !== "/" ? "hidden" : "";
 
   return (
     <footer className={`${footerPosition}`}>
