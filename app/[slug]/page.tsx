@@ -55,7 +55,7 @@ export default function Page({ params }: { params: { slug: string } }) {
       <div className="flex flex-col justify-around pb-20 pt-28 lg:pb-24 lg:pt-32 xl:h-full xl:w-2/5  xl:justify-between xl:py-20 xl:pr-4 2xl:w-1/3 2xl:px-4 ">
         {/* First Div : Name and Date  */}
         <div>
-          <h2 className="mb-4 flex justify-between text-left text-6xl md:mb-6 md:text-7xl lg:text-9xl xl:mb-0 xl:flex-row xl:text-8xl xl:leading-[68px] 2xl:flex-col 2xl:text-10xl 2xl:leading-[88px]">
+          <h2 className="mb-4 flex justify-between text-left text-6xl md:mb-6 md:text-7xl lg:text-9xl xl:mb-0 xl:flex-row xl:text-8xl xl:leading-[68px] 2xl:flex-col 2xl:text-10xl 2xl:leading-[80px]">
             <span>{project.name}</span>
             <span>{project.date}</span>
           </h2>
