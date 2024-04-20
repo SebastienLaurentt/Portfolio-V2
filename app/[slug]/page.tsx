@@ -59,12 +59,13 @@ export default function Page({ params }: { params: { slug: string } }) {
       </div>
       <div className="">
         <ul className=" gap-x-10 xl:flex xl:flex-row">
-          <li>
+          <li >
             <Image
               src={project.images[currentIndex].src}
               alt=""
               width={1100}
               height={700}
+              className="rounded-lg"
             />
           </li>
         </ul>
