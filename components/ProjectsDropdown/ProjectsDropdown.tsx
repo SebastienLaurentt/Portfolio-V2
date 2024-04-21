@@ -25,7 +25,7 @@ const ProjectsDropdown = () => {
       <DropdownMenuContent>
         {projects.map((project) => (
           project.slug !== pathname.slice(1) && (
-          <DropdownMenuItem key={project.slug}>
+          <DropdownMenuItem key={project.slug} asChild>
             <Link href={`/${project.slug}`} className="text-sm text-tertiary-foreground md:text-md">
               {project.name}
             </Link>
