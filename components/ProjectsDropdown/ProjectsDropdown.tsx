@@ -19,7 +19,7 @@ const ProjectsDropdown = () => {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="text-sm text-tertiary-foreground md:text-md">
+      <DropdownMenuTrigger className="text-md text-tertiary-foreground md:text-md">
         Projets
       </DropdownMenuTrigger>
       <DropdownMenuContent>
