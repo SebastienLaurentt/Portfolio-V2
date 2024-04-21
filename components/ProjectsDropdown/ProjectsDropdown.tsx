@@ -5,6 +5,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const projects = [
   { slug: "stash", name: "Stash" },
@@ -14,6 +15,8 @@ const projects = [
 ];
 
 const ProjectsDropdown = () => {
+  const pathname = usePathname();
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="text-sm text-primary-foreground md:text-md">
@@ -21,11 +24,13 @@ const ProjectsDropdown = () => {
       </DropdownMenuTrigger>
       <DropdownMenuContent>
         {projects.map((project) => (
+          project.slug !== pathname.slice(1) && (
           <DropdownMenuItem key={project.slug}>
             <Link href={`/${project.slug}`} className="text-sm text-primary-foreground md:text-md">
               {project.name}
             </Link>
           </DropdownMenuItem>
+          )
         ))}
       </DropdownMenuContent>
     </DropdownMenu>
