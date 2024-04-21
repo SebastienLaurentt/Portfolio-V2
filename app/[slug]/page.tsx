@@ -88,14 +88,14 @@ export default function Page({ params }: { params: { slug: string } }) {
       { x: 0, opacity: 1, duration: 1 }
     );
 
-    // Img Hero Animation
+    // Project Mobile Images Animation
     gsap.fromTo(
       "#project-imageMobile",
       { x: 0, opacity: 0 },
       { x: 0, opacity: 1, duration: 1, delay: 0.6 }
     );
 
-    // Img Hero Animation
+    // Project Desktop Images Animation
     gsap.fromTo(
       "#project-imageDesk",
       { x: 0, opacity: 0 },
