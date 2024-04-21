@@ -1,13 +1,19 @@
+'use client'
+
 import GitHubIcon from "@/components/SvgIcons/GitHubIcon/GitHubIcon";
 import LinkedInIcon from "@/components/SvgIcons/LinkedInIcon/LinkedInIcon";
 import XIcon from "@/components/SvgIcons/XIcon/XIcon";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export const Footer = () => {
   const fillColor = "hsl(var(--primary-foreground))";
+  const pathname = usePathname();
+
+  const footerPosition = pathname !== "/" ? "hidden" : "";
 
   return (
-    <footer className="">
+    <footer className={`${footerPosition}`}>
       <div className="mx-auto w-[210px] items-center border-t p-6 text-center text-xs md:w-[400px] md:px-10 md:text-sm lg:w-[600px] xl:px-16">
         <span className="">&#169;2024 - Sébastien Laurent</span>
 

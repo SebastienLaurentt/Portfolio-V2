@@ -23,7 +23,8 @@ const Projets = () => {
             marginBottom={true}
             projectTitle="Stash"
             projectDescription="Agence de design web. Presentation de l'agence, de ses services et de ses realisations."
-            projectStack="WordPress • Figma • Elementor  "
+            projectStack="WordPress • Figma • Elementor"
+            slug="stash"
           />
           <ProjectCard
             src={Sandamal}
@@ -35,6 +36,7 @@ const Projets = () => {
             projectStack="Next.Js • TypeScript • Sanity"
             siteHref="https://sandamal-lilac.vercel.app/"
             githubHref="https://github.com/SebastienLaurentt/Sandamal"
+            slug="sandamal"
           />
           <ProjectCard
             src={Galopins}
@@ -46,6 +48,7 @@ const Projets = () => {
             projectStack="Next.Js • TypeScript • Node.Js"
             siteHref="https://lesgalopinsdemontelimar.com/"
             githubHref="https://github.com/SebastienLaurentt/Galopins-Next-V2"
+            slug="galopins"
           />
         </div>
         <div className="">
@@ -81,6 +84,7 @@ const Projets = () => {
             projectStack="React • Symfony • Redux "
             siteHref="https://codit-codit.vercel.app/"
             githubHref="https://github.com/O-clock-Titanium/projet-codit-front"
+            slug="codit"
           />
         </div>
       </div>

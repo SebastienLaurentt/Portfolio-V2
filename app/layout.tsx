@@ -50,7 +50,7 @@ export default function RootLayout({
         </head>
         <body className={Bebas.className}>
           <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-            <div className=" flex h-full flex-col">
+            <div className=" flex h-full flex-col overflow-x-hidden">
               <Header />
               <div>{children}</div>
               <Footer />

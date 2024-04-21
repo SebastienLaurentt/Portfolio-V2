@@ -1,6 +1,7 @@
 "use client";
 
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import ProjectCardLinks from "../ProjectCardLinks/ProjectCardLinks";
 
@@ -13,6 +14,7 @@ interface ProjectCardProps {
   projectTitle: string;
   projectDescription?: string;
   projectStack: string;
+  slug?: string;
   imgClassname?: string;
   siteHref?: string;
   githubHref?: string;
@@ -27,6 +29,7 @@ const ProjectCard = ({
   projectTitle,
   projectDescription,
   projectStack,
+  slug,
   imgClassname,
   siteHref,
   githubHref,
@@ -94,13 +97,26 @@ const ProjectCard = ({
         </div>
 
         {/* Project Image */}
+
         <div className="mx-auto mt-[20px]  md:mt-0 md:w-4/5 lg:w-3/5 xl:w-2/5">
-          <Image
-            src={src}
-            alt={alt}
-            className={`rounded-lg ${imgClassname} `}
-            quality={100}
-          />
+          {/* Link if Slug */}
+          {slug ? (
+            <Link href={`/${slug}`}>
+                <Image
+                  src={src}
+                  alt={alt}
+                  className={`rounded-lg ${imgClassname} `}
+                  quality={100}
+                />
+            </Link>
+          ) : (
+            <Image
+              src={src}
+              alt={alt}
+              className={`rounded-lg ${imgClassname} `}
+              quality={100}
+            />
+          )}
         </div>
 
         {/* Project Links */}

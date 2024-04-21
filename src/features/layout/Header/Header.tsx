@@ -1,6 +1,9 @@
 "use client";
+import ProjectsDropdown from "@/components/ProjectsDropdown/ProjectsDropdown";
 import { gsap } from "gsap";
 import { Bebas_Neue } from "next/font/google";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { ThemeToggle } from "../../../theme/ThemeToggle";
 
@@ -13,6 +16,7 @@ const Bebas = Bebas_Neue({
 export function Header() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  const pathname = usePathname();
 
   useEffect(() => {
     //  Define when Header is visible
@@ -51,7 +55,22 @@ export function Header() {
         <span className={`${Bebas.className} text-md text-tertiary-foreground`}>
           SÉBASTIEN.LAURENT
         </span>
-        <ThemeToggle />
+        <div className="flex flex-row items-center">
+          <div className="flex flex-row gap-x-1 md:gap-x-2 mr-4 md:mr-6">
+            {/* Accueil not visible in "/"" path */}
+            {pathname !== "/" && (
+              <Link
+                href="/"
+                className="text-md text-tertiary-foreground md:text-md"
+              >
+                Accueil
+              </Link>
+            )}
+            <ProjectsDropdown />
+          </div>
+
+          <ThemeToggle />
+        </div>
       </div>
     </header>
   );
