@@ -6,48 +6,30 @@ import {
 } from "@/components/ui/dropdown-menu";
 import Link from "next/link";
 
+const projects = [
+  { slug: "stash", name: "Stash" },
+  { slug: "sandamal", name: "Sandamal" },
+  { slug: "galopins", name: "Galopins" },
+  { slug: "codit", name: "Codit" },
+];
+
 const ProjectsDropdown = () => {
   return (
     <DropdownMenu>
-            <DropdownMenuTrigger className="text-sm text-primary-foreground md:text-md">
-              Projets
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              <DropdownMenuItem>
-                <Link
-                  href="/stash"
-                  className="text-sm text-primary-foreground md:text-md"
-                >
-                  Stash
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link
-                  href="/sandamal"
-                  className="text-sm text-primary-foreground md:text-md"
-                >
-                  Sandamal
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link
-                  href="/galopins"
-                  className="text-sm text-primary-foreground md:text-md"
-                >
-                  Galopins
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link
-                  href="/codit"
-                  className="text-sm text-primary-foreground md:text-md"
-                >
-                  Codit
-                </Link>
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
-  )
-}
+      <DropdownMenuTrigger className="text-sm text-primary-foreground md:text-md">
+        Projets
+      </DropdownMenuTrigger>
+      <DropdownMenuContent>
+        {projects.map((project) => (
+          <DropdownMenuItem key={project.slug}>
+            <Link href={`/${project.slug}`} className="text-sm text-primary-foreground md:text-md">
+              {project.name}
+            </Link>
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
+};
 
-export default ProjectsDropdown
+export default ProjectsDropdown;
