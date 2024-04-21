@@ -1,19 +1,11 @@
 "use client";
 import { gsap } from "gsap";
-
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import { Bebas_Neue } from "next/font/google";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { ThemeToggle } from "../../../theme/ThemeToggle";
+import ProjectsDropdown from "@/components/ProjectsDropdown/ProjectsDropdown";
 
 const Bebas = Bebas_Neue({
   weight: "400",
@@ -73,45 +65,7 @@ export function Header() {
               Accueil
             </Link>
           )}
-          <DropdownMenu>
-            <DropdownMenuTrigger className="text-sm text-primary-foreground md:text-md">
-              Projets
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              <DropdownMenuItem>
-                <Link
-                  href="/stash"
-                  className="text-sm text-primary-foreground md:text-md"
-                >
-                  Stash
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link
-                  href="/sandamal"
-                  className="text-sm text-primary-foreground md:text-md"
-                >
-                  Sandamal
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link
-                  href="/galopins"
-                  className="text-sm text-primary-foreground md:text-md"
-                >
-                  Galopins
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link
-                  href="/codit"
-                  className="text-sm text-primary-foreground md:text-md"
-                >
-                  Codit
-                </Link>
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+          <ProjectsDropdown />
           <ThemeToggle />
         </div>
       </div>
