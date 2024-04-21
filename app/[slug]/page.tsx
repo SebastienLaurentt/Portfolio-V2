@@ -56,29 +56,45 @@ export default function Page({ params }: { params: { slug: string } }) {
     // Project Title Animation
     gsap.fromTo(
       "#project-title",
-      { x: screenWidth < 1280 ? 0 : -30, y: screenWidth < 1280 ? -30 : 0, opacity: 0 },
-      { x: 0, opacity: 1, y:0, duration: 1 }
+      {
+        x: screenWidth < 1280 ? 0 : -30,
+        y: screenWidth < 1280 ? -30 : 0,
+        opacity: 0,
+      },
+      { x: 0, opacity: 1, y: 0, duration: 1 }
     );
 
     // Project Description Animation
     gsap.fromTo(
       "#project-description",
-      { x: screenWidth < 1280 ? 0 : -30, y: screenWidth < 1280 ? -30 : 0, opacity: 0 },
-      { x: 0, opacity: 1, y:0, duration: 1 }
+      {
+        x: screenWidth < 1280 ? 0 : -30,
+        y: screenWidth < 1280 ? -30 : 0,
+        opacity: 0,
+      },
+      { x: 0, opacity: 1, y: 0, duration: 1 }
     );
 
     // Project Tech Stack Animation
     gsap.fromTo(
       "#project-tech",
-      { x: screenWidth < 1280 ? 0 : -30, y: screenWidth < 1280 ? -30 : 0, opacity: 0 },
-      { x: 0, opacity: 1, y:0, duration: 1 }
+      {
+        x: screenWidth < 1280 ? 0 : -30,
+        y: screenWidth < 1280 ? -30 : 0,
+        opacity: 0,
+      },
+      { x: 0, opacity: 1, y: 0, duration: 1 }
     );
 
     // Project Links Animation
     gsap.fromTo(
       "#project-links",
-      { x: screenWidth < 1280 ? 0 : -30, y: screenWidth < 1280 ? -30 : 0, opacity: 0 },
-      { x: 0, opacity: 1, y:0, duration: 1 }
+      {
+        x: screenWidth < 1280 ? 0 : -30,
+        y: screenWidth < 1280 ? -30 : 0,
+        opacity: 0,
+      },
+      { x: 0, opacity: 1, y: 0, duration: 1 }
     );
 
     // Project Images Text Animation
@@ -111,7 +127,7 @@ export default function Page({ params }: { params: { slug: string } }) {
         <div>
           <h2
             id="project-title"
-            className="mb-4 flex justify-between text-left text-6xl md:mb-6 md:text-7xl lg:text-9xl xl:mb-0 xl:flex-row xl:text-8xl xl:leading-[68px] 2xl:flex-col 2xl:text-10xl 2xl:leading-[80px]"
+            className="mb-4 flex flex-col justify-between text-left text-6xl leading-[52px] md:mb-6 md:flex-row md:text-7xl lg:text-9xl xl:mb-0 xl:text-8xl xl:leading-[68px] 2xl:flex-col 2xl:text-10xl 2xl:leading-[80px]"
           >
             <span>{project.name}</span>
             <span>{project.date}</span>
@@ -147,7 +163,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           ) : null}
         </div>
 
-        {/* Third Block : Textuals Images Related Infos */}
+        {/* Third Block : Textuals Images Related Infos (Desktop) */}
         <div
           id="project-images-text"
           className="hidden flex-row items-end justify-between text-primary-foreground xl:flex"
@@ -164,7 +180,7 @@ export default function Page({ params }: { params: { slug: string } }) {
         </div>
       </div>
 
-      {/* Images */}
+      {/* Images for Desktop */}
       <div
         id="project-imageDesk"
         className="hidden xl:block xl:w-3/5 2xl:w-2/3 2xl:pr-4"
@@ -175,6 +191,8 @@ export default function Page({ params }: { params: { slug: string } }) {
           className="rounded-lg"
         />
       </div>
+
+      {/* Images and Textuals Images Infos for Mobile and Tablette */}
       <div id="project-imageMobile" className="xl:hidden">
         <ul className="flex flex-col gap-y-8">
           {project.images.map((image, index) => (
