@@ -18,7 +18,7 @@ const ProjectsDropdown = () => {
   const pathname = usePathname();
 
   return (
-    <DropdownMenu>
+    <DropdownMenu modal={false}>
       <DropdownMenuTrigger className="text-md text-tertiary-foreground md:text-md">
         Projets
       </DropdownMenuTrigger>
