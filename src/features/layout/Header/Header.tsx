@@ -1,17 +1,10 @@
 "use client";
 import ProjectsDropdown from "@/components/ProjectsDropdown/ProjectsDropdown";
 import { gsap } from "gsap";
-import { Bebas_Neue } from "next/font/google";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { ThemeToggle } from "../../../theme/ThemeToggle";
-
-const Bebas = Bebas_Neue({
-  weight: "400",
-  style: "normal",
-  subsets: ["latin"],
-});
 
 export function Header() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -41,7 +34,7 @@ export function Header() {
       { opacity: 0 },
       { opacity: 1, duration: 1, delay: 0.8 }
     );
-  }, []); 
+  }, []);
 
   return (
     <header
@@ -51,7 +44,7 @@ export function Header() {
       }`}
     >
       <div className="flex items-center justify-between px-6 py-4 md:px-10 lg:py-6 xl:mx-auto xl:px-16">
-        <span className={`${Bebas.className} text-md text-tertiary-foreground`}>
+        <span className="text-md text-tertiary-foreground">
           SÉBASTIEN.LAURENT
         </span>
         <div className="flex flex-row items-center">
