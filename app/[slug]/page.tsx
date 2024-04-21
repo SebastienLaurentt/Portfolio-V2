@@ -163,7 +163,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           ) : null}
         </div>
 
-        {/* Third Block : Textuals Images Related Infos */}
+        {/* Third Block : Textuals Images Related Infos (Desktop) */}
         <div
           id="project-images-text"
           className="hidden flex-row items-end justify-between text-primary-foreground xl:flex"
@@ -180,7 +180,7 @@ export default function Page({ params }: { params: { slug: string } }) {
         </div>
       </div>
 
-      {/* Images */}
+      {/* Images for Desktop */}
       <div
         id="project-imageDesk"
         className="hidden xl:block xl:w-3/5 2xl:w-2/3 2xl:pr-4"
@@ -191,6 +191,8 @@ export default function Page({ params }: { params: { slug: string } }) {
           className="rounded-lg"
         />
       </div>
+
+      {/* Images and Textuals Images Infos for Mobile and Tablette */}
       <div id="project-imageMobile" className="xl:hidden">
         <ul className="flex flex-col gap-y-8">
           {project.images.map((image, index) => (
