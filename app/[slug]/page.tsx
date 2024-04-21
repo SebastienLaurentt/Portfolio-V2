@@ -127,7 +127,7 @@ export default function Page({ params }: { params: { slug: string } }) {
         <div>
           <h2
             id="project-title"
-            className="mb-4 flex flex-col justify-between text-left text-6xl leading-[52px] md:mb-6 md:flex-row md:text-7xl lg:text-9xl xl:mb-0 xl:text-8xl xl:leading-[68px] 2xl:flex-col 2xl:text-10xl 2xl:leading-[80px]"
+            className="mb-4 flex flex-col justify-between text-left text-6xl leading-[56px] md:mb-6 md:flex-row md:text-7xl lg:text-9xl xl:mb-0 xl:text-8xl xl:leading-[68px] 2xl:flex-col 2xl:text-10xl 2xl:leading-[80px]"
           >
             <span>{project.name}</span>
             <span>{project.date}</span>
