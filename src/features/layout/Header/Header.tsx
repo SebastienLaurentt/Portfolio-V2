@@ -36,13 +36,12 @@ export function Header() {
   }, [prevScrollPos, visible]);
 
   useEffect(() => {
-    // Animation pour la fleche
     gsap.fromTo(
       "#header",
       { opacity: 0 },
       { opacity: 1, duration: 1, delay: 0.8 }
     );
-  }, []); // Déclencher l'effet une seule fois au montage du composant
+  }, []); 
 
   return (
     <header
@@ -56,7 +55,7 @@ export function Header() {
           SÉBASTIEN.LAURENT
         </span>
         <div className="flex flex-row items-center">
-          <div className="flex flex-row gap-x-1 md:gap-x-2 mr-4 md:mr-6">
+          <div className="mr-6 flex flex-row gap-x-2 md:mr-9 md:gap-x-3">
             {/* Accueil not visible in "/"" path */}
             {pathname !== "/" && (
               <Link
