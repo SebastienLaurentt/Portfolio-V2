@@ -60,7 +60,7 @@ export function Header() {
           {pathname !== "/" && (
             <Link
               href="/"
-              className="text-sm text-primary-foreground md:text-md"
+              className="text-sm text-tertiary-foreground md:text-md"
             >
               Accueil
             </Link>

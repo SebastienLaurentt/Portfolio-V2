@@ -19,14 +19,14 @@ const ProjectsDropdown = () => {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="text-sm text-primary-foreground md:text-md">
+      <DropdownMenuTrigger className="text-sm text-tertiary-foreground md:text-md">
         Projets
       </DropdownMenuTrigger>
       <DropdownMenuContent>
         {projects.map((project) => (
           project.slug !== pathname.slice(1) && (
           <DropdownMenuItem key={project.slug}>
-            <Link href={`/${project.slug}`} className="text-sm text-primary-foreground md:text-md">
+            <Link href={`/${project.slug}`} className="text-sm text-tertiary-foreground md:text-md">
               {project.name}
             </Link>
           </DropdownMenuItem>
