@@ -1,6 +1,14 @@
 "use client";
 import { gsap } from "gsap";
 
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { Bebas_Neue } from "next/font/google";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -58,10 +66,52 @@ export function Header() {
         <div className="flex flex-row items-center gap-x-4">
           {/* Accueil not visible in "/"" path */}
           {pathname !== "/" && (
-            <Link href="/" className="text-md text-primary-foreground">
+            <Link
+              href="/"
+              className="text-sm text-primary-foreground md:text-md"
+            >
               Accueil
             </Link>
           )}
+          <DropdownMenu>
+            <DropdownMenuTrigger className="text-sm text-primary-foreground md:text-md">
+              Projets
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuItem>
+                <Link
+                  href="/stash"
+                  className="text-sm text-primary-foreground md:text-md"
+                >
+                  Stash
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link
+                  href="/sandamal"
+                  className="text-sm text-primary-foreground md:text-md"
+                >
+                  Sandamal
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link
+                  href="/galopins"
+                  className="text-sm text-primary-foreground md:text-md"
+                >
+                  Galopins
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link
+                  href="/codit"
+                  className="text-sm text-primary-foreground md:text-md"
+                >
+                  Codit
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
           <ThemeToggle />
         </div>
       </div>
