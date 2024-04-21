@@ -48,7 +48,7 @@ export function Header() {
       }`}
     >
       <div className="flex items-center justify-between px-6 py-4 md:px-10 lg:py-6 xl:mx-auto xl:px-16">
-        <span className={`${Bebas.className} text-md text-tertiary-foreground`}>
+        <span className={`${Bebas.className} text-md text-tertiary-foreground `}>
           SÉBASTIEN.LAURENT
         </span>
         <ThemeToggle />
