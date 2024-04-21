@@ -56,29 +56,29 @@ export default function Page({ params }: { params: { slug: string } }) {
     // Project Title Animation
     gsap.fromTo(
       "#project-title",
-      { x:  -30, opacity: 0 },
-      { x: 0, opacity: 1, duration: 1 }
+      { x: screenWidth < 1280 ? 0 : -30, y: screenWidth < 1280 ? -30 : 0, opacity: 0 },
+      { x: 0, opacity: 1, y:0, duration: 1 }
     );
 
     // Project Description Animation
     gsap.fromTo(
       "#project-description",
-      { x:  -30, opacity: 0 },
-      { x: 0, opacity: 1, duration: 1 }
+      { x: screenWidth < 1280 ? 0 : -30, y: screenWidth < 1280 ? -30 : 0, opacity: 0 },
+      { x: 0, opacity: 1, y:0, duration: 1 }
     );
 
     // Project Tech Stack Animation
     gsap.fromTo(
       "#project-tech",
-      { x: -30, opacity: 0 },
-      { x: 0, opacity: 1, duration: 1 }
+      { x: screenWidth < 1280 ? 0 : -30, y: screenWidth < 1280 ? -30 : 0, opacity: 0 },
+      { x: 0, opacity: 1, y:0, duration: 1 }
     );
 
     // Project Links Animation
     gsap.fromTo(
       "#project-links",
-      { x: -30, opacity: 0 },
-      { x: 0, opacity: 1, duration: 1 }
+      { x: screenWidth < 1280 ? 0 : -30, y: screenWidth < 1280 ? -30 : 0, opacity: 0 },
+      { x: 0, opacity: 1, y:0, duration: 1 }
     );
 
     // Project Images Text Animation
