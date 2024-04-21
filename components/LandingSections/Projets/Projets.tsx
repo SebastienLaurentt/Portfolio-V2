@@ -62,7 +62,6 @@ const Projets = () => {
             projectStack=" Expo • React Native • Clerk"
             imgClassname="w-4/5 xl:w-3/5 mx-auto"
             githubHref="https://github.com/SebastienLaurentt/Fintech-ReactN"
-            slug="fintech"
           />
           <ProjectCard
             src={TechHaven}
@@ -73,7 +72,6 @@ const Projets = () => {
             projectDescription="Concept E-Commerce de vente de produits high-tech."
             projectStack="Next.Js • PayloadCMS • Stripe"
             githubHref="https://github.com/SebastienLaurentt/Tech-Haven"
-            slug="techhaven"
           />
 
           <ProjectCard
