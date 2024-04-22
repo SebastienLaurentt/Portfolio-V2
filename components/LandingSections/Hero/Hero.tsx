@@ -52,11 +52,11 @@ const Hero = () => {
     <Section
       marginBottom={true}
       marginTop={false}
-      classname="min-h-screen flex flex-col justify-center uppercase"
+      classname="min-h-screen  flex flex-col justify-center uppercase"
     >
       <div className="flex flex-col xl:flex-row xl:justify-around ">
         {/* Text Hero */}
-        <div className="mt-24 w-full lg:mt-40 xl:mb-16 xl:mt-28 xl:flex xl:w-1/2 xl:flex-col xl:justify-end">
+        <div className="w-full lg:mt-8 xl:mb-16 xl:mt-28 xl:flex xl:w-1/2 xl:flex-col xl:justify-end">
           <div>
             <h1 id="hero-text" className="mb-2">
               Web <br /> Developer{" "}
