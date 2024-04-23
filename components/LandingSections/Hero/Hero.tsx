@@ -56,7 +56,7 @@ const Hero = () => {
     >
       <div className="flex flex-col xl:flex-row xl:justify-around ">
         {/* Text Hero */}
-        <div className="w-full md:mt-24 xl:mb-16 xl:mt-28 xl:flex xl:w-1/2 xl:flex-col xl:justify-end">
+        <div className="w-full mt-8 md:mt-24 xl:mb-16 xl:mt-28 xl:flex xl:w-1/2 xl:flex-col xl:justify-end">
           <div>
             <h1 id="hero-text" className="mb-2">
               Web <br /> Developer{" "}
