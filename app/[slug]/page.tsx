@@ -120,7 +120,7 @@ export default function Page({ params }: { params: { slug: string } }) {
   }, []);
 
   return (
-    <div className="xl:flex xl:h-screen xl:flex-col xl:justify-center">
+    <main className="xl:flex xl:h-screen xl:flex-col xl:justify-center">
       <div className=" mx-auto flex w-full flex-col px-6 py-20 md:px-10  lg:pt-36  xl:flex-row xl:items-center  xl:justify-center xl:px-16 2xl:max-w-[2000px] ">
         {/* Textual Infos */}
         <div className="flex flex-col justify-around pb-20 pt-28 lg:pb-24 lg:pt-32 xl:h-full xl:w-2/5  xl:justify-between xl:py-20 xl:pr-4 2xl:w-1/3 2xl:px-4 ">
@@ -207,6 +207,6 @@ export default function Page({ params }: { params: { slug: string } }) {
           </ul>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
