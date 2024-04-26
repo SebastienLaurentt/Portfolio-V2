@@ -11,6 +11,8 @@ export function Header() {
   const [visible, setVisible] = useState(true);
   const pathname = usePathname();
 
+  const isNotFixed = pathname !== "/" ? "" : "fixed";
+
   useEffect(() => {
     //  Define when Header is visible
     if (typeof window !== "undefined") {
@@ -39,7 +41,7 @@ export function Header() {
   return (
     <header
       id="header"
-      className={`fixed left-0 top-0 z-20 w-full bg-background transition-transform duration-700 2xl:bg-transparent ${
+      className={`${isNotFixed} left-0 top-0 z-20 w-full bg-background transition-transform duration-700 2xl:bg-transparent ${
         visible ? "" : "-translate-y-full"
       }`}
     >

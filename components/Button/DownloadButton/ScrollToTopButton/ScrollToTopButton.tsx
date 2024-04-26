@@ -2,10 +2,14 @@
 
 import { Button } from "@/components/ui/button";
 import { ChevronUp } from "lucide-react";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const pathname = usePathname();
+
+  const isHidden = pathname !== "/" ? "xl:hidden" : "";
 
   useEffect(() => {
     const toggleVisibility = () => {
@@ -34,7 +38,7 @@ const ScrollToTopButton = () => {
     <Button
       variant="icons"
       size="icons"
-      className={`fixed bottom-6 right-6 md:right-10 xl:right-16 rounded-xl outline-none transition-opacity duration-200   ${
+      className={`${isHidden} fixed bottom-6 right-6 rounded-xl outline-none transition-opacity duration-200 md:right-10 xl:right-16   ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
       onClick={scrollToTop}
