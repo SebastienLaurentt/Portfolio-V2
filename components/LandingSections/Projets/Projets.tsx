@@ -2,12 +2,12 @@ import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import Section from "@/components/Section/Section";
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
 
-import Codit from "../../../public/images/Codit.png";
+import Codit from "../../../public/images/Codit.webp";
 import Effroi from "../../../public/images/Effroi.webp";
-import Fintech from "../../../public/images/Fintech.png";
-import Galopins from "../../../public/images/Galopins.png";
-import Sandamal from "../../../public/images/Sandamal.png";
-import Stash from "../../../public/images/Stash.png";
+import Fintech from "../../../public/images/Fintech.webp";
+import Galopins from "../../../public/images/Galopins.webp";
+import Sandamal from "../../../public/images/Sandamal.webp";
+import Stash from "../../../public/images/Stash.webp";
 
 const Projets = () => {
   return (
