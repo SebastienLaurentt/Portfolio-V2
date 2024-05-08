@@ -9,8 +9,9 @@ import { usePathname } from "next/navigation";
 
 const projects = [
   { slug: "stash", name: "Stash" },
-  { slug: "sandamal", name: "Sandamal" },
+  { slug: "effroi", name: "Effroi" },
   { slug: "galopins", name: "Galopins" },
+  { slug: "sandamal", name: "Sandamal" },
   { slug: "codit", name: "Codit" },
 ];
 
