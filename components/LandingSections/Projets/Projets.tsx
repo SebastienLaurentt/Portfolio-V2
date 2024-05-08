@@ -5,10 +5,10 @@ import SectionHeader from "@/components/SectionHeader/SectionHeader";
 import Codit from "../../../public/images/Codit.png";
 import Fintech from "../../../public/images/Fintech.png";
 import Galopins from "../../../public/images/Galopins.png";
+import Sandamal from "../../../public/images/Sandamal.png";
 import Stash from "../../../public/images/Stash.png";
 import TechHaven from "../../../public/images/TechHaven.png";
-import Sandamal from "../../../public/images/Sandamal.png";
-
+import Effroi from "../../../public/images/Effroi.webp";
 
 const Projets = () => {
   return (
@@ -63,7 +63,7 @@ const Projets = () => {
             imgClassname="w-4/5 xl:w-3/5 mx-auto"
             githubHref="https://github.com/SebastienLaurentt/Fintech-ReactN"
           />
-          <ProjectCard
+          {/* <ProjectCard
             src={TechHaven}
             alt="Impression d'ecran de la page d'accueil du Projet TechHaven"
             rowReverse={false}
@@ -72,6 +72,18 @@ const Projets = () => {
             projectDescription="Concept E-Commerce de vente de produits high-tech."
             projectStack="Next.Js • PayloadCMS • Stripe"
             githubHref="https://github.com/SebastienLaurentt/Tech-Haven"
+          /> */}
+          <ProjectCard
+            src={Effroi}
+            alt="Impression d'ecran de la page d'accueil du Projet La Villa de l'Effroi"
+            rowReverse={false}
+            marginBottom={true}
+            projectTitle="Villa Effroi"
+            projectDescription="Escape Game. Présentation, réservation et paiement."
+            projectStack="Next.Js • NextAuth • Stripe"
+            siteHref="https://escape-game-pi.vercel.app/"
+            githubHref="https://github.com/SebastienLaurentt/Escape-Game"
+            slug="effroi"
           />
 
           <ProjectCard
