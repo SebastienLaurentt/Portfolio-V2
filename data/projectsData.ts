@@ -11,6 +11,10 @@ import CoditLarge1 from "../public/images/CoditLarge1.webp";
 import CoditLarge2 from "../public/images/CoditLarge2.webp";
 import CoditLarge3 from "../public/images/CoditLarge3.webp";
 import CoditLarge4 from "../public/images/CoditLarge4.webp";
+import EffroiLarge1 from "../public/images/EffroiLarge1.webp";
+import EffroiLarge2 from "../public/images/EffroiLarge2.webp";
+import EffroiLarge3 from "../public/images/EffroiLarge3.webp";
+import EffroiLarge4 from "../public/images/EffroiLarge4.webp";
 
 const projectsData = {
   stash: {
@@ -62,6 +66,20 @@ const projectsData = {
       { src: CoditLarge2, description: "Page snippets" },
       { src: CoditLarge3, description: "Inscription" },
       { src: CoditLarge4, description: "Dashboard" }
+    ],
+  },
+  effroi: {
+    name: "Villa Effroi",
+    description: "Escape Game. Présentation, réservation et paiement.",
+    date: "[2024]",
+    tech: ["Next.Js ", "NextAuth", "Stripe", "Zustand", "Tailwind"],
+    siteHref: "https://escape-game-pi.vercel.app/",
+    githubHref: "https://github.com/SebastienLaurentt/Escape-Game",
+    images: [
+      { src: EffroiLarge1, description: "Experience Cards" },
+      { src: EffroiLarge2, description: "Reservation" },
+      { src: EffroiLarge3, description: "Dashboard Admin" },
+      { src: EffroiLarge4, description: "Contact" }
     ],
   },
 };
