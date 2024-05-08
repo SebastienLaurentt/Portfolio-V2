@@ -3,12 +3,11 @@ import Section from "@/components/Section/Section";
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
 
 import Codit from "../../../public/images/Codit.png";
+import Effroi from "../../../public/images/Effroi.webp";
 import Fintech from "../../../public/images/Fintech.png";
 import Galopins from "../../../public/images/Galopins.png";
 import Sandamal from "../../../public/images/Sandamal.png";
 import Stash from "../../../public/images/Stash.png";
-import TechHaven from "../../../public/images/TechHaven.png";
-import Effroi from "../../../public/images/Effroi.webp";
 
 const Projets = () => {
   return (
@@ -27,16 +26,16 @@ const Projets = () => {
             slug="stash"
           />
           <ProjectCard
-            src={Sandamal}
-            alt="Impression d'écran de la page d'accueil du Projet Sandamal"
+            src={Effroi}
+            alt="Impression d'ecran de la page d'accueil du Projet La Villa de l'Effroi"
             rowReverse={false}
             marginBottom={true}
-            projectTitle="Sandamal"
-            projectDescription="Site d'art professionel. Presentation de l'artiste, de ses oeuvres et de ses expositions."
-            projectStack="Next.Js • TypeScript • Sanity"
-            siteHref="https://sandamal-lilac.vercel.app/"
-            githubHref="https://github.com/SebastienLaurentt/Sandamal"
-            slug="sandamal"
+            projectTitle="Villa Effroi"
+            projectDescription="Escape Game. Présentation, réservation et paiement."
+            projectStack="Next.Js • NextAuth • Stripe"
+            siteHref="https://escape-game-pi.vercel.app/"
+            githubHref="https://github.com/SebastienLaurentt/Escape-Game"
+            slug="effroi"
           />
           <ProjectCard
             src={Galopins}
@@ -49,6 +48,18 @@ const Projets = () => {
             siteHref="https://lesgalopinsdemontelimar.com/"
             githubHref="https://github.com/SebastienLaurentt/Galopins-Next-V2"
             slug="galopins"
+          />
+          <ProjectCard
+            src={Sandamal}
+            alt="Impression d'écran de la page d'accueil du Projet Sandamal"
+            rowReverse={false}
+            marginBottom={true}
+            projectTitle="Sandamal"
+            projectDescription="Site d'art professionel. Presentation de l'artiste, de ses oeuvres et de ses expositions."
+            projectStack="Next.Js • TypeScript • Sanity"
+            siteHref="https://sandamal-lilac.vercel.app/"
+            githubHref="https://github.com/SebastienLaurentt/Sandamal"
+            slug="sandamal"
           />
         </div>
         <div className="">
@@ -73,18 +84,6 @@ const Projets = () => {
             projectStack="Next.Js • PayloadCMS • Stripe"
             githubHref="https://github.com/SebastienLaurentt/Tech-Haven"
           /> */}
-          <ProjectCard
-            src={Effroi}
-            alt="Impression d'ecran de la page d'accueil du Projet La Villa de l'Effroi"
-            rowReverse={false}
-            marginBottom={true}
-            projectTitle="Villa Effroi"
-            projectDescription="Escape Game. Présentation, réservation et paiement."
-            projectStack="Next.Js • NextAuth • Stripe"
-            siteHref="https://escape-game-pi.vercel.app/"
-            githubHref="https://github.com/SebastienLaurentt/Escape-Game"
-            slug="effroi"
-          />
 
           <ProjectCard
             src={Codit}
