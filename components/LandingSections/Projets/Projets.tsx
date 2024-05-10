@@ -31,7 +31,7 @@ const Projets = () => {
             rowReverse={false}
             marginBottom={true}
             projectTitle="Villa Effroi"
-            projectDescription="Escape Game. Présentation, réservation et paiement."
+            projectDescription="Escape Game. Presentation, reservation et paiement."
             projectStack="Next.Js • NextAuth • Stripe"
             siteHref="https://escape-game-pi.vercel.app/"
             githubHref="https://github.com/SebastienLaurentt/Escape-Game"

@@ -47,7 +47,7 @@ export function Header() {
     >
       <div className="flex items-center justify-between px-6 py-4 md:px-10 lg:py-6 xl:mx-auto  xl:max-w-[2000px] xl:px-16">
         <Link href="/" className="text-md text-tertiary-foreground">
-          SÉBASTIEN.LAURENT
+          SEBASTIEN.LAURENT
         </Link>
         <div className="flex flex-row items-center">
           <div className="mr-6 flex flex-row gap-x-2 md:mr-9 md:gap-x-3">

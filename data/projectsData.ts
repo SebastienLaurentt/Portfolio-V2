@@ -70,7 +70,7 @@ const projectsData = {
   },
   effroi: {
     name: "Villa Effroi",
-    description: "Escape Game. Présentation, réservation et paiement.",
+    description: "Escape Game. Presentation, reservation et paiement.",
     date: "[2024]",
     tech: ["Next.Js ", "NextAuth", "Stripe", "Zustand", "Tailwind"],
     siteHref: "https://escape-game-pi.vercel.app/",
