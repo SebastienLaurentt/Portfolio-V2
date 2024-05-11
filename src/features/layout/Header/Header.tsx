@@ -41,7 +41,7 @@ export function Header() {
   return (
     <header
       id="header"
-      className={`${isNotFixed} left-0 top-0 z-20 w-full bg-background transition-transform duration-700 2xl:bg-transparent ${
+      className={`${isNotFixed} left-0 top-0 z-20 w-full bg-background opacity-0 transition-transform duration-700 2xl:bg-transparent ${
         visible ? "" : "-translate-y-full"
       }`}
     >
