@@ -6,7 +6,7 @@ import { MoveDown } from "lucide-react";
 import {} from "next/font/google";
 import Image from "next/image";
 import { useEffect } from "react";
-import HeroImg from "../../../public/images/HeroImg.svg";
+import HeroImg from "../../../public/images/leS.png";
 
 const Hero = () => {
   useEffect(() => {
