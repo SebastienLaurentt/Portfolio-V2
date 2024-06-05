@@ -72,7 +72,7 @@ const projectsData = {
     name: "Villa Effroi",
     description: "Escape Game. Presentation, reservation et paiement.",
     date: "[2024]",
-    tech: ["Next.Js ", "NextAuth", "Stripe", "Zustand", "Tailwind"],
+    tech: ["Next.Js ", "Prisma", "Stripe", "Tanstack", "Kinde"],
     siteHref: "https://escape-game-pi.vercel.app/",
     githubHref: "https://github.com/SebastienLaurentt/Escape-Game",
     images: [

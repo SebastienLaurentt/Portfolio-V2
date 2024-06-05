@@ -16,26 +16,26 @@ const Projets = () => {
       <div className="flex flex-col ">
         <div className="">
           <ProjectCard
+            src={Effroi}
+            alt="Impression d'ecran de la page d'accueil du Projet La Villa de l'Effroi"
+            rowReverse={true}
+            marginBottom={true}
+            projectTitle="Villa Effroi"
+            projectDescription="Escape Game. Presentation, reservation et paiement."
+            projectStack="Next.Js • Prisma • Stripe"
+            siteHref="https://escape-game-pi.vercel.app/"
+            githubHref="https://github.com/SebastienLaurentt/Escape-Game"
+            slug="effroi"
+          />
+          <ProjectCard
             src={Stash}
             alt="Impression d'écran de la page d'accueil du Projet Stash"
-            rowReverse={true}
+            rowReverse={false}
             marginBottom={true}
             projectTitle="Stash"
             projectDescription="Agence de design web. Presentation de l'agence, de ses services et de ses realisations."
             projectStack="WordPress • Figma • Elementor"
             slug="stash"
-          />
-          <ProjectCard
-            src={Effroi}
-            alt="Impression d'ecran de la page d'accueil du Projet La Villa de l'Effroi"
-            rowReverse={false}
-            marginBottom={true}
-            projectTitle="Villa Effroi"
-            projectDescription="Escape Game. Presentation, reservation et paiement."
-            projectStack="Next.Js • NextAuth • Stripe"
-            siteHref="https://escape-game-pi.vercel.app/"
-            githubHref="https://github.com/SebastienLaurentt/Escape-Game"
-            slug="effroi"
           />
           <ProjectCard
             src={Galopins}
