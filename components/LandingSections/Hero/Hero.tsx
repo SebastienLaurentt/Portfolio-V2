@@ -6,7 +6,7 @@ import { MoveDown } from "lucide-react";
 import {} from "next/font/google";
 import Image from "next/image";
 import { useEffect } from "react";
-import HeroImg from "../../../public/images/leS.png";
+import HeroImg from "../../../public/images/leS.webp";
 
 const Hero = () => {
   useEffect(() => {
@@ -56,7 +56,7 @@ const Hero = () => {
     >
       <div className="flex flex-col xl:flex-row xl:justify-around ">
         {/* Text Hero */}
-        <div className="mt-8 w-full md:mt-24 xl:mb-16 xl:mt-28 xl:flex xl:w-1/2 xl:flex-col xl:justify-end">
+        <div className="mt-14 w-full md:mt-24 xl:mb-16 xl:mt-28 xl:flex xl:w-1/2 xl:flex-col xl:justify-end">
           <div>
             <h1 id="hero-text" className="mb-2 opacity-0">
               Web <br /> Developer{" "}
@@ -72,7 +72,7 @@ const Hero = () => {
             <Image
               src={HeroImg}
               alt="Logo Galopins"
-              className="pr-2  md:w-[520px] lg:w-[700px] xl:w-4/5 xl:pr-0"
+              className="pr-2 md:w-[520px] lg:w-[700px]  xl:pr-0"
             />
           </div>
         </div>
