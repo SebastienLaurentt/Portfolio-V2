@@ -18,6 +18,7 @@ import EffroiLarge4 from "../public/images/EffroiLarge4.webp";
 import EffroiLarge5 from "../public/images/EffroiLarge5.webp";
 import EffroiLarge6 from "../public/images/EffroiLarge6.webp";
 import EffroiLarge7 from "../public/images/EffroiLarge7.webp";
+import EffroiLarge8 from "../public/images/EffroiLarge8.webp";
 
 const projectsData = {
   stash: {
@@ -84,8 +85,9 @@ const projectsData = {
       { src: EffroiLarge3, description: "Reservation3 : Preview" },
       { src: EffroiLarge4, description: "Reservation4 : Paiement Stripe" },
       { src: EffroiLarge5, description: "Reservation5 : Remerciement" },
-      { src: EffroiLarge6, description: "Admin1 : Gestion Experience" },
-      { src: EffroiLarge7, description: "Admin2 : Gestion Ouverture" }
+      { src: EffroiLarge6, description: "Admin1 : Gestion Experiences" },
+      { src: EffroiLarge7, description: "Admin2 : Gestion Ouvertures" },
+      { src: EffroiLarge8, description: "Admin3 : Gestion Reservations" }
     ],
   },
 };
