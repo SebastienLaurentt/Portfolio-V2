@@ -19,6 +19,8 @@ import EffroiLarge5 from "../public/images/EffroiLarge5.webp";
 import EffroiLarge6 from "../public/images/EffroiLarge6.webp";
 import EffroiLarge7 from "../public/images/EffroiLarge7.webp";
 import EffroiLarge8 from "../public/images/EffroiLarge8.webp";
+import EffroiLarge9 from "../public/images/EffroiLarge9.webp";
+import EffroiLarge10 from "../public/images/EffroiLarge10.webp";
 
 const projectsData = {
   stash: {
@@ -80,14 +82,16 @@ const projectsData = {
     siteHref: "https://escape-game-pi.vercel.app/",
     githubHref: "https://github.com/SebastienLaurentt/Escape-Game",
     images: [
-      { src: EffroiLarge1, description: "Reservation1 : Choix experience" },
-      { src: EffroiLarge2, description: "Reservation2 : Booking" },
-      { src: EffroiLarge3, description: "Reservation3 : Preview" },
-      { src: EffroiLarge4, description: "Reservation4 : Paiement Stripe" },
-      { src: EffroiLarge5, description: "Reservation5 : Remerciement" },
-      { src: EffroiLarge6, description: "Admin1 : Gestion Experiences" },
-      { src: EffroiLarge7, description: "Admin2 : Gestion Ouvertures" },
-      { src: EffroiLarge8, description: "Admin3 : Gestion Reservations" }
+      { src: EffroiLarge1, description: "Page Accueil" },
+      { src: EffroiLarge2, description: "Reservation1 : Choix experience" },
+      { src: EffroiLarge3, description: "Reservation2 : Booking" },
+      { src: EffroiLarge4, description: "Reservation3 : Preview" },
+      { src: EffroiLarge5, description: "Reservation4 : Paiement Stripe" },
+      { src: EffroiLarge6, description: "Reservation5 : Remerciement" },
+      { src: EffroiLarge7, description: "Admin1 : Gestion Experiences" },
+      { src: EffroiLarge8, description: "Admin2 : Gestion Ouvertures" },
+      { src: EffroiLarge9, description: "Admin3 : Gestion Reservations" },
+      { src: EffroiLarge10, description: "Admin4 : Gestion Tarifs" },
     ],
   },
 };
