@@ -21,6 +21,9 @@ import EffroiLarge7 from "../public/images/EffroiLarge7.webp";
 import EffroiLarge8 from "../public/images/EffroiLarge8.webp";
 import EffroiLarge9 from "../public/images/EffroiLarge9.webp";
 import EffroiLarge10 from "../public/images/EffroiLarge10.webp";
+import MonipostLarge1 from "../public/images/MonipostLarge1.webp";
+import MonipostLarge2 from "../public/images/MonipostLarge2.webp";
+import MonipostLarge3 from "../public/images/MonipostLarge3.webp";
 
 const projectsData = {
   stash: {
@@ -45,6 +48,19 @@ const projectsData = {
       { src: SandamalLarge1, description: "Landing page" },
       { src: SandamalLarge2, description: "page projet" },
       { src: SandamalLarge3, description: "Page info" }
+    ],
+  },
+  monipost: {
+    name: "MoniPost",
+    description: "Landing page pour Start-Up.",
+    date: "[2024]",
+    tech: ["Next.Js", "TypeScript ", "GSAP", "Tailwind"],
+    siteHref: "https://moni-post.vercel.app/",
+    githubHref: "https://github.com/SebastienLaurentt/MoniPost",
+    images: [
+      { src: MonipostLarge1, description: "Section Background" },
+      { src: MonipostLarge2, description: "Section Tarifs" },
+      { src: MonipostLarge3, description: "Section FAQ" }
     ],
   },
   galopins: {

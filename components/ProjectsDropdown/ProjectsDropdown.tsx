@@ -8,8 +8,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const projects = [
-  { slug: "stash", name: "Stash" },
   { slug: "effroi", name: "Effroi" },
+  { slug: "stash", name: "Stash" },
+  { slug: "monipost", name: "MoniPost" },
   { slug: "galopins", name: "Galopins" },
   { slug: "sandamal", name: "Sandamal" },
   { slug: "codit", name: "Codit" },

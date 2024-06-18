@@ -8,6 +8,7 @@ import Fintech from "../../../public/images/Fintech.webp";
 import Galopins from "../../../public/images/Galopins.webp";
 import Sandamal from "../../../public/images/Sandamal.webp";
 import Stash from "../../../public/images/Stash.webp";
+import Monipost from "../../../public/images/Monipost.webp";
 
 const Projets = () => {
   return (
@@ -38,9 +39,21 @@ const Projets = () => {
             slug="stash"
           />
           <ProjectCard
+            src={Monipost}
+            alt="Impression d'écran de la page d'accueil du Projet MoniPost"
+            rowReverse={true}
+            marginBottom={true}
+            projectTitle="MoniPost"
+            projectDescription="Landing page pour Start-Up."
+            projectStack="Next.Js • TypeScript • GSAP"
+            siteHref="https://moni-post.vercel.app/"
+            githubHref="https://github.com/SebastienLaurentt/MoniPost"
+            slug="monipost"
+          />
+          <ProjectCard
             src={Galopins}
             alt="Impression d'écran de la page d'accueil du Projet Galopins"
-            rowReverse={true}
+            rowReverse={false}
             marginBottom={true}
             projectTitle="Galopins"
             projectDescription="Club de randonnee. Presentation du club, de ses activites et des photos realisees."
@@ -52,7 +65,7 @@ const Projets = () => {
           <ProjectCard
             src={Sandamal}
             alt="Impression d'écran de la page d'accueil du Projet Sandamal"
-            rowReverse={false}
+            rowReverse={true}
             marginBottom={true}
             projectTitle="Sandamal"
             projectDescription="Site d'art professionel. Presentation de l'artiste, de ses oeuvres et de ses expositions."
@@ -66,7 +79,7 @@ const Projets = () => {
           <ProjectCard
             src={Fintech}
             alt="Impression d'ecran de la page d'accueil du Projet Fintech"
-            rowReverse={true}
+            rowReverse={false}
             marginBottom={true}
             projectTitle="Fintech"
             projectDescription="Concept d'application mobile de gestion de crypto-monnaies."
@@ -78,7 +91,7 @@ const Projets = () => {
             src={Codit}
             alt="Impression d'écran de la page d'accueil du Projet Codit"
             rowReverse={false}
-            marginBottom={false}
+            marginBottom={true}
             projectTitle="Codit"
             projectDescription="Reseau social pour developpeurs. Partager les illustrations de ses projets avec le code source."
             projectStack="React • Symfony • Redux "
