@@ -90,7 +90,7 @@ const Projets = () => {
           <ProjectCard
             src={Codit}
             alt="Impression d'écran de la page d'accueil du Projet Codit"
-            rowReverse={false}
+            rowReverse={true}
             marginBottom={true}
             projectTitle="Codit"
             projectDescription="Reseau social pour developpeurs. Partager les illustrations de ses projets avec le code source."
