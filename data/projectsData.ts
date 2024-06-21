@@ -55,7 +55,7 @@ const projectsData = {
     description: "Landing page pour Start-Up.",
     date: "[2024]",
     tech: ["Next.Js", "TypeScript ", "GSAP", "Tailwind"],
-    siteHref: "https://moni-post.vercel.app/",
+    siteHref: "https://monipost.com/",
     githubHref: "https://github.com/SebastienLaurentt/MoniPost",
     images: [
       { src: MonipostLarge1, description: "Section Background" },
