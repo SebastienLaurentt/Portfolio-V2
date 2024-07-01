@@ -12,7 +12,7 @@ const projects = [
   { slug: "stash", name: "Stash" },
   { slug: "monipost", name: "MoniPost" },
   { slug: "galopins", name: "Galopins" },
-  { slug: "sandamal", name: "Sandamal" },
+  // { slug: "sandamal", name: "Sandamal" },
   { slug: "codit", name: "Codit" },
 ];
 
