@@ -44,7 +44,7 @@ const Projets = () => {
           projectTitle="MoniPost"
           projectDescription="Landing page pour Start-Up."
           projectStack="Next.Js • TypeScript • GSAP"
-          siteHref="https://moni-post-rmpu.vercel.app/"
+          siteHref="https://monipost.com/"
           githubHref="https://github.com/SebastienLaurentt/MoniPost"
           slug="monipost"
         />
