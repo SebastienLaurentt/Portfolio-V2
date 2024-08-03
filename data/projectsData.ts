@@ -4,6 +4,8 @@ import SandamalLarge3 from "../public/images/SandamalLarge3.webp";
 import GalopinsLarge1 from "../public/images/GalopinsLarge1.webp";
 import GalopinsLarge2 from "../public/images/GalopinsLarge2.webp";
 import GalopinsLarge3 from "../public/images/GalopinsLarge3.webp";
+import GalopinsLarge4 from "../public/images/GalopinsLarge4.webp";
+import GalopinsLarge5 from "../public/images/GalopinsLarge5.webp";
 import StashLarge1 from "../public/images/StashLarge1.webp";
 import StashLarge2 from "../public/images/StashLarge2.webp";
 import StashLarge3 from "../public/images/StashLarge3.webp";
@@ -72,8 +74,10 @@ const projectsData = {
     githubHref: "https://github.com/SebastienLaurentt/Galopins-Next-V2",
     images: [
       { src: GalopinsLarge1, description: "Page Parcours" },
-      { src: GalopinsLarge2, description: "Page Club" },
-      { src: GalopinsLarge3, description: "Contact" }
+      { src: GalopinsLarge2, description: "Page Programmes" },
+      { src: GalopinsLarge3, description: "Page Club" },
+      { src: GalopinsLarge4, description: "Page Connexion" },
+      { src: GalopinsLarge5, description: "Contact" }
     ],
   },
   codit: {
