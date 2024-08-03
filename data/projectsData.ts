@@ -77,7 +77,7 @@ const projectsData = {
       { src: GalopinsLarge2, description: "Page Programmes" },
       { src: GalopinsLarge3, description: "Page Club" },
       { src: GalopinsLarge4, description: "Page Connexion" },
-      { src: GalopinsLarge5, description: "Contact" }
+      { src: GalopinsLarge5, description: "Page Contact" }
     ],
   },
   codit: {
