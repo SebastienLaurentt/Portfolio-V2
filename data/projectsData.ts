@@ -1,6 +1,4 @@
-import SandamalLarge1 from "../public/images/SandamalLarge1.webp";
-import SandamalLarge2 from "../public/images/SandamalLarge2.webp";
-import SandamalLarge3 from "../public/images/SandamalLarge3.webp";
+
 import GalopinsLarge1 from "../public/images/GalopinsLarge1.webp";
 import GalopinsLarge2 from "../public/images/GalopinsLarge2.webp";
 import GalopinsLarge3 from "../public/images/GalopinsLarge3.webp";
@@ -13,6 +11,12 @@ import CoditLarge1 from "../public/images/CoditLarge1.webp";
 import CoditLarge2 from "../public/images/CoditLarge2.webp";
 import CoditLarge3 from "../public/images/CoditLarge3.webp";
 import CoditLarge4 from "../public/images/CoditLarge4.webp";
+import TSVLarge1 from "../public/images/TSVLarge1.webp";
+import TSVLarge2 from "../public/images/TSVLarge2.webp";
+import TSVLarge3 from "../public/images/TSVLarge3.webp";
+import TSVLarge4 from "../public/images/TSVLarge4.webp";
+import TSVLarge5 from "../public/images/TSVLarge5.webp";
+import TSVLarge6 from "../public/images/TSVLarge6.webp";
 import EffroiLarge1 from "../public/images/EffroiLarge1.webp";
 import EffroiLarge2 from "../public/images/EffroiLarge2.webp";
 import EffroiLarge3 from "../public/images/EffroiLarge3.webp";
@@ -39,19 +43,6 @@ const projectsData = {
       { src: StashLarge3, description: "Contact" }
     ],
   },
-  sandamal: {
-    name: "Sandamal",
-    description: "Site d'art professionel. Presentation de l'artiste, de ses oeuvres et de ses expositions.",
-    date: "[2024]",
-    tech: ["Next.Js", "TypeScript ", "Sanity", "Tailwind"],
-    siteHref: "https://sandamal-lilac.vercel.app/",
-    githubHref: "https://github.com/SebastienLaurentt/Sandamal",
-    images: [
-      { src: SandamalLarge1, description: "Landing page" },
-      { src: SandamalLarge2, description: "page projet" },
-      { src: SandamalLarge3, description: "Page info" }
-    ],
-  },
   monipost: {
     name: "MoniPost",
     description: "Landing page pour Start-Up.",
@@ -63,6 +54,21 @@ const projectsData = {
       { src: MonipostLarge1, description: "Section Background" },
       { src: MonipostLarge2, description: "Section Tarifs" },
       { src: MonipostLarge3, description: "Section FAQ" }
+    ],
+  },
+  tsv: {
+    name: "TSV",
+    description: "Agence de courtier automobile. Presentation de l'agence, de ses services et gestion back-office.",
+    date: "[2024]",
+    tech: ["Next.Js", "TypeScript ", "GSAP", "Prisma", "Zod"],
+    githubHref: "https://github.com/SebastienLaurentt/trouver_sa_voiture",
+    images: [
+      { src: TSVLarge1, description: "Carousel Vehicules" },
+      { src: TSVLarge2, description: "Section Services" },
+      { src: TSVLarge3, description: "Section Témoignagnes" },
+      { src: TSVLarge4, description: "Footer" },
+      { src: TSVLarge5, description: "Page Achat : Methode" },
+      { src: TSVLarge6, description: "Page Achat : Tarifs" },
     ],
   },
   galopins: {
